@@ -9,7 +9,7 @@ https://www.docker.com/products/docker-toolbox
 . Installer INF1006 dans le dossier ~/Developer
 
 ```
-$ git clone git@github.com:CollegeBoreal/INF1006-16A.git
+$ git clone git@github.com:CollegeBoreal/INF1069-17H.git
 ```
 
 . changer de repertoire
@@ -18,14 +18,14 @@ $ git clone git@github.com:CollegeBoreal/INF1006-16A.git
 $ cd INF1006-16A
 ```
 
-. Installer MySQL
+. Installer MongoDB
 
 ```
-$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 -d mysql:latest 
+$ docker run -v "$(pwd)":/data --name mongo -d mongo mongod --smallfiles
 ```
 
 . Executer la commande d'accer a MySQL
 
 ```
-$ docker exec -it some-mysql bash
+$ docker exec -it mongo bash
 ```

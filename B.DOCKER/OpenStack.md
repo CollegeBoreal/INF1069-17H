@@ -12,9 +12,9 @@ http://docs.openstack.org/user-guide/common/cli_set_environment_variables_using_
 ## Create the Docker Machine on OpenStack
 
 ```
-$ docker-machine --debug \
+$ docker-machine \
    create --driver openstack \
-          --openstack-flavor-name m1.tiny \
+          --openstack-flavor-name m1.small \
           --openstack-image-name "Ubuntu 14.04" \
           --openstack-ssh-user ubuntu \
           --openstack-sec-groups default  \

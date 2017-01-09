@@ -39,3 +39,15 @@ $ ssh -o BatchMode=yes \
       -i ~/.docker/machine/machines/INF1069/id_rsa \
     ubuntu@<external IP address>
 ```
+
+## SSH into the host with docker-machine 
+
+```
+$ docker-machine ssh QC-STEVE
+```
+
+## swith docker environment  
+```
+$ eval $(docker-machine env QC-STEVE)
+```
+

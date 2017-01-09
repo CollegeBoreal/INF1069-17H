@@ -21,7 +21,7 @@ $ docker-machine --debug \
           --openstack-floatingip-pool nova \
           --openstack-nova-network \
           --openstack-net-name nova \
-     INF1006
+     QC-STEVE
 ```
 
 ## SSH into the host

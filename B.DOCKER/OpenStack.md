@@ -1,28 +1,6 @@
 # OpenStack
 
 
-## On Mac
-
-```
-$ sudo easy_install pip
-$ sudo -H pip install python-openstackclient --upgrade --ignore-installed six
-```
-
-### [ImportError: No module named xmlrpc_client] issue
-
-```
-$ sudo -H pip uninstall python-novaclient
-$ sudo easy_install python-novaclient
-```
-
-### Testing Nova Commands
-
-```
-$ nova --version
-$ nova floating-ip-pool-list
-$ nova image-list
-$ nova flavor-list
-```
 ## Set your environment Variables
 
 ```
@@ -44,23 +22,6 @@ $ docker-machine --debug \
           --openstack-nova-network \
           --openstack-net-name nova \
      INF1006
-```
-## Check if the VM is running
-
-```
-$ nova list
-```
-
-## Check if there's an available floating IP address
-
-```
-$ nova floating-ip-list
-```
-
-## Assign the new IP address
-
-```
-$ nova add-floating-ip cd2c796d-4280-4328-9bed-b168c8229fe3 <external IP address>
 ```
 
 ## SSH into the host

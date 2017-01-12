@@ -1,27 +1,13 @@
 
-1. Introduction
+Seance 2. Introduction au NoSQL
 a) Définition et contexte du NoSQL
-b) Relationnelle vs no relationnelle
+b) Relationnelle vs non relationnelle
 c) Défis du relationnelle
 d) Scalability
 e) MapReduce – programmation fonctionnelle
-f) Key/Value store: Cassandra, Riak, etc.; Document databases: MongoDB, CouchDB, etc.
+f) Différent type de NoSQL
+Key/Value store: Cassandra, Riak, etc.; Document databases: MongoDB, CouchDB, etc.
 Graph databases: Neo4j, FlockDB, etc.
-http://nosql-database.org/
 
-2. Introduction à MongoDB
-a) Architecture
-b) Administration (installation, créer usager, changer mot de passe, importer et exporter des données)
-3. Opération - CRUD
-4. Indexes
-5. Modelisation avec MongoDB – partie 1
-6. Modelisation avec MongoDB – partie 2
-7. MongoDB avec Java
-8. MapReduce
-9. Performance avec MongoDB
-10. Cas d’utilisation
-11. Application
-12. ???
-13. Autre système NosQL (CouchDB, CouchBase, Cassandra, Hbase, etc. ?)
-14. ???
-15. Synthèse et révision
+Références: http://nosql-database.org/
+

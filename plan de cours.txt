@@ -1,5 +1,5 @@
 
-Seance 2. Introduction au NoSQL
+Semaine 2. Introduction au NoSQL
 a) Définition et contexte du NoSQL
 b) Relationnelle vs non relationnelle
 c) Défis du relationnelle

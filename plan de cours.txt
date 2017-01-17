@@ -1,13 +1,16 @@
+Plan du cours
+=============
 
-Semaine 2. Introduction au NoSQL
+Semaine 1. Introduction au NoSQL
 a) Définition et contexte du NoSQL
 b) Relationnelle vs non relationnelle
 c) Défis du relationnelle
 d) Scalability
-e) MapReduce – programmation fonctionnelle
-f) Différent type de NoSQL
+e) Différent type de NoSQL
 Key/Value store: Cassandra, Riak, etc.; Document databases: MongoDB, CouchDB, etc.
 Graph databases: Neo4j, FlockDB, etc.
 
 Références: http://nosql-database.org/
+
+Semaine 2. Opératiions CRUD
 

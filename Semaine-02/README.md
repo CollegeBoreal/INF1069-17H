@@ -238,17 +238,16 @@ Modifier le document
 ```
 > db.catalog.update(
 	{ 
-		catalogId: 2
+		catalogId: 1
 	},
 	{
-		"catalogId" :  2,
+		"catalogId" :  1,
 		"journal" : 'Oracle Magazine', 
 		"publisher" : 'Oracle Publishing', 
 		"edition" : '11122013',
 		"title" : 'Engineering as a Service',
 		"author": 'Kelly, David A.'
-	},
-	{ upsert: true}
+	}
 )
 > db.catalog.find().pretty()
 ```
@@ -362,7 +361,7 @@ Exemple: On insert avant
 > db.catalog.drop()
 > doc1 = {
 			"_id": ObjectId("507f191e810c19729de860ea"), 
-			"catalogId" : 1
+			"catalogId" : 1,
 			"journal" : 'Oracle Magazine', 
 			"publisher" : 'Oracle Publishing',
 			"edition": 'November December 2013',
@@ -409,7 +408,7 @@ Ajout des champs title et author
 ```
 > doc2 = {
 			"_id": ObjectId("507f191e810c19729de860ea"),
-			"catalogId" : 'catalog2',
+			"catalogId" : 2,
 			"journal" : 'Oracle Magazine', 
 			"publisher" : 'Oracle Publishing', 
 			"edition" : '11122013',
@@ -856,7 +855,7 @@ true
 * Il supprime la plus ancienne valeur et insère de façon circulaire.
 
 ```
-> db.createCollection("catalog", {capped: true, autoIndexId: true, size: 64 * 1024, max: 1000} )
+> db.createCollection("catalog", {capped: true, size: 64 * 1024, max: 1000} )
 ```
 
 ### Supprimer la base de données courante

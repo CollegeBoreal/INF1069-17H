@@ -7,11 +7,7 @@ Utiliser la base de données *semaine02*
 3. Ajouter Marie qui est originaire du Peru. Elle a deux types de passe temps (*hobbies*), dont films (*movies*) et *sports*. Assignez-lui 4 films et 2 sports de votre choix.
 4. Ajouter Paul qui est origine de la ville de Paris. Paul aime le soccer et la boxe. Paul a 20 ans.
 5. On decide de ne plus avoir l'age de Paul.
-6. Expliquer cette commande:
-> db.user.update( {"username": "Tom"},
-{$addToSet: {"favorites.movies": "The Maltese Falcon"} },
-false,
-false )
+6. Expliquer cette commande: ```> db.user.update( {"username": "Tom"}, {$addToSet: {"favorites.movies": "The Maltese Falcon"} }, false, false)```
 7. Expliquer cette commande: ```> db.user.update({username: "moe"}, {$inc: {age: -1})```
 8. Organiser l'enregistrement d'Henry afin qu'il ressemble à celui de Marie avec un sport de plus et on veut son age, soit 24 ans.
 9. Suprimmer tous les sports de James.

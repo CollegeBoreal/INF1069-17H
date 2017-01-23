@@ -6,18 +6,22 @@ qui sont exécutées comme une seule opération - cad, soit l'opération réussi
 On parle d'opération *atomic*, si:
 * Aucun processus n'est au courant du changement jusqu'à ce que le changement soit complété.
 * Si une opération échoue, l'ensemble d'opérations est annulé (rollback).
+
 ## Règles sur la nomenclature d'une collection
 * Pas plus que 128 caractères.
 * Ne peut pas avoir un champ de caractère vide (" ") comme nom.
 * Doit commencer par une lettre ou bien underscore _ Exemple: 6019_inf est invalide
 * Ne peut pas utiliser le mot *system*, car c'est une collection reservée par MongoDB.
 * Ne peut pas contenir le caractère NULL (dont le code ascii est "\0").
+
 ## Règles à considérer pour un document
 * Le nom d'un champ ne doit pas commencer par le caractère $ Exemple: $tags
 * Le nom d'un champ ne doit pas contenir le caractère [.] Exemple: ta.gs
 * Le champ *_id* est réservé pour la clé primaire.
 * Bien que ce n'est pas recommandé, le champ *_id* peut contenir une chaine de caractère ou un integer.
+
 ## La fonction insérer
+
 Syntaxe
 ```
 db.collection.insert(<document or array of documents>,
@@ -167,7 +171,15 @@ Autres exemples
 > show collections
 > db.catalog.insert([doc3, doc1, doc2], { writeConcern: { w: "majority", wtimeout: 5000 }, ordered:true })
 ```
-## La fonction modifier 
+## La fonction modifier
+* La fonction prend 3 paramètres: *criteria*, *objNew* et *options*.
+* Le paramètre *criteria* permet de spécifier le critère pour retrouver la donnée à modifier.
+* Le paramètre *objNew* permet de spécifier la donnée mise à jour; 
+* ou sinon utiliser un opérateur pour le faire. 
+* Le paramètre *options* permet de spécifier les options et les values possibles sont: *upsert* et *multi*.
+* upsert: mettre à jour ou créer.
+* multi: tous les documents trouvés ou la 1er seulement.
+
 Syntaxe
 ```
 db.collection.update(query, update, options)
@@ -181,13 +193,6 @@ db.collection.update(
 	}
 )
 ```
-* La fonction prend 3 paramètres: *criteria*, *objNew* et *options*.
-* Le paramètre *criteria* permet de spécifier le critère pour retrouver la donnée à modifier.
-* Le paramètre *objNew* permet de spécifier la donnée mise à jour; 
-* ou sinon utiliser un opérateur pour le faire. 
-* Le paramètre *options* permet de spécifier les options et les values possibles sont: *upsert* et *multi*.
-* upsert: mettre à jour ou créer.
-* multi: tous les documents trouvés ou la 1er seulement.
 Insérer dans notre catalogue en premier, puis modifier
 ```
 > db.catalog.drop()
@@ -304,12 +309,14 @@ Ensuite, modifier
 > db.catalog.find({ journal: 'Oracle Magazine'}).pretty()
 ```
 ### La fonction *save()*
+
+En utilisant *save*, il faut spécifier le *_id*, sinon il fait un *insert*.
+La commande *save* vous permet de simplifier la syntaxe. Le résultat est le même.
+
 Syntaxe
 ```
 db.collection.save(<document>,{writeConcern: <document>})
 ```
-En utilisant *save*, il faut spécifier le *_id*, sinon il fait un *insert*.
-La commande *save* vous permet de simplifier la syntaxe. Le résultat est le même.
 Exemple: On insert avant.
 ```
 > use semaine02
@@ -621,6 +628,7 @@ Préciser une position dans le tableau
 ### La fonction *findAndModify*
 * Prend 3 paramètres query, sort, operations
 * Utilise tous les opérateurs de modification sauf $set
+
 Syntaxe
 ```
 db.collection.findAndModify({
@@ -658,6 +666,11 @@ Exception, ne pas combiner *upsert* avec *remove*
 })
 ```
 ## La fonction supprimer
+
+Bonne pratique:
+
+C'est recommandé de faire un find() pour retrouver la donnée en premier avant de supprimer.
+
 Syntaxe
 ```
 db.collection.remove(
@@ -668,11 +681,6 @@ db.collection.remove(
 	}
 )
 ```
-Bonne pratique:
-C'est recommandé de faire un find() pour retrouver la donnée en premier avant de supprimer.
-
-Supprimer un document spécifique
-
 Supprime toutes les documents ayant ce Title.
 ```
 > db.catalog.drop()
@@ -730,7 +738,7 @@ true
 > db.catalog.drop()
 true
 ```
-Note: Particularité d'une collection fixe, *capped*
+Particularité d'une collection fixe, *capped*
 * On ne peut pas supprimer des documents.
 * Il faut faire *drop* et recréer.
 * Il supprime la plus ancienne valeur et insère de façon circulaire.

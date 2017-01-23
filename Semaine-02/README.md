@@ -1,59 +1,46 @@
 # Les opérations CRUD
-
-## Opérations atomic
-
+## Une opération *atomic*
 Une opération *atomic* est une combinaison de plusieurs opérations 
 qui sont exécutées comme une seule opération - cad, soit l'opération réussit ou elle échoue.
-On parle d'opération *atomic*, si:
 
+On parle d'opération *atomic*, si:
 * Aucun processus n'est au courant du changement jusqu'à ce que le changement soit complété.
 * Si une opération échoue, l'ensemble d'opérations est annulé (rollback).
-
 ## Règles sur la nomenclature d'une collection
-
 * Pas plus que 128 caractères.
 * Ne peut pas avoir un champ de caractère vide (" ") comme nom.
-* Doit commencer par une lettre ou bien underscore _ 
-*Exemple: 6019_inf est invalide*
-* Ne peut pas utiliser le mot *system* pour nom, car c'est une collection reservée par MongoDB.
-* Ne peut pas contenir le caractère NULL (code ascii est "\0").
-
+* Doit commencer par une lettre ou bien underscore _ Exemple: 6019_inf est invalide
+* Ne peut pas utiliser le mot *system*, car c'est une collection reservée par MongoDB.
+* Ne peut pas contenir le caractère NULL (dont le code ascii est "\0").
 ## Règles à considérer pour un document
-
-* Le caractère $ ne peut pas être le 1er caractère dans un nom d'un champ. *Exemple: $tags*
-* Le caractère [.] ne doit pas être utilisé dans le nom de la clé. *Exemple: ta.gs*
+* Le nom d'un champ ne doit pas commencer par le caractère $ Exemple: $tags
+* Le nom d'un champ ne doit pas contenir le caractère [.] Exemple: ta.gs
 * Le champ *_id* est réservé pour la clé primaire.
-* Bien que ce n'est pas recommandé, le *_id* peut contenir une chaine de caractère ou un integer.
-
-## La fonction INSÉRER
-
-### Syntaxe
-
+* Bien que ce n'est pas recommandé, le champ *_id* peut contenir une chaine de caractère ou un integer.
+## La fonction insérer
+Syntaxe
 ```
 db.collection.insert(<document or array of documents>,
 					{writeConcern: <document>,ordered:<boolean>})
 ```
-
-### En utilisant une variable
-
+En utilisant une variable
 ```
 > use semaine02
 > db.catalog.drop()
 > doc1 = {
-			"catalogId" : 1, 
-			"journal" : 'Oracle Magazine',
-			"publisher" : 'Oracle Publishing',
-			"edition" : 'November December 2013',
-			"title" : 'Engineering as a Service',
-			"author": 'David A. Kelly'
-		}
+				"catalogId" : 1, 
+				"journal" : 'Oracle Magazine',
+				"publisher" : 'Oracle Publishing',
+				"edition" : 'November December 2013',
+				"title" : 'Engineering as a Service',
+				"author": 'David A. Kelly'
+			}
 > db.catalog.insert(doc1)
 > db.catalog.find().pretty()
 ```
-
 Note: La collection est créée automatiquement si elle n'existe pas.
-On n'est pas obligé de la créer explicitement.
 
+On n'est pas obligé de la créer explicitement.
 ```
 > document = ({ 
 				"Type" : "Book",
@@ -61,25 +48,21 @@ On n'est pas obligé de la créer explicitement.
 				"ISBN" : "978-1-4302-5821-6",
 				"Publisher" : "Apress",
 				"Author": [
-							"Hows, David",
-							"Plugge, Eelco",
-							"Membrey, Peter",
-							"Hawkins, Tim" 
-						] 
+						"Hows, David",
+						"Plugge, Eelco",
+						"Membrey, Peter",
+						"Hawkins, Tim" 
+					] 
 				} )
 > db.media.insert(document)
 > db.media.find().pretty()
 ```
-
-### Directement dans la ligne de commande sans définir de variable
-
+Directement dans la ligne de commande sans définir de variable
 ```
 > db.media.insert( { "Type" : "CD", "Artist" : "Nirvana", "Title" : "Nevermind" })
 > db.media.find().pretty()
 ```
-
-### Directement dans la ligne de commande avec des sauts de lignes
-
+Directement dans la ligne de commande avec des sauts de lignes
 ```
 > db.media.insert( { "Type" : "CD",
 "Artist" : "Nirvana",
@@ -100,103 +83,92 @@ On n'est pas obligé de la créer explicitement.
 })
 > db.media.find().pretty()
 ```
-
-### En spécifiant implicitement une valeur pour le champ *_id*
-
+En spécifiant implicitement une valeur pour le champ *_id*
 ```
 > doc1 = {
-			"_id": ObjectId("507f191e810c19729de860ea"),
-			"catalogId" : 1,
-			"journal": 'Oracle Magazine',
-			"publisher" : 'Oracle Publishing',
-			"edition" : 'November December 2013',
-			"title" : 'Engineering as a Service',
-			"author" : 'David A. Kelly'
-		}
+				"_id": ObjectId("507f191e810c19729de860ea"),
+				"catalogId" : 1,
+				"journal": 'Oracle Magazine',
+				"publisher" : 'Oracle Publishing',
+				"edition" : 'November December 2013',
+				"title" : 'Engineering as a Service',
+				"author" : 'David A. Kelly'
+			}
 > db.catalog.insert(doc1)
 > db.catalog.find().pretty()
 ```
-
-### La clé *_id* doit être unique
-
+La clé *_id* doit être unique
 ```
 > doc2 = {
-			"_id": ObjectId("507f191e810c19729de860ea"),
-			"catalogId" : 2,
-			"journal" : 'Oracle Magazine',
-			"publisher" : 'Oracle Publishing',
-			"edition" : 'November December 2013'
-		}
+				"_id": ObjectId("507f191e810c19729de860ea"),
+				"catalogId" : 2,
+				"journal" : 'Oracle Magazine',
+				"publisher" : 'Oracle Publishing',
+				"edition" : 'November December 2013'
+			}
 > db.catalog.insert(doc2)
 > doc3 = {"_id": ObjectId("507f191e810c19729de860ea"),"catalogId" : 3}
 > db.catalog.insert(doc3)
 > db.catalog.find().pretty()
 ```
-
-### Insérer plusieurs documents
-
+Insérer plusieurs documents à la fois
 ```
 > doc1 = {
-			"_id": ObjectId("507f191e810c19729de860ea"),
-			"catalogId" : 1,
-			"journal" : 'Oracle Magazine',
-			"publisher" : 'Oracle Publishing',
-			"edition" : 'November December 2013',
-			"title": 'Engineering as a Service',
-			"author" : 'David A. Kelly'
-		}
+				"_id": ObjectId("507f191e810c19729de860ea"),
+				"catalogId" : 1,
+				"journal" : 'Oracle Magazine',
+				"publisher" : 'Oracle Publishing',
+				"edition" : 'November December 2013',
+				"title": 'Engineering as a Service',
+				"author" : 'David A. Kelly'
+			}
 > doc2 = {
-			"_id" : ObjectId("53fb4b08d17e68cd481295d5"),
-			"catalogId" : 2,
-			"journal" : 'Oracle Magazine',
-			"publisher" : 'Oracle Publishing',
-			"edition" : 'November December 2013',
-			"title": 'Quintessential and Collaborative',
-			"author" : 'Tom Haunert'
-		}
+				"_id" : ObjectId("53fb4b08d17e68cd481295d5"),
+				"catalogId" : 2,
+				"journal" : 'Oracle Magazine',
+				"publisher" : 'Oracle Publishing',
+				"edition" : 'November December 2013',
+				"title": 'Quintessential and Collaborative',
+				"author" : 'Tom Haunert'
+			}
 > db.catalog.drop()
 > show collections
 > db.catalog.insert([doc1, doc2])
 > db.catalog.find().pretty()
 ```
-
-Autre exemple
-
+Autres exemples
 ```
 > doc1 = {
-			"_id": ObjectId("507f191e810c19729de860ea"),
-			"catalogId" : 2,
-			"journal" : 'Oracle Magazine',
-			"publisher" : 'Oracle Publishing', 
-			"edition" : 'November December 2013',
-			"title" : 'Engineering as a Service',
-			"author" : 'David A. Kelly'
-		}
+				"_id": ObjectId("507f191e810c19729de860ea"),
+				"catalogId" : 2,
+				"journal" : 'Oracle Magazine',
+				"publisher" : 'Oracle Publishing', 
+				"edition" : 'November December 2013',
+				"title" : 'Engineering as a Service',
+				"author" : 'David A. Kelly'
+			}
 > doc2 = {
-			"_id" : ObjectId("53fb4b08d17e68cd481295d5"), 
-			"catalogId" : 1, 
-			"journal" : 'Oracle Magazine', 
-			"publisher" : 'Oracle Publishing', 
-			"edition" : 'November December 2013',
-			"title": 'Quintessential and Collaborative',
-			"author" : 'Tom Haunert'
-		}
+				"_id" : ObjectId("53fb4b08d17e68cd481295d5"), 
+				"catalogId" : 1, 
+				"journal" : 'Oracle Magazine', 
+				"publisher" : 'Oracle Publishing', 
+				"edition" : 'November December 2013',
+				"title": 'Quintessential and Collaborative',
+				"author" : 'Tom Haunert'
+			}
 > doc3 = {
-			"_id" : ObjectId("53fb4b08d17e68cd481295d6"),
-			"catalogId" : 3, 
-			"journal" : 'Oracle Magazine', 
-			"publisher" : 'Oracle Publishing', 
-			"edition" : 'November December 2013'
-		}
+				"_id" : ObjectId("53fb4b08d17e68cd481295d6"),
+				"catalogId" : 3, 
+				"journal" : 'Oracle Magazine', 
+				"publisher" : 'Oracle Publishing', 
+				"edition" : 'November December 2013'
+			}
 > db.catalog.drop()
 > show collections
 > db.catalog.insert([doc3, doc1, doc2], { writeConcern: { w: "majority", wtimeout: 5000 }, ordered:true })
 ```
-
-## La fonction MODIFIER
-
-### Syntaxe
-
+## La fonction modifier 
+Syntaxe
 ```
 db.collection.update(query, update, options)
 db.collection.update(
@@ -209,17 +181,14 @@ db.collection.update(
 	}
 )
 ```
-
-* La fonction prend 3 paramètres: *criteria, objNew et options*.
+* La fonction prend 3 paramètres: *criteria*, *objNew* et *options*.
 * Le paramètre *criteria* permet de spécifier le critère pour retrouver la donnée à modifier.
 * Le paramètre *objNew* permet de spécifier la donnée mise à jour; 
 * ou sinon utiliser un opérateur pour le faire. 
 * Le paramètre *options* permet de spécifier les options et les values possibles sont: *upsert* et *multi*.
-** upsert: mettre à jour ou créer
-** multi: tous les documents trouvés ou la 1er seulement.
-
-### Insérer dans notre catalogue en premier, puis modifier
-
+* upsert: mettre à jour ou créer.
+* multi: tous les documents trouvés ou la 1er seulement.
+Insérer dans notre catalogue en premier, puis modifier
 ```
 > db.catalog.drop()
 > show collections
@@ -232,9 +201,7 @@ db.collection.update(
 > db.catalog.insert(doc1)
 > db.catalog.find().pretty()
 ```
-
 Modifier le document
-
 ```
 > db.catalog.update(
 	{ 
@@ -251,9 +218,7 @@ Modifier le document
 )
 > db.catalog.find().pretty()
 ```
-
-### Pas besoin d'insérer, *upsert: true*
-
+Pas besoin d'insérer, *upsert: true*
 ```
 > db.media.update( 
 	{ "Title" : "Matrix, The"}, 
@@ -267,9 +232,7 @@ Modifier le document
 )
 > db.media.find({"Title" : "Matrix, The"}).pretty()
 ```
-
-### Utiliser *upsert* et *multi* quand on utilise l'opérateur *$set*
-
+Utiliser *upsert* et *multi* quand on utilise l'opérateur *$set*
 ```
 > db.media.update( 
 	{ "Title" : "Matrix, The"}, 
@@ -285,7 +248,6 @@ Modifier le document
 	{upsert: true, multi: true} 
 )
 > db.media.find().pretty()
-
 > db.catalog.update(
 	{ journal: 'Oracle Magazine'},
 	{
@@ -299,9 +261,9 @@ Modifier le document
 )
 > db.catalog.find().pretty()
 ```
+Modifier plusieurs documents à la fois.
 
-### Modifier plusieurs document à la fois
-
+Insérer tout d'abord
 ```
 > use semaine02
 > db.catalog.drop()
@@ -326,9 +288,7 @@ Modifier le document
 > db.catalog.insert(doc2)
 > db.catalog.find().pretty()
 ```
-
 Ensuite, modifier
-
 ```
 > db.catalog.update(
    { journal: 'Oracle Magazine'},
@@ -343,19 +303,14 @@ Ensuite, modifier
 )
 > db.catalog.find({ journal: 'Oracle Magazine'}).pretty()
 ```
-
 ### La fonction *save()*
-
-#### Syntaxe
-
+Syntaxe
 ```
 db.collection.save(<document>,{writeConcern: <document>})
 ```
-
 En utilisant *save*, il faut spécifier le *_id*, sinon il fait un *insert*.
 La commande *save* vous permet de simplifier la syntaxe. Le résultat est le même.
-Exemple: On insert avant
-
+Exemple: On insert avant.
 ```
 > use semaine02
 > db.catalog.drop()
@@ -371,9 +326,7 @@ Exemple: On insert avant
 > db.catalog.insert(doc1)
 > db.catalog.find().pretty()
 ```
-
-#### Construire un document avec le même *_id*
-
+Construire un document avec le même *_id*
 ```
 > doc1 = {
 			"_id": ObjectId("507f191e810c19729de860ea"), 
@@ -387,9 +340,7 @@ Exemple: On insert avant
 > db.catalog.save(doc1,{ writeConcern: { w: "majority", wtimeout: 5000 } })
 > db.catalog.find().pretty()
 ```
-
-#### Modifier la structure d'un document existant
-
+Modifier la structure d'un document existant
 ```
 doc2 = {
 			"_id": ObjectId("507f191e810c19729de860ea"), 
@@ -402,9 +353,7 @@ doc2 = {
 > db.catalog.insert(doc2)
 > db.catalog.find().pretty()
 ```
-
 Ajout des champs title et author
-
 ```
 > doc2 = {
 			"_id": ObjectId("507f191e810c19729de860ea"),
@@ -418,9 +367,7 @@ Ajout des champs title et author
 > db.catalog.save(doc2)
 > db.catalog.find().pretty()
 ```
-
-#### Modifier ou ajouter si le document n'existe pas
-
+Modifier ou ajouter si le document n'existe pas
 ```
 > db.catalog.drop()
 > doc2 = {
@@ -432,7 +379,6 @@ Ajout des champs title et author
 		}
 > db.catalog.insert(doc2)
 > db.catalog.find().pretty()
-
 > doc2 = {
 			"_id": ObjectId("507f191e810c19729de860eb"),
 			"catalogId" : 3,
@@ -445,9 +391,7 @@ Ajout des champs title et author
 > db.catalog.save(doc2)
 > db.catalog.find().pretty()
 ```
-
-#### Sans préciser le *_id*
-
+Sans préciser le *_id*
 ```
 > db.catalog.drop()
 > doc2 = {
@@ -459,9 +403,7 @@ Ajout des champs title et author
 > db.catalog.insert(doc2)
 > db.catalog.find().pretty()
 ```
-
 Ajout des champs title et author
-
 ```
 > doc2 = {
 			"catalogId" : 3, 
@@ -474,11 +416,7 @@ Ajout des champs title et author
 > db.catalog.save(doc2)
 > db.catalog.find().pretty()
 ```
-
-#### update vs save
-
-Update
-
+Quand utiliser *update* ou bien *save*?
 ```
 > db.media.update( 
 	{ 
@@ -494,9 +432,6 @@ Update
 )
 > db.media.find().pretty()
 ```
-
-Save
-
 ```
 > db.media.save( 
 	{ 
@@ -511,12 +446,9 @@ Save
 )
 > db.media.find({"Title" : "Matrix, The"}).pretty()
 ```
-
-### Incrémenter une valeur avec l'opérateur *$inc*
-
+Opérateur *$inc*: incrémente une valeur
 * Performe une opération *atomic*.
 * Si la champ n'existe pas, il sera créé.
-
 ```
 > manga = ( 
 	{ 
@@ -532,11 +464,7 @@ Save
 > db.media.update ( { "Title" : "One Piece"}, {$inc: {"Read" : 4} } )
 > db.media.find ( { "Title" : "One Piece" } ).pretty()
 ```
-
-### Opérateur *$set*
-
-Change la valeur, sinon crée la champ avec la valeur.
-
+Opérateur *$set*: change la valeur, sinon crée la champ avec la valeur
 ```
 > db.media.update ( 
 	{ 
@@ -548,34 +476,23 @@ Change la valeur, sinon crée la champ avec la valeur.
 )
 > db.media.find ( { "Title" : "Matrix, The" } ).pretty()
 ```
-
-### Opérateur *$unset*
-
-Supprime le champ.
-
+Opérateur *$unset*: supprime le champ
 ```
 > db.media.update ( {"Title": "Matrix, The"}, {$unset : { "Genre" : 1 } } )
 > db.media.find ( { "Title" : "Matrix, The" } ).pretty()
 ```
 
-### Opérateur *$push*
-
-Permet d'ajouter à la fin, *append*. Ne s'applique qu'à un tableau.
-
+Opérateur *$push*: permet d'ajouter à la fin, *append*
 ```
 > db.media.update ( {"ISBN" : "978-1-4302-5821-6"}, {$push: { Author : "Griffin, Stewie"} } )
 > db.media.find ( { "ISBN" : "978-1-4302-5821-6" } ).pretty()
 ```
-
-Ne s'applique qu'à un tableau
-
+Note: Ne s'applique qu'à un tableau
 ```
 > db.media.update ( {"ISBN" : "978-1-4302-5821-6"}, {$push: { Title : "This isn't an array"} } )
 Cannot apply $push/$pushAll modifier to non-array
 ```
-
-### Spécifier plusieurs valeurs pour un tableau
-
+Spécifier plusieurs valeurs pour un tableau
 ```
 > db.media.update( 
 	{ 
@@ -593,10 +510,9 @@ Cannot apply $push/$pushAll modifier to non-array
 )
 > db.media.find ( { "ISBN" : "978-1-4302-5821-6" } ).pretty()
 ```
+Utiliser *$slice* pour limiter la taille du tableau lors du *push* (c'est optionnel)
 
-Utiliser *$slice* pour limiter la taille du tableau lors du *push* - c'est optionnel
-Prend une valeur négative ou 0.
-
+Prend une valeur négative ou 0
 ```
 > db.media.update( 
 	{ 
@@ -615,11 +531,9 @@ Prend une valeur négative ou 0.
 )
 > db.media.find ( { "ISBN" : "978-1-4302-5821-6" } ).pretty()
 ```
+Opérateur *$addToSet*: ajoute des données dans un tableau
 
-### Ajouter des données dans un tableau avec *$addToSet*
-
-La différence avec *$push*, il n'ajoute qu'une valeur qui n'est pas présente.
-
+La différence avec *$push* c'est qu'il n'ajoute qu'une valeur qui n'est pas présente (pas de doublons)
 ```
 > db.media.update( 
 	{ 
@@ -631,7 +545,6 @@ La différence avec *$push*, il n'ajoute qu'une valeur qui n'est pas présente.
 	{ upsert: true}
 )
 > db.media.find ( { "ISBN" : "1-4302-3051-7" } ).pretty()
-
 > db.media.update( 
 	{ 
 		"ISBN" : "1-4302-3051-7" 
@@ -645,20 +558,16 @@ La différence avec *$push*, il n'ajoute qu'une valeur qui n'est pas présente.
 )
 > db.media.find ( { "ISBN" : "1-4302-3051-7" } ).pretty()
 ```
+Supprimer des éléments dans un tableau
 
-### Supprimer des éléments dans un tableau
-
-#### *$pop*, supprime un seul élément selon le critère
-
+Opérateur *$pop*: supprime un seul élément
 ```
 > db.media.update( { "ISBN" : "1-4302-3051-7" }, {$pop : {Author : 1 } } )
 > db.media.find ( { "ISBN" : "1-4302-3051-7" } ).pretty()
 > db.media.update( { "ISBN" : "1-4302-3051-7" }, {$pop : {Author : -1 } } )
 > db.media.find ( { "ISBN" : "1-4302-3051-7" } ).pretty()
 ```
-
-#### *$pull*, supprime chaque occurence, selon le critère
-
+Opérateur *$pull*: supprime chaque occurence
 ```
 > db.media.update ( 
 	{
@@ -669,7 +578,6 @@ La différence avec *$push*, il n'ajoute qu'une valeur qui n'est pas présente.
 	} 
 )
 > db.media.find ( { "ISBN" : "1-4302-3051-7" } ).pretty()
-
 > db.media.update ( 
 	{
 		"ISBN" : "1-4302-3051-7"
@@ -680,9 +588,7 @@ La différence avec *$push*, il n'ajoute qu'une valeur qui n'est pas présente.
 )
 > db.media.find ( { "ISBN" : "1-4302-3051-7" } ).pretty()
 ```
-
-#### *$pullAll*, supprime tous les éléments selon le critère
-
+Opérateur *$pullAll*: supprime tous les éléments
 ```
 > db.media.update( 
 	{ 
@@ -697,9 +603,7 @@ La différence avec *$push*, il n'ajoute qu'une valeur qui n'est pas présente.
 )
 > db.media.find ( { "ISBN" : "1-4302-3051-7" } ).pretty()
 ```
-
-### Préciser une position dans le tableau
-
+Préciser une position dans le tableau
 ```
 > db.media.update( 
 	{ 
@@ -714,14 +618,10 @@ La différence avec *$push*, il n'ajoute qu'une valeur qui n'est pas présente.
 )
 > db.media.find ( { "Artist" : "Nirvana" } ).pretty()
 ```
-
 ### La fonction *findAndModify*
-
 * Prend 3 paramètres query, sort, operations
 * Utilise tous les opérateurs de modification sauf $set
-
-#### Syntaxe
-
+Syntaxe
 ```
 db.collection.findAndModify({
 	query: <document>,
@@ -733,9 +633,7 @@ db.collection.findAndModify({
 	upsert: <boolean>
 })
 ```
-
-#### Modifier, trier, upsert
-
+Modifier, trier, upsert
 ```
 > db.catalog.findAndModify({
 	query: {journal : "Oracle Magazine"},
@@ -747,9 +645,7 @@ db.collection.findAndModify({
 })
 > db.getCollection('catalog').find({}).pretty()
 ```
-
-#### Exception, ne pas combiner *upsert* avec *remove*
-
+Exception, ne pas combiner *upsert* avec *remove*
 ```
 > db.catalog.findAndModify({
 	query: {journal : "Oracle Magazine"},
@@ -761,11 +657,8 @@ db.collection.findAndModify({
 	fields: {catalogId: 1, edition: 1, title: 1, author: 1}
 })
 ```
-
-## La fonction SUPPRIMER
-
-### Syntaxe
-
+## La fonction supprimer
+Syntaxe
 ```
 db.collection.remove(
 	<query>,
@@ -775,15 +668,12 @@ db.collection.remove(
 	}
 )
 ```
-
-### Bonne pratique
-
+Bonne pratique:
 C'est recommandé de faire un find() pour retrouver la donnée en premier avant de supprimer.
 
-### Supprimer un document spécifique
+Supprimer un document spécifique
 
 Supprime toutes les documents ayant ce Title.
-
 ```
 > db.catalog.drop()
 > doc1 = {
@@ -797,7 +687,6 @@ Supprime toutes les documents ayant ce Title.
 		}
 > db.catalog.insert(doc1)
 > db.catalog.find().pretty()
-
 > doc2 = {
 			"_id" : ObjectId("53fb4b08d17e68cd481295d6"), 
 			"catalogId" : 2, 
@@ -821,9 +710,7 @@ Supprime toutes les documents ayant ce Title.
 > db.catalog.remove({ catalogId: 2 })
 > db.catalog.find().pretty()
 ```
-
-### Autres exemples avec le paramètre *justOne*
-
+Autres exemples avec le paramètre *justOne*
 ```
 > db.catalog.remove(
 	{ catalogId: { $gt: 1 } },
@@ -831,35 +718,26 @@ Supprime toutes les documents ayant ce Title.
 )
 > db.catalog.find().pretty()
 ```
-
-### Supprime tous les documents dans cette collection
-
+Supprime tous les documents dans une collection
 ```
 > db.media.remove({})
 > db.catalog.remove({})
 ```
-
-### Supprimer la collection et les documents
-
+Supprimer la collection et les documents
 ```
 > db.media.drop()
 true
 > db.catalog.drop()
 true
 ```
-
-### Particularité d'une collection fixe, *capped*
-
+Note: Particularité d'une collection fixe, *capped*
 * On ne peut pas supprimer des documents.
 * Il faut faire *drop* et recréer.
 * Il supprime la plus ancienne valeur et insère de façon circulaire.
-
 ```
 > db.createCollection("catalog", {capped: true, size: 64 * 1024, max: 1000} )
 ```
-
-### Supprimer la base de données courante
-
+Supprimer la base de données courante
 ```
 > db.dropDatabase()
 { "dropped" : "library", "ok" : 1 }

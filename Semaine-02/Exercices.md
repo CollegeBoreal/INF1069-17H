@@ -11,7 +11,7 @@ Utiliser la base de données *semaine02*
 7. Expliquer cette commande: ```> db.user.update({username: "moe"}, {$inc: {age: -1})```
 8. Organiser l'enregistrement d'Henry afin qu'il ressemble à celui de Marie avec un sport de plus et on veut son age, soit 24 ans.
 9. Suprimmer tous les sports de James.
-10. Vous avez fait un typo sur le sport préféré de Paul. Mettez-le à jour.
+10. Vous avez fait un typo sur les sports préférés de Paul. Mettez-les à jour.
 11. Ajouter les 4 usagers, Steve, Gary, Yves et Julien en une seule commande.
 12. Mettez-les à jour en une seule commande avec comme pays d'origine Japon.
 13. Ajouter le volleyball (sans doublons) comme sport à tous les usagers dont l'origine est Peru.

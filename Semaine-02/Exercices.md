@@ -21,7 +21,7 @@ Utiliser la base de données *semaine02*
 17. Importer les collections customer et product. Notez combien de documents sont été modifiés pour chacune des requêtes suivantes.
 18. Ajouter les champs pays d'origine et description pour tous les produits.
 19. Incrémenter le prix unitaire de 5 pour tous les produits de categorie 2.
-20. Modifier les produits pour tous les fournisseurs de type 2, pour Canada et de type 1 pour USA.
+20. Modifier le pays d'origine pour les produits pour tous les fournisseurs de type 2, pour Canada et de type 1 pour USA.
 21. Discontinuer tous les produits de catégorie 4.
 22. Changer la region à Brussel-Capital pour le customer dont le _id est *588069902cff4eba9ab01b1a*
 23. Notez tous les customers dont la valeur est NULL pour le champ field11.

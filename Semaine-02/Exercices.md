@@ -17,14 +17,13 @@ Utiliser la base de données *semaine02*
 13. Ajouter le volleyball (sans doublons) comme sport à tous les usagers dont l'origine est Peru.
 14. Faire un backup de votre collection.
 15. Supprimer tous les documents sans supprimer la collection.
-16. Importer vos données.
-17. Importer les collections customer et product. Notez combien de documents sont été modifiés pour chacune des requêtes suivantes.
-18. Ajouter les champs pays d'origine et description pour tous les produits.
-19. Incrémenter le prix unitaire de 5 pour tous les produits de categorie 2.
-20. Modifier les produits pour tous les fournisseurs de type 2, pour Canada et de type 1 pour USA.
-21. Discontinuer tous les produits de catégorie 4.
-22. Changer la region à Brussel-Capital pour le customer dont le _id est *588069902cff4eba9ab01b1a*
-23. Notez tous les customers dont la valeur est NULL pour le champ field11.
-24. Supprimer le champ field11 et organiser les données pour ces customers.
-25. Supprimer tous les customers dont l'origine est UK.
-26. Mettre à jour tous les customers et les producits en ajoutant la date de dernère modification (lastModifiedDate), utiliser $currentDate et votre nom comme dernier à avoir modifier (lastModifiedBy)
+16. Importer les collections customer et product. Notez combien de documents sont été modifiés pour chacune des requêtes suivantes.
+17. Ajouter les champs pays d'origine et description pour tous les produits.
+18. Incrémenter le prix unitaire de 5 pour tous les produits de categorie 2.
+19. Modifier les produits pour tous les fournisseurs de type 2, pour Canada et de type 1 pour USA.
+20. Discontinuer tous les produits de catégorie 4.
+21. Changer la region à Brussel-Capital pour le customer dont le _id est *588069902cff4eba9ab01b1a*
+22. Notez tous les customers dont la valeur est NULL pour le champ field11.
+23. Supprimer le champ field11 et organiser les données pour ces customers.
+24. Supprimer tous les customers dont l'origine est UK.
+25. Mettre à jour tous les customers et les producits en ajoutant la date de dernère modification (lastModifiedDate), utiliser $currentDate et votre nom comme dernier à avoir modifier (lastModifiedBy)

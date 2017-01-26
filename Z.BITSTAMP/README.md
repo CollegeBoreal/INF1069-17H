@@ -30,7 +30,7 @@ or
 > btc.pdf <- diff(log(btc.ts))
 ```
 
-Rplot01
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/rplot01.png)
 
 Some Descriptive Statistics:
 

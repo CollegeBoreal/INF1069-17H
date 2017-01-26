@@ -146,12 +146,18 @@ Exemple: Rechercher les villes dont le champ *isMetro* existe et dont la valeur 
 ```
 > db.cities.find({isMetro:{$exists:true}, isMetro:{$ne:"true"}})
 ```
-Le résultat inclut ceux qui ne sont filtrés dans la 1ère condition.
+Le résultat inclut ceux qui ne sont filtrés dans la 1ère condition, car seul la 2ième condition est considérée.
 
 Dans ce cas, il faut utiliser $and
 
 ```
 > db.cities.find({$and:[{isMetro:{$ne:"true"}}, {isMetro:{$exists:true}}]})
+```
+
+ou bien utiliser ceci:
+
+```
+> db.cities.find({isMetro:{$ne:"true", $exists:true}})
 ```
 
 Opérateur $or, $not et $nor n'ont qu'une seule syntaxe.

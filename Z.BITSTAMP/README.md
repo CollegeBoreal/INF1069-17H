@@ -34,7 +34,7 @@ or
 
 Some Descriptive Statistics:
 
-The mean $latex \mu $
+The mean ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/m.png)
 
 ```
 > mean(btc.pdf)

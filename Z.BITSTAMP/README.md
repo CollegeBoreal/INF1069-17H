@@ -5,7 +5,7 @@
 
 ## Prerequisite
 
-* Install RStudio
+* [Install RStudio](https://www.rstudio.com/products/rstudio/download/)
 * [Install R](https://cran.r-project.org/)
 
 ## Analysis

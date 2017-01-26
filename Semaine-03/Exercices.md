@@ -5,7 +5,7 @@ Utiliser la base de données *semaine03*
 Insérer les données suivantes (titles)
 
 ```
-Title Name                    Page Count 	  Publication Year 	    Author 				        Amazon Review
+Title Name                    Page Count 	  Publication Year 	          Author 				        Amazon Review
 -----------------------------------------------------------------------------------------------------
 Extreme Scoping               300 		      2013 				          Larissa Moss 		      4.5
 

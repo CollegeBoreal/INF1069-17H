@@ -10,7 +10,7 @@ Let's plot some data
 > plot(bitstampusd$Date,bitstampusd$Close)
 ```
 
-Rplot
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/rplot.png)
 
 Let's use some Continuous Compounded Return data by adding parameter retclass="ts" (Zoo class might be better)
 

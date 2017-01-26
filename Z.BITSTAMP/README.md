@@ -1,3 +1,15 @@
+
+
+
+# Bitstamp Bitcoin/USD Analysis
+
+## Prerequisite
+
+* Install RStudio
+* Install R
+
+## Analysis
+
 To retrieve a currency pair, for example the Bitcoin against the US Dollar, we use read.csv against data provided by quandl
 
 ```

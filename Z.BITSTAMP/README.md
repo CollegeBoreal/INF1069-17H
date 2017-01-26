@@ -18,7 +18,7 @@ Let's use some Continuous Compounded Return data by adding parameter retclass="t
 > btc.ts <- as.ts(bitstampusd$Close)
 ```
 
-To Create the $latex f(x) $ function of returns, I use the diff function to calculate $latex log\left(\frac{Price(t)}{Price(t-1)}\right)$ from $latex rt = log ( 1 + R) = log\left(\frac{Price(t)}{Price(t-1)}\right) $
+To Create the ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/fx.png) function of returns, I use the diff function to calculate ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/lg.png) from ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/r.png)
 
 ```
 > btc.pdf <- log(lag(btc.ts))-log(btc.ts)

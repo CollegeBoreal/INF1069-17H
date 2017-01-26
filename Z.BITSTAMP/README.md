@@ -76,4 +76,5 @@ Showing that Bitcoin still has fat tails a good candidate for Black Swan Theory.
 > chart.Histogram(btc.pdf)
 ```
 
-Rplot02
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/rplot.png)
+

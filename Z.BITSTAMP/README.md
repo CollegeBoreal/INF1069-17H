@@ -41,7 +41,7 @@ The mean ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.B
 [1] 0.006749139
 ```
 
-The Variance $latex \sigma^2 $
+The Variance ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/s_2.png)
 
 ```
 > var(btc.pdf)
@@ -50,7 +50,7 @@ The Variance $latex \sigma^2 $
 
 As you can see a +.15% average return is not that interesting but again I believe Bitcoin Virtual Currency is still the way to go.
 
-The Standard Deviation $latex \sigma $
+The Standard Deviation ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/s.png)
 
 ```
 > sd(btc.pdf)

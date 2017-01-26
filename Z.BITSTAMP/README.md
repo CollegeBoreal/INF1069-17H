@@ -68,7 +68,7 @@ Same for the standard deviation, 5% may look risky for an investor.
 [1] 7.774766
 ```
 
-Finally some Bell Curve Equation $latex f(x,\mu ,\sigma^2) = \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2} $
+Finally some Bell Curve Equation ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/bc.png)
 
 Showing that Bitcoin still has fat tails a good candidate for Black Swan Theory.
 

@@ -160,7 +160,13 @@ Permet de sauter les X documents.
     { $skip : 2995 }
   ]).pretty()
 ```
-Note: Les deux opérations, $skip et $limit sont utilisés pour faire de la pagination. 
+Note: Les deux opérations, $skip et $limit sont utilisés pour faire de la pagination.
+
+### Autres opérateurs
+
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/date_functions.PNG)
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/arithmetic_functions.PNG)
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/string_functions.PNG)
 
 ## References
 * Le site de documentation de MongoDB. Aggregation https://docs.mongodb.com/manual/aggregation/ (page accédée le 29 janvier 2017)

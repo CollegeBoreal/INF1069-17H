@@ -1,2 +1,2 @@
-# Fonctions d’agrégation - Réponses
+# Les fonctions d’agrégation - Réponses
 

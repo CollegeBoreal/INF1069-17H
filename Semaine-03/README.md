@@ -1,4 +1,5 @@
 # Les fonctions de recherche
+
 ## La fonction *find()*
 
 Rechercher tous les documents.
@@ -7,6 +8,9 @@ Syntaxe
 ```
 db.collection.find(query, <projection>)
 ```
+
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-03/Querying-data-in-MongoDB.PNG)
+
 Importer les données suivantes pour manipuler les fonctions.
 ```
 mongoimport -h localhost:27017 -d semaine03 -c states --drop --type json --file IndiaStates.json
@@ -227,3 +231,11 @@ Les paramètres *upsert* et *remove* ne peuvent pas être combinés.
 	fields: {catalogId: 1, edition: 1, title: 1, author: 1}
 })
 ```
+
+### [Exercices] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-03/Exercices.md)
+
+### [Réponses] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-03/Reponses.md)
+
+## References
+
+David Hows; Peter Membrey; Eelco Plugge; Tim Hawkins. The Definitive Guide to MongoDB: A complete guide to dealing with Big Data using MongoDB, Third Edition. Apress. 16-DEC-2015

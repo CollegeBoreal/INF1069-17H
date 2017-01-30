@@ -51,10 +51,12 @@ __Question 5__
 > db.user.update({"username": "Paul"}, {$unset: {"age": 1}})
 ```
 
-__Question 6__ 
+__Question 6__
+
 On ajoute à l'usager Tom le films "The Maltese Falcon". Tom n'existe pas, donc il n'y aura pas de changement.
 
 __Question 7__ 
+
 On réduit l'âge de l'usage moe de 1. moe n'existe pas dans la collection, donc il n'y aura pas de changement.
 
 __Question 8__

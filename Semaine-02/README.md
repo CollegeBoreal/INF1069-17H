@@ -1,7 +1,7 @@
 # Les opérations CRUD
 ## Une opération *atomic*
 Une opération *atomic* est une combinaison de plusieurs opérations 
-qui sont exécutées comme une seule opération - cad, soit l'opération réussit ou elle échoue.
+qui sont exécutées comme une seule opération - cad, soit l'opération réussie ou elle échoue.
 
 On parle d'opération *atomic*, si:
 * Aucun processus n'est au courant du changement jusqu'à ce que le changement soit complété.
@@ -27,6 +27,9 @@ Syntaxe
 db.collection.insert(<document or array of documents>,
 					{writeConcern: <document>,ordered:<boolean>})
 ```
+
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Adding-data-in-MongoDB.PNG)
+
 En utilisant une variable
 ```
 > use semaine02
@@ -42,9 +45,9 @@ En utilisant une variable
 > db.catalog.insert(doc1)
 > db.catalog.find().pretty()
 ```
-Note: La collection est créée automatiquement si elle n'existe pas.
+Note:
 
-On n'est pas obligé de la créer explicitement.
+La collection est créée automatiquement si elle n'existe pas. On n'est pas obligé de la créer explicitement.
 ```
 > document = ({ 
 				"Type" : "Book",
@@ -193,6 +196,9 @@ db.collection.update(
 	}
 )
 ```
+
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Updating-data-in-MongoDB.PNG)
+
 Insérer dans notre catalogue en premier, puis modifier
 ```
 > db.catalog.drop()
@@ -223,7 +229,7 @@ Modifier le document
 )
 > db.catalog.find().pretty()
 ```
-Pas besoin d'insérer, *upsert: true*
+Pas besoin d'insérer, on utilise *upsert: true*
 ```
 > db.media.update( 
 	{ "Title" : "Matrix, The"}, 
@@ -311,6 +317,7 @@ Ensuite, modifier
 ### La fonction *save()*
 
 En utilisant *save*, il faut spécifier le *_id*, sinon il fait un *insert*.
+
 La commande *save* vous permet de simplifier la syntaxe. Le résultat est le même.
 
 Syntaxe
@@ -681,6 +688,9 @@ db.collection.remove(
 	}
 )
 ```
+
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Deleting-data-in-MongoDB.PNG)
+
 Supprime toutes les documents ayant ce Title.
 ```
 > db.catalog.drop()
@@ -750,3 +760,10 @@ Supprimer la base de données courante
 > db.dropDatabase()
 { "dropped" : "library", "ok" : 1 }
 ```
+
+### [Exercices] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Exercices.md)
+
+### [Réponses] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Reponses.md)
+
+## References
+* David Hows; Peter Membrey; Eelco Plugge; Tim Hawkins. The Definitive Guide to MongoDB: A complete guide to dealing with Big Data using MongoDB, Third Edition. Apress. 16-DEC-2015

@@ -1,4 +1,4 @@
-# Fonctions d’agrégation
+# Les fonctions d’agrégation
 
 MongoDB propose un framework pour manipuler les fonctions et les opérations d'agrégation. Ces opérations permettent de présenter l'information pour analyser les données stockées dans les collections. Il comprend des fonctions dédiées, le mapReduce et les fonctions de pipeline. Le mapReduce sera présenté lors d'une autre séance.
 
@@ -168,11 +168,9 @@ Note: Les deux opérations, $skip et $limit sont utilisés pour faire de la pagi
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/arithmetic_functions.PNG)
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/string_functions.PNG)
 
-## Exercices
-![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Exercices.md)
+### [Exercices] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Exercices.md)
 
-## Réponses
-![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Reponses.md)
+### [Réponses] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Reponses.md)
 
 ## References
 * Le site de documentation de MongoDB. Aggregation https://docs.mongodb.com/manual/aggregation/ (page accédée le 29 janvier 2017)

@@ -1,10 +1,11 @@
 # Les opérations CRUD - Réponses
 
-Question 1 
+__Question 1__ 
 ```
 > db.user.insert( {username: "Henry"})
 ```
-Question 2 
+
+__Question 2__ 
 ```
 > db.user.update({username: "Henry"}, {$set: {country: "Canada"}})
 > db.user.update({username: "Henry"}, {$unset: {country: "Canada"}})
@@ -17,7 +18,8 @@ Question 2
         "country" : "Canada"
 	})
 ```
-Question 3 
+
+__Question 3__
 ```
 > db.user.insert( 
 	{
@@ -30,7 +32,8 @@ Question 3
 	})
 ```
 ou bien en utilisant update avec upsert ou sinon save.
-Question 4 
+
+__Question 4__
 ```
 > db.user.insert(
 	{
@@ -42,15 +45,19 @@ Question 4
 		"age": 20
 	})
 ```
-Question 5 
+
+__Question 5__
 ```
 > db.user.update({"username": "Paul"}, {$unset: {"age": 1}})
 ```
-Question 6. On ajoute à l'usager Tom le films "The Maltese Falcon". Tom n'existe pas, donc il n'y aura pas de changement.
 
-Question 7. On réduit l'âge de l'usage moe de 1. moe n'existe pas dans la collection, donc il n'y aura pas de changement.
+__Question 6__ 
+On ajoute à l'usager Tom le films "The Maltese Falcon". Tom n'existe pas, donc il n'y aura pas de changement.
 
-Question 8 
+__Question 7__ 
+On réduit l'âge de l'usage moe de 1. moe n'existe pas dans la collection, donc il n'y aura pas de changement.
+
+__Question 8__
 ```
 > db.user.update(
 	{	"username": "Henry"},
@@ -64,16 +71,19 @@ Question 8
 		"age": 24
 	})
 ```
-Question 9 
+
+__Question 9__
 ```
 > db.user.update( {"username": "James"}, { $unset: { "hobbies":{"sports": 1}} })
 > db.user.update( {"username": "James"}, { $unset: { "hobbies.sports": 1}})
 ```
-Question 10
+
+__Question 10__
 ```
 > db.user.update( {"username": "Paul"}, { $set: { "hobbies.sports": ["Soccer", "Boxe"]}})
 ```
-Question 11
+
+__Question 11__
 ```
 > db.user.insert(
 	[
@@ -83,7 +93,8 @@ Question 11
 		{"username": "Julien"}
 	])
 ```
-Question 12
+
+__Question 12__
 ```
 > db.user.update (
 		{ $or:[{"username": "Steve"}, {"username": "Gary"}, {"username": "Yves"}, {"username": "Julien"}]},
@@ -91,7 +102,8 @@ Question 12
 		{upsert: false, multi: true}
 	)
 ```
-Question 13
+
+__Question 13__
 ```
 > db.user.find({"country": "Peru"}).pretty()
 > db.user.update(
@@ -100,24 +112,29 @@ Question 13
 	{upsert: false, multi: true} 
 )
 ```
-Question 14
+
+__Question 14__
 ```
 $ mongoexport --db semaine02 --type=json --collection user --out user.bak.json
 ```
-Question 15
+
+__Question 15__
 ```
 > db.user.remove({})
 ```
-Question 16
+
+__Question 16__
 ```
 $ mongoimport --port 27018 -d semaine02 -c user --drop --type json --file user.bak.json
 ```
-Question 17
+
+__Question 17__
 ```
 $ mongoimport --port 27018 -d semaine02 -c customer --drop --type csv --file customers.csv --headerline
 $ mongoimport --port 27018 -d semaine02 -c product --drop --type csv --file products.csv --headerline
 ```
-Question 18
+
+__Question 18__
 ```
 > db.product.find().count()
 > db.product.update(
@@ -128,7 +145,7 @@ Question 18
 ```
 On a 77 documents
 
-Question 19
+__Question 19__
 ```
 > db.product.find({"CategoryID" : 2}).count()
 > db.product.find({"CategoryID" : 2}).pretty()
@@ -140,7 +157,7 @@ Question 19
 ```
 On a 12 documents
 
-Question 20
+__Question 20__
 ```
 > db.product.find({"SupplierID" : 2}).count()
 > db.product.find({"SupplierID" : 2}).pretty()
@@ -160,7 +177,7 @@ Question 20
 ```
 On en a 4 pour Canada et 3 pour USA
 
-Question 21
+__Question 21__
 ```
 > db.product.find({"CategoryID" : 4}).count()
 > db.product.find({"CategoryID" : 4}).pretty()

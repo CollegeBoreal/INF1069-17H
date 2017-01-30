@@ -168,6 +168,12 @@ Note: Les deux opérations, $skip et $limit sont utilisés pour faire de la pagi
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/arithmetic_functions.PNG)
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/string_functions.PNG)
 
+## Exercices
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Exercices.md)
+
+## Réponses
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Reponses.md)
+
 ## References
 * Le site de documentation de MongoDB. Aggregation https://docs.mongodb.com/manual/aggregation/ (page accédée le 29 janvier 2017)
 * David Hows; Peter Membrey; Eelco Plugge; Tim Hawkins. The Definitive Guide to MongoDB: A complete guide to dealing with Big Data using MongoDB, Second Edition. Apress. 06-NOV-2013.

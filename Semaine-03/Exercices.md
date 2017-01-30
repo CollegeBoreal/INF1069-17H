@@ -22,24 +22,45 @@ $ mongoimport --db semaine03 --collection books --type json --drop  --file catal
 $ mongoimport --db semaine03 --collection companies --type json --drop  --file companies.json
 ```
 
-Questions
+__Question 1__
 
-1. Quels sont les titres (titles) dont le nombre de pages est plus grand que 200 et l'année de publication est avant 2010.
+Quels sont les titres (titles) dont le nombre de pages est plus grand que 200 et l'année de publication est avant 2010.
 
-2. Quels sont les auteurs dont le nom ne contient pas "Shive" parmis les titres (titles).
+__Question 2__
 
-3. Quel est le title qui a été enregistré en premier.
+Quels sont les auteurs dont le nom ne contient pas "Shive" parmis les titres (titles).
 
-4. Combien y a-t-il de livres (books) qui ne sont pas de catégories Java.
+__Question 3__
 
-5. Quels sont les 3 derniers livres (books) enregistrés.
+Quel est le title qui a été enregistré en premier.
 
-6. Quels sont les livres (books) qui ont été publiés après le 1er mars 2005.
+__Question 4__
 
-7. Afficher le titre, le isbn et les auteurs des 5 premiers livres (books) triés en order croissant de _id qui ont une date de publication.
+Combien y a-t-il de livres (books) qui ne sont pas de catégories Java.
 
-8. Une application affiche tous les livres en order croissant selon le _id. Quels sont les livres à la page 4, si on affiche 5 par pages.
+__Question 5__
 
-9. Combien de livres (books) ont été publiés (status).
+Quels sont les 3 derniers livres (books) enregistrés.
 
-10. Combien de livres (books) dont la catégorie est Networking ou qui n'ont pas été publiés.
+__Question 6__
+
+Quels sont les livres (books) qui ont été publiés après le 1er mars 2005.
+
+__Question 7__
+
+Afficher le titre, le isbn et les auteurs des 5 premiers livres (books) triés en order croissant de _id qui ont une date de publication.
+
+__Question 8__
+
+Une application affiche tous les livres en order croissant selon le _id. Quels sont les livres à la page 4, si on affiche 5 par pages.
+
+__Question 9__
+
+Combien de livres (books) ont été publiés (status).
+
+__Question 10__
+
+Combien de livres (books) dont la catégorie est Networking ou qui n'ont pas été publiés.
+
+
+### [Voir les réponses] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-03/Reponses.md)

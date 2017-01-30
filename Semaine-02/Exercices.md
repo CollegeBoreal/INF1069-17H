@@ -2,62 +2,62 @@
 
 Utiliser la base de données *semaine02*
 
-Question 1. Ajouter un utilisateur dans la collection *user* avec comme nom d'usager Henry.
+__Question 1__. Ajouter un utilisateur dans la collection *user* avec comme nom d'usager Henry.
 
-Question 2. Ajouter Canada comme pays d'origine pour Henry. Proposez plus qu'une solution.
+__Question 2__. Ajouter Canada comme pays d'origine pour Henry. Proposez plus qu'une solution.
 
-Question 3. Ajouter Marie qui est originaire du Peru. Elle a deux types de passe temps (*hobbies*), dont films (*movies*) et *sports*. Assignez-lui 4 films et 2 sports de votre choix.
+__Question 3__. Ajouter Marie qui est originaire du Peru. Elle a deux types de passe temps (*hobbies*), dont films (*movies*) et *sports*. Assignez-lui 4 films et 2 sports de votre choix.
 
-Question 4. Ajouter Paul qui est originaire de la ville de Paris. Paul aime le soccer et la boxe. Paul a 20 ans.
+__Question 4__. Ajouter Paul qui est originaire de la ville de Paris. Paul aime le soccer et la boxe. Paul a 20 ans.
 
-Question 5. On decide de ne plus avoir l'age de Paul.
+__Question 5__. On decide de ne plus avoir l'age de Paul.
 
-Question 6. Expliquer cette commande: 
+__Question 6__. Expliquer cette commande: 
 ```
 > db.user.update( {"username": "Tom"}, {$addToSet: {"favorites.movies": "The Maltese Falcon"} }, false, false)
 ```
 
-Question 7. Expliquer cette commande:
+__Question 7__. Expliquer cette commande:
 ```
 > db.user.update({username: "moe"}, {$inc: {age: -1})
 ```
 
-Question 8. Organiser l'enregistrement d'Henry afin qu'il ressemble à celui de Marie avec un sport de plus et on veut son age, soit 24 ans.
+__Question 8__. Organiser l'enregistrement d'Henry afin qu'il ressemble à celui de Marie avec un sport de plus et on veut son age, soit 24 ans.
 
-Question 9. Suprimmer tous les sports de James.
+__Question 9__. Suprimmer tous les sports de James.
 
-Question 10. Vous avez fait un typo sur les sports préférés de Paul. Mettez-les à jour.
+__Question 10__. Vous avez fait un typo sur les sports préférés de Paul. Mettez-les à jour.
 
-Question 11. Ajouter les 4 usagers, Steve, Gary, Yves et Julien en une seule commande.
+__Question 11__. Ajouter les 4 usagers, Steve, Gary, Yves et Julien en une seule commande.
 
-Question 12. Mettez-les à jour en une seule commande avec comme pays d'origine Japon.
+__Question 12__. Mettez-les à jour en une seule commande avec comme pays d'origine Japon.
 
-Question 13. Ajouter le volleyball (sans doublons) comme sport à tous les usagers dont l'origine est Peru.
+__Question 13__. Ajouter le volleyball (sans doublons) comme sport à tous les usagers dont l'origine est Peru.
 
-Question 14. Faire un backup de votre collection.
+__Question 14__. Faire un backup de votre collection.
 
-Question 15. Supprimer tous les documents sans supprimer la collection.
+__Question 15__. Supprimer tous les documents sans supprimer la collection.
 
-Question 16. Importer la collection user.
+__Question 16__. Importer la collection user.
 
-Question 17. Importer les collections customer et product. Notez combien de documents sont été modifiés pour chacune des requêtes suivantes.
+__Question 17__. Importer les collections customer et product. Notez combien de documents sont été modifiés pour chacune des requêtes suivantes.
 
-Question 18. Ajouter les champs pays d'origine et description pour tous les produits.
+__Question 18__. Ajouter les champs pays d'origine et description pour tous les produits.
 
-Question 19. Incrémenter le prix unitaire de 5 pour tous les produits de categorie 2.
+__Question 19__. Incrémenter le prix unitaire de 5 pour tous les produits de categorie 2.
 
-Question 20. Modifier le pays d'origine pour les produits pour tous les fournisseurs de type 2, pour Canada et de type 1 pour USA.
+__Question 20__. Modifier le pays d'origine pour les produits pour tous les fournisseurs de type 2, pour Canada et de type 1 pour USA.
 
-Question 21. Discontinuer tous les produits de catégorie 4.
+__Question 21__. Discontinuer tous les produits de catégorie 4.
 
-Question 22. Changer la region à Brussel-Capital pour le customer dont le _id est *588069902cff4eba9ab01b1a*
+__Question 22__. Changer la region à Brussel-Capital pour le customer dont le _id est *588069902cff4eba9ab01b1a*
 
-Question 23. Notez tous les customers dont la valeur est NULL pour le champ field11.
+__Question 23__. Notez tous les customers dont la valeur est NULL pour le champ field11.
 
-Question 24. Supprimer le champ field11 et organiser les données pour ces customers.
+__Question 24__. Supprimer le champ field11 et organiser les données pour ces customers.
 
-Question 25. Supprimer tous les customers dont l'origine est UK.
+__Question 25__. Supprimer tous les customers dont l'origine est UK.
 
-Question 26. Mettre à jour tous les customers et les producits en ajoutant la date de dernère modification (lastModifiedDate), utiliser $currentDate et votre nom comme dernier à avoir modifier (lastModifiedBy)
+__Question 26__. Mettre à jour tous les customers et les producits en ajoutant la date de dernère modification (lastModifiedDate), utiliser $currentDate et votre nom comme dernier à avoir modifier (lastModifiedBy)
 
-### [Réponses] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Reponses.md)
+### [Voir les réponses] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Reponses.md)

@@ -34,7 +34,7 @@ db.collection.distinct(field, query)
 
 Exemple: Les catégories de livres dont le status est publié.
 ```
-> db.books.distinct('categories', {"status" : "PUBLISH"}).pretty()
+> db.books.distinct('categories', {"status" : "PUBLISH"})
 ```
 
 ### group()
@@ -53,7 +53,7 @@ Exemple: Compter le nombre de livres par status.
     reduce :  function (items,prev) {
                 prev.total += 1
               }
-}).pretty()
+})
 ```
 
 ## Pipeline

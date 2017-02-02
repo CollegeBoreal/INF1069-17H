@@ -54,7 +54,7 @@ __Question 7__
 
 Trouvez le mois ayant le plus de réussite ("Pass").
 
-__ Question 8__
+__Question 8__
 
 Trouvez la ville la plus inspéctée.
 

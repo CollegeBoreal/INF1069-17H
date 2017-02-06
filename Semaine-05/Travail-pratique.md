@@ -1,2 +1,2 @@
-# Gestion des indexes - Travail pratique
+# Gestion des index - Travail pratique
 

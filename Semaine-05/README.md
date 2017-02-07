@@ -253,12 +253,11 @@ Ensure ascending index
       ] 
   })
   
-> db.media.ensureIndex( { "Tracklist.Title" : 1 } )
 ```
 
 Embedded field
 ```
-> db.media.ensureIndex( { "Tracklist" : 1 } )
+> db.media.ensureIndex( { "Tracklist.Title" : 1 } )
 ```
 
 Index each element of an array

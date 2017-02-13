@@ -207,7 +207,7 @@ Example: An Author may write a PrintVersion or eBook. They both are subtype of T
 
 You can choose either to embed information into a document or reference that information from another document. Embedding information simply means that you place a certain type of data (for example, an array containing more data) into the document itself. Referencing information means that you create a reference to another document that contains that specific data.
 
-## Reminder for data types
+## Reminder about data types
 
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-06/Types-of-data-representation-in-BSON.PNG)
 

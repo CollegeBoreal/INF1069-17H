@@ -92,11 +92,47 @@ Now you can use a simple query such as {"items.damage" : {"$gt" : 20}}
 
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-07/Practice-1-car.PNG)
 
-Solution
+Solution 1
+```
+Embed the car to a person if he is a unique owner.
 
+Person
+{
+	
+	First_Name: "Paul",
+	Surname: "Miller",
+	City: "London",
+	Cars: [
+			{ 	
+				Car_ID: 101,
+				model: "Bentley",
+				year: 1973,
+				value: 100000
+			},
+			{ 	
+				Car_ID: 102,
+				model: "Rolls Royce",
+				year: 1965,
+				value: 330000
+			}
+	]
+}
+```
+Solution 2
+```
+If the cars were generic models that anybody could possess or like, we would have a reference.
+Person
+{
+	First_Name: "Paul",
+	Surname: "Miller",
+	City: "London",
+	Cars: [
+			{ Car_ID: 101},
+			{ Car_ID: 102}
+		]
+}
 ```
 
-```
 ### Practice 2
 
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-07/Practice-2-sql.PNG)
@@ -106,7 +142,25 @@ Solution
 Solution
 
 ```
-
+{
+	_id: POST_ID,
+	...
+	category: [CAT1, CAT2, CAT3],,
+	tags: [TAG1, TAG2, TAG3],
+	comments: [
+		{
+			user: 'COMMENT_BY',
+			message: TEXT,
+			datecreated: DATE_TIME,
+			like: LIKES
+		},
+		{
+			user: 'COMMENT_BY',
+			message: TEST,
+			dateCreated: DATE_TIME,
+			like: LIKES
+		}]
+}
 ```
 
 ### Practice 3
@@ -121,7 +175,31 @@ Solution
 Solution
 
 ```
-
+posts
+{
+	_id: POST_ID
+	title: TITLE_OF_POST,
+	description: POST_DESCRIPTION,
+	by: POST_BY,
+	url: URL_OF_POST,
+	tags: [TAG1, STEVEN, TAG3],
+	likes: TOTAL_LIKES,
+		comments: 
+		[
+			{
+				user: 'COMMENT_BY',
+				message: TEXT,
+				datecreated: DATE_TIME,
+				like: LIKES
+			},
+			{
+				user: 'COMMENT_BY',
+				message: TEST,
+				dateCreated: DATE_TIME,
+				like: LIKES
+			}
+		]
+}
 ```
 
 ### Practice 4
@@ -140,7 +218,6 @@ Solution
 ```
 
 ```
-
 
 ## References
 * Steve Hoberman. Data Modeling for MongoDB. Technics Publications. 09-JUN-2014.

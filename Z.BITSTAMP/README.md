@@ -3,6 +3,8 @@
 
 # Bitstamp Bitcoin/USD Analysis
 
+Descriptive statistics and probability distributions  
+
 ## Prerequisite
 
 * [Install RStudio](https://www.rstudio.com/products/rstudio/download/)
@@ -84,8 +86,16 @@ The Standard Deviation ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/b
 
 Same for the standard deviation, 5% may look risky for an investor.
 
+## Using Performance Analytics
+
 ```
+> install.packages("PerformanceAnalytics")
 > library(PerformanceAnalytics)
+```
+
+Analysing data  
+
+```
 > skewness(btc.pdf)
 [1] 0.00998609
 

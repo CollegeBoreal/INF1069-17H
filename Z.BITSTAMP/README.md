@@ -15,6 +15,9 @@
 > install.packages("jsonlite")
 > library(jsonlite)
 > url <- 'https://www.quandl.com/api/v1/datasets/BCHARTS/BITSTAMPUSD.json?&trim_start=2013-09-01&trim_end=2015-01-10&sort_order=asc'
+> bitstampusd <- fromJSON(txt=url)
+> bitstampusd$data[,1] # Date
+> bitstampusd$data[,5] # Close
 ```
 
 ## Analysis

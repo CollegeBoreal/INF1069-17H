@@ -41,6 +41,8 @@ Let's use some Continuous Compounded Return data by adding parameter retclass="t
 > btc.ts <- as.ts(rates)
 ```
 
+Probability Density Function
+
 To Create the ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/fx.png) function of returns, I use the diff function to calculate ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/lg.png) from ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/r.png)
 
 ```

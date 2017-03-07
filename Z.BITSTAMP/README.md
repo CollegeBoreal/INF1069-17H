@@ -8,6 +8,14 @@
 * [Install RStudio](https://www.rstudio.com/products/rstudio/download/)
 * [Install R](https://cran.r-project.org/)
 
+
+## Using jsonlite
+
+```
+$ install.packages("jsonlite")
+$ library(jsonlite)
+```
+
 ## Analysis
 
 To retrieve a currency pair, for example the Bitcoin against the US Dollar, we use read.csv against data provided by quandl

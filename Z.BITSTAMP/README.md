@@ -14,24 +14,23 @@
 ```
 > install.packages("jsonlite")
 > library(jsonlite)
-> url <- 'https://www.quandl.com/api/v1/datasets/BCHARTS/BITSTAMPUSD.json?&trim_start=2013-09-01&trim_end=2015-01-10&sort_order=asc'
-> bitstampusd <- fromJSON(txt=url)
-> bitstampusd$data[,1] # Date
-> bitstampusd$data[,5] # Close
 ```
 
 ## Analysis
 
-To retrieve a currency pair, for example the Bitcoin against the US Dollar, we use read.csv against data provided by quandl
+To retrieve a currency pair, for example the Bitcoin against the US Dollar, we use data provided by quandl
 
 ```
->  bitstampusd <- read.csv('http://www.quandl.com/api/v1/datasets/BCHARTS/BITSTAMPUSD.csv?&trim_start=2013-09-01&trim_end=2015-01-10&sort_order=asc', colClasses=c('Date'='Date'))
+> url <- 'https://www.quandl.com/api/v1/datasets/BCHARTS/BITSTAMPUSD.json?&trim_start=2013-09-01&trim_end=2014-12-10&sort_order=asc'
+> bitstampusd <- fromJSON(txt=url)
+> dates <- as.Date(bitstampusd$data[,1],format="%Y-%m-%d")
+> rates <- as.numeric(bitstampusd$data[,5])
 ```
 
 Let's plot some data
 
 ```
-> plot(bitstampusd$Date,bitstampusd$Close)
+> plot(dates,rates)
 ```
 
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/rplot.png)
@@ -39,7 +38,7 @@ Let's plot some data
 Let's use some Continuous Compounded Return data by adding parameter retclass="ts" (Zoo class might be better)
 
 ```
-> btc.ts <- as.ts(bitstampusd$Close)
+> btc.ts <- as.ts(rates)
 ```
 
 To Create the ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/fx.png) function of returns, I use the diff function to calculate ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/lg.png) from ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/r.png)

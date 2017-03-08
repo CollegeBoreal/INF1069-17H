@@ -11,11 +11,12 @@ Descriptive statistics and probability distributions
 * [Install R](https://cran.r-project.org/)
 
 
-## Using jsonlite
+## Using jsonlite et Curl
 
 ```
 > install.packages("jsonlite")
 > library(jsonlite)
+> install.packages("curl")
 ```
 
 ## Analysis

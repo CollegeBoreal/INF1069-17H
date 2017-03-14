@@ -70,8 +70,7 @@ Check box "public void static void main(String [] args)"
 
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/New-Java-Class.PNG)
 
-3. Copy the contents from the class
-![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBConnect.java)
+3. Copy the contents from the class [MongoDBConnect.java](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBConnect.java)
 
 4. Run the Java Application
 
@@ -83,34 +82,25 @@ In the Project Explorer, right-click the MongoConnect.java class Run as > Java A
 
 1. Create new Java class named MongoDBGetCollectionNames
 
-2. Copy the contents from this class
-
-![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBGetCollectionNames.java)
+2. Copy the contents from this class [MongoDBGetCollectionNames.java](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBGetCollectionNames.java)
 
 ## Insert document
 
 1. Create new Java class, MongoDBInsertDocument
 
-2. Copy the contents from this class:
-
-![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBInsertDocument.java)
+2. Copy the contents from this class [MongoDBInsertDocument.java](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBInsertDocument.java)
 
 ## Update document
 
 1. Create new Java class named MongoDBUpdateDocument
 
-2. Copy the contents from this class
-
-![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBUpdateDocument.java)
+2. Copy the contents from this class [MongoDBUpdateDocument.java](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBUpdateDocument.java)
 
 ## Delete document
 
 1. Create new Java class named MongoDBDeleteDocument
 
-2. Copy the contents from the class
-
-![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBDeleteDocument.java)
+2. Copy the contents from the class [MongoDBDeleteDocument.java](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBDeleteDocument.java)
 
 ## References
 * Deepak Vohra. Pro MongoDB™ Development. Apress. 26-SEP-2015
-

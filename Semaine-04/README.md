@@ -63,7 +63,7 @@ Exemple: Compter le nombre de livres par status.
 
 Le résultat de chaque opération est le *input* de la suivante.
 
-````
+```
 db.collection.aggregate([ {$match: ...}, {$group: ...}, {$sort: ...} ] )
 db.collection.aggregate({pipeline document})
 ```

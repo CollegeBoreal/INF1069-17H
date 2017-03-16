@@ -326,10 +326,6 @@ Use function *explain()* (with queryPlanner, or executionStats, or allPlansExecu
 $ mongorestore -d semaine05 dump/stocks
 ```
 
-
-### [Travail pratique] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-05/Travail-pratique.md)
-
-
 ## References
 
 * Le site de documentation de MongoDB. Indexes https://docs.mongodb.com/manual/indexes/ (page accédée le 02 février 2017)

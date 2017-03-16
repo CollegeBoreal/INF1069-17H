@@ -232,9 +232,9 @@ Les paramètres *upsert* et *remove* ne peuvent pas être combinés.
 })
 ```
 
-### [Exercices] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-03/Exercices.md)
+### [Exercices](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-03/Exercices.md)
 
-### [Réponses] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-03/Reponses.md)
+### [Réponses](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-03/Reponses.md)
 
 ## References
 

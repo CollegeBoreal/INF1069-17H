@@ -9,7 +9,7 @@ public class JavaFindDistinct {
   public static void main(String[] args) {
     try {
       MongoClient mongoClient = new MongoClient("localhost", 27017);
-      DB db = mongoClient.getDB("words");
+      DB db = mongoClient.getDB("semaine09");
       DBCollection collection = db.getCollection("word_stats");
       JavaFindDistinct.sizesOfAllWords(collection);
       JavaFindDistinct.sizesOfQWords(collection);

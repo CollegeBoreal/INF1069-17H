@@ -761,9 +761,9 @@ Supprimer la base de données courante
 { "dropped" : "library", "ok" : 1 }
 ```
 
-### [Exercices] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Exercices.md)
+### [Exercices](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Exercices.md)
 
-### [Réponses] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Reponses.md)
+### [Réponses](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Reponses.md)
 
 ## References
 * David Hows; Peter Membrey; Eelco Plugge; Tim Hawkins. The Definitive Guide to MongoDB: A complete guide to dealing with Big Data using MongoDB, Third Edition. Apress. 16-DEC-2015

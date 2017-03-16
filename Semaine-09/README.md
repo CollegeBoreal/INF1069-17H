@@ -10,6 +10,10 @@ Get Eclipse
 
 https://www.eclipse.org/downloads/eclipse-packages/
 
+Or get IntelliJ IDEA
+
+https://www.jetbrains.com/idea/#chooseYourEdition
+
 ## Creating a Maven Project
 
 1. Select File New Other. In the New window, select the Maven Maven Project wizard and click on Next.
@@ -101,6 +105,8 @@ In the Project Explorer, right-click the MongoConnect.java class Run as > Java A
 1. Create new Java class named MongoDBDeleteDocument
 
 2. Copy the contents from the class [MongoDBDeleteDocument.java](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBDeleteDocument.java)
+
+### [Travail pratique] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/Travail-pratique.md)
 
 ## References
 * Deepak Vohra. Pro MongoDB™ Development. Apress. 26-SEP-2015

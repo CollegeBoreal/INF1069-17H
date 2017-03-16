@@ -66,4 +66,4 @@ __Question 10__
 
 Présentez pour chaque ville, la somme des inspéctions par secteur.
 
-### [Voir les réponses] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Reponses.md)
+### [Voir les réponses](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Reponses.md)

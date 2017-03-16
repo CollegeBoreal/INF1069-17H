@@ -106,7 +106,7 @@ In the Project Explorer, right-click the MongoConnect.java class Run as > Java A
 
 2. Copy the contents from the class [MongoDBDeleteDocument.java](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBDeleteDocument.java)
 
-### [Travail pratique] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/Travail-pratique.md)
+### [Travail pratique](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/Travail-pratique.md)
 
 ## References
 * Deepak Vohra. Pro MongoDB™ Development. Apress. 26-SEP-2015

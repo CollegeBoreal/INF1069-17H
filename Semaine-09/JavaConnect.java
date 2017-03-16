@@ -7,7 +7,7 @@ public class JavaConnect {
     try {
       MongoClient mongoClient = new MongoClient("localhost", 27017);
       mongoClient.setWriteConcern(WriteConcern.JOURNAL_SAFE);
-      DB db = mongoClient.getDB("words");
+      DB db = mongoClient.getDB("semaine09");
       DBCollection collection = db.getCollection("word_stats");
       System.out.println("Number of Documents: " + 
         new Long(collection.count()).toString());

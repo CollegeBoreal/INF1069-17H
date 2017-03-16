@@ -22,7 +22,7 @@ public class ArrayInsert {
             // To connect to mongodb server
             MongoClient mongoClient = new MongoClient(HOST, PORT);
 
-            DB db = mongoClient.getDB("sampledb");
+            DB db = mongoClient.getDB("semaine09");
 
             DBCollection coll = db.getCollection("contacts");
 

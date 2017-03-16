@@ -20,6 +20,7 @@ db.collection.count(query)
 ```
 
 Exemple: Le nombre de livres publiés après le 1er avril 2009.
+
 ```
 > db.books.count({"publishedDate": {$gt: ISODate("2009-04-01")}})
 ```
@@ -33,6 +34,7 @@ db.collection.distinct(field, query)
 ```
 
 Exemple: Les catégories de livres dont le status est publié.
+
 ```
 > db.books.distinct('categories', {"status" : "PUBLISH"})
 ```
@@ -46,6 +48,7 @@ db.collection.group({ key, reduce, initial [, keyf] [, cond] [, finalize] })
 ```
 
 Exemple: Compter le nombre de livres par status.
+
 ```
 > db.books.group ({
     key: {status : true},
@@ -82,6 +85,7 @@ SQL versus aggregation
 * *$color* est la reference au champ manipulé dans la collection.
 
 Exemple: Grouper les couleurs dans la collection aggregation.
+
 ```
 > db.aggregation.aggregate( { $group : { _id : "$color" } } ).pretty()
 ```
@@ -91,6 +95,7 @@ Fonctions pour manipuler l'opération $group
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/group_functions.PNG)
 
 Exemple: On veut compter le nombre de chaque couleur.
+
 ```
 > db.aggregation.aggregate({ $group : { _id : "$color", count : { $sum : 1 } } }).pretty()
 ```
@@ -98,6 +103,7 @@ Exemple: On veut compter le nombre de chaque couleur.
 Le résutlat de est stocké dans la variable *count*.
 
 Exemple: On veut compter le nombre de chaque couleur et le transport.
+
 ```
 > db.aggregation.aggregate({ $group : { _id : { color: "$color", transport: "$transport"} , count : { $sum : 1 } }}).pretty()
 ```
@@ -111,6 +117,7 @@ db.collection.aggregate({$limit:<number to limit>})
 ```
 
 Exemple: On veut limiter le résultat de notre exemple précédent de 5.
+
 ```
 > db.aggregation.aggregate( 
   [ 
@@ -129,6 +136,7 @@ db.collection.aggregate({$match:{<expression>}})
 ```
 
 Exemple: On veut les documents dont la valeur du *num* est supérieur à 500.
+
 ```
 > db.aggregation.aggregate(
   [
@@ -157,6 +165,7 @@ Permet de trier. On spécifie 1 pour l'ordre croissant et -1 pour décroissant p
 Permet de générer un nouveau document en mémoire pour chaque élément d'un tableau.
 
 Exemple: Si on prend le tableau des légumes (vegetables)
+
 ```
 > db.aggregation.aggregate({ $unwind : "$vegetables" }).pretty()
 ```
@@ -170,6 +179,7 @@ Note: Faire attention de ne pas sur-utiliser la mémoire avec cette opération.
 Permet de controler les champs retournés. On peut limiter et/ou renommer les champs désirés. Le champ _id est retourné par défaut. On spécifie *true* ou *false* pour le champ à retourné; sinon 0 ou 1.
 
 Exemple: Ne retourner que les champs *fruits* et *vegetables* de l'exemple précédent.
+
 ```
 > db.aggregation.aggregate(
   [
@@ -185,6 +195,8 @@ Permet de sauter les X documents.
 ```
 db.collection.aggregate({$skip:<number to skip>})
 ```
+
+Exemple
 
 ```
 > db.aggregation.aggregate(
@@ -205,9 +217,9 @@ Note: Les deux opérations, $skip et $limit sont utilisés pour faire de la pagi
 
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/string_functions.PNG)
 
-### [Exercices] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Exercices.md)
+### [Exercices](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Exercices.md)
 
-### [Réponses] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Reponses.md)
+### [Réponses](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Reponses.md)
 
 ## References
 * Le site de documentation de MongoDB. Aggregation https://docs.mongodb.com/manual/aggregation/ (page accédée le 29 janvier 2017)

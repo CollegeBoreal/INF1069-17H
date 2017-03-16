@@ -117,7 +117,7 @@ __Question 13__
 
 __Question 14__
 ```
-$ mongoexport --db semaine02 --type=json --collection user --out user.bak.json
+$ mongoexport --db semaine02 --collection user --out user.bak.json
 ```
 
 __Question 15__

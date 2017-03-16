@@ -112,4 +112,4 @@ __Question 26__
 
 Mettre à jour tous les customers et les producits en ajoutant la date de dernère modification (lastModifiedDate), utiliser $currentDate et votre nom comme dernier à avoir modifier (lastModifiedBy)
 
-### [Voir les réponses] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Reponses.md)
+### [Voir les réponses](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Reponses.md)

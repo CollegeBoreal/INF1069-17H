@@ -31,7 +31,7 @@ Prenez note des examples suivants:
 
 Proposez des solutions aux exercices vus durant les semaines précédentes.
 
-## [Semaine 02] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Exercices.md)
-## [Semaine 03] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-03/Exercices.md)
-## [Semaine 04] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Exercices.md)
-## [Semaine 05] (https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-05/README.md)
+* [Semaine 02](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-02/Exercices.md)
+* [Semaine 03](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-03/Exercices.md)
+* [Semaine 04](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-04/Exercices.md)
+* [Semaine 05](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-05/README.md)

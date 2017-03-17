@@ -86,7 +86,7 @@ In the Project Explorer, right-click the MongoConnect.java class Run as > Java A
 
 1. Create new Java class named MongoDBGetCollectionNames
 
-2. Copy the contents from this class [MongoDBGetCollectionNames.java](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBGetCollectionNames.java)
+2. Copy the contents from this class [MongoDBGetCollectionName.java](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-09/MongoDBGetCollectionName.java)
 
 ## Insert document
 

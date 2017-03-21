@@ -1,0 +1,495 @@
+{ "_id" : 1, "state" : "ANDAMAN & NICOBAR ISLANDS", "city" : "Port Blair", "population" : 100608, "literates" : 81908, "sexRatio" : 889 }
+{ "_id" : 2, "state" : "ANDHRA PRADESH", "city" : "Adilabad", "population" : 117388, "literates" : 83955, "sexRatio" : 982 }
+{ "_id" : 3, "state" : "ANDHRA PRADESH", "city" : "Nizamabad", "population" : 310467, "literates" : 221829, "sexRatio" : 1001, "isMetro" : "false" }
+{ "_id" : 4, "state" : "ANDHRA PRADESH", "city" : "Ramagundam", "population" : 229632, "literates" : 160646, "sexRatio" : 964 }
+{ "_id" : 5, "state" : "ANDHRA PRADESH", "city" : "Karimnagar", "population" : 260899, "literates" : 204614, "sexRatio" : 980 }
+{ "_id" : 6, "state" : "ANDHRA PRADESH", "city" : "Greater Hyderabad", "population" : 6809970, "literates" : 5047705, "sexRatio" : 945, "isMetro" : "true" }
+{ "_id" : 7, "state" : "ANDHRA PRADESH", "city" : "Secunderabad", "population" : 213698, "literates" : 170148, "sexRatio" : 914 }
+{ "_id" : 8, "state" : "ANDHRA PRADESH", "city" : "Mahbubnagar", "population" : 157902, "literates" : 119626, "sexRatio" : 988 }
+{ "_id" : 9, "state" : "ANDHRA PRADESH", "city" : "Suryapet", "population" : 105250, "literates" : 81366, "sexRatio" : 1019 }
+{ "_id" : 10, "state" : "ANDHRA PRADESH", "city" : "Nalgonda", "population" : 135163, "literates" : 105885, "sexRatio" : 995, "isMetro" : "false" }
+{ "_id" : 11, "state" : "ANDHRA PRADESH", "city" : "Miryalaguda", "population" : 103855, "literates" : 76693, "sexRatio" : 995 }
+{ "_id" : 12, "state" : "ANDHRA PRADESH", "city" : "Warangal", "population" : 620116, "literates" : 475247, "sexRatio" : 998 }
+{ "_id" : 13, "state" : "ANDHRA PRADESH", "city" : "Khammam", "population" : 184252, "literates" : 136532, "sexRatio" : 1024 }
+{ "_id" : 14, "state" : "ANDHRA PRADESH", "city" : "Srikakulam", "population" : 126003, "literates" : 97904, "sexRatio" : 1013 }
+{ "_id" : 15, "state" : "ANDHRA PRADESH", "city" : "Vizianagaram", "population" : 227533, "literates" : 169461, "sexRatio" : 1039 }
+{ "_id" : 16, "state" : "ANDHRA PRADESH", "city" : "GVMC", "population" : 1730320, "literates" : 1298896, "sexRatio" : 977 }
+{ "_id" : 17, "state" : "ANDHRA PRADESH", "city" : "Rajahmundry", "population" : 343903, "literates" : 264653, "sexRatio" : 1026 }
+{ "_id" : 18, "state" : "ANDHRA PRADESH", "city" : "Kakinada", "population" : 312255, "literates" : 231559, "sexRatio" : 1046 }
+{ "_id" : 19, "state" : "ANDHRA PRADESH", "city" : "Tadepalligudem", "population" : 103577, "literates" : 78557, "sexRatio" : 1024 }
+{ "_id" : 20, "state" : "ANDHRA PRADESH", "city" : "Eluru", "population" : 214414, "literates" : 145516, "sexRatio" : 1028 }
+{ "_id" : 21, "state" : "ANDHRA PRADESH", "city" : "Bhimavaram", "population" : 142280, "literates" : 108535, "sexRatio" : 1031 }
+{ "_id" : 22, "state" : "ANDHRA PRADESH", "city" : "Vijayawada", "population" : 1048240, "literates" : 789038, "sexRatio" : 997 }
+{ "_id" : 23, "state" : "ANDHRA PRADESH", "city" : "Gudivada", "population" : 118289, "literates" : 89009, "sexRatio" : 1007 }
+{ "_id" : 24, "state" : "ANDHRA PRADESH", "city" : "Machilipatnam", "population" : 170008, "literates" : 130173, "sexRatio" : 1035 }
+{ "_id" : 25, "state" : "ANDHRA PRADESH", "city" : "Narasaraopet", "population" : 116329, "literates" : 84123, "sexRatio" : 975 }
+{ "_id" : 26, "state" : "ANDHRA PRADESH", "city" : "Guntur", "population" : 651382, "literates" : 480068, "sexRatio" : 1016 }
+{ "_id" : 27, "state" : "ANDHRA PRADESH", "city" : "Chilakaluripet", "population" : 101550, "literates" : 66336, "sexRatio" : 1023 }
+{ "_id" : 28, "state" : "ANDHRA PRADESH", "city" : "Tenali", "population" : 164649, "literates" : 125275, "sexRatio" : 1025 }
+{ "_id" : 29, "state" : "ANDHRA PRADESH", "city" : "Ongole", "population" : 202826, "literates" : 153888, "sexRatio" : 994 }
+{ "_id" : 30, "state" : "ANDHRA PRADESH", "city" : "Nellore", "population" : 505258, "literates" : 387192, "sexRatio" : 966 }
+{ "_id" : 31, "state" : "ANDHRA PRADESH", "city" : "Proddatur", "population" : 162816, "literates" : 115011, "sexRatio" : 1001 }
+{ "_id" : 32, "state" : "ANDHRA PRADESH", "city" : "Kadapa", "population" : 341823, "literates" : 242540, "sexRatio" : 990 }
+{ "_id" : 33, "state" : "ANDHRA PRADESH", "city" : "Kurnool", "population" : 424920, "literates" : 297490, "sexRatio" : 1006 }
+{ "_id" : 34, "state" : "ANDHRA PRADESH", "city" : "Adoni", "population" : 166537, "literates" : 101292, "sexRatio" : 1013 }
+{ "_id" : 35, "state" : "ANDHRA PRADESH", "city" : "Nandyal", "population" : 200746, "literates" : 138525, "sexRatio" : 992 }
+{ "_id" : 36, "state" : "ANDHRA PRADESH", "city" : "Anantapur", "population" : 262340, "literates" : 195452, "sexRatio" : 995 }
+{ "_id" : 37, "state" : "ANDHRA PRADESH", "city" : "Guntakal", "population" : 126479, "literates" : 86197, "sexRatio" : 1017 }
+{ "_id" : 38, "state" : "ANDHRA PRADESH", "city" : "Tadpatri", "population" : 108249, "literates" : 69948, "sexRatio" : 1004 }
+{ "_id" : 39, "state" : "ANDHRA PRADESH", "city" : "Dharmavaram", "population" : 121992, "literates" : 79037, "sexRatio" : 962 }
+{ "_id" : 40, "state" : "ANDHRA PRADESH", "city" : "Hindupur", "population" : 151835, "literates" : 103538, "sexRatio" : 982 }
+{ "_id" : 41, "state" : "ANDHRA PRADESH", "city" : "Tirupati", "population" : 287035, "literates" : 229730, "sexRatio" : 966 }
+{ "_id" : 42, "state" : "ANDHRA PRADESH", "city" : "Madanapalle", "population" : 135669, "literates" : 99486, "sexRatio" : 1012 }
+{ "_id" : 43, "state" : "ANDHRA PRADESH", "city" : "Chittoor", "population" : 153766, "literates" : 121094, "sexRatio" : 1008 }
+{ "_id" : 44, "state" : "ASSAM", "city" : "Nagaon", "population" : 116355, "literates" : 98068, "sexRatio" : 971 }
+{ "_id" : 45, "state" : "ASSAM", "city" : "Dibrugarh", "population" : 138661, "literates" : 113822, "sexRatio" : 925 }
+{ "_id" : 46, "state" : "ASSAM", "city" : "Silchar", "population" : 172709, "literates" : 144255, "sexRatio" : 989 }
+{ "_id" : 47, "state" : "ASSAM", "city" : "Guwahati", "population" : 963429, "literates" : 798726, "sexRatio" : 918 }
+{ "_id" : 48, "state" : "BIHAR", "city" : "Bettiah", "population" : 132896, "literates" : 94663, "sexRatio" : 888 }
+{ "_id" : 49, "state" : "BIHAR", "city" : "Bagaha", "population" : 113012, "literates" : 56998, "sexRatio" : 885 }
+{ "_id" : 50, "state" : "BIHAR", "city" : "Motihari", "population" : 125183, "literates" : 94926, "sexRatio" : 856 }
+{ "_id" : 51, "state" : "BIHAR", "city" : "Kishanganj", "population" : 107076, "literates" : 67286, "sexRatio" : 923 }
+{ "_id" : 52, "state" : "BIHAR", "city" : "Purnia", "population" : 280547, "literates" : 178381, "sexRatio" : 895 }
+{ "_id" : 53, "state" : "BIHAR", "city" : "Katihar", "population" : 225982, "literates" : 155706, "sexRatio" : 897 }
+{ "_id" : 54, "state" : "BIHAR", "city" : "Saharsa", "population" : 155175, "literates" : 101425, "sexRatio" : 879 }
+{ "_id" : 55, "state" : "BIHAR", "city" : "Darbhanga", "population" : 294116, "literates" : 205203, "sexRatio" : 898 }
+{ "_id" : 56, "state" : "BIHAR", "city" : "Muzaffarpur", "population" : 351838, "literates" : 263638, "sexRatio" : 890 }
+{ "_id" : 57, "state" : "BIHAR", "city" : "Siwan", "population" : 134458, "literates" : 98898, "sexRatio" : 903 }
+{ "_id" : 58, "state" : "BIHAR", "city" : "Chapra", "population" : 201597, "literates" : 141403, "sexRatio" : 897 }
+{ "_id" : 59, "state" : "BIHAR", "city" : "Hajipur", "population" : 147126, "literates" : 100691, "sexRatio" : 873 }
+{ "_id" : 60, "state" : "BIHAR", "city" : "Begusarai", "population" : 251136, "literates" : 169161, "sexRatio" : 875 }
+{ "_id" : 61, "state" : "BIHAR", "city" : "Bhagalpur", "population" : 398138, "literates" : 279469, "sexRatio" : 878 }
+{ "_id" : 62, "state" : "BIHAR", "city" : "Munger", "population" : 213101, "literates" : 150435, "sexRatio" : 883 }
+{ "_id" : 63, "state" : "BIHAR", "city" : "Jamalpur", "population" : 105221, "literates" : 81192, "sexRatio" : 871 }
+{ "_id" : 64, "state" : "BIHAR", "city" : "Biharsharif", "population" : 296889, "literates" : 189420, "sexRatio" : 916 }
+{ "_id" : 65, "state" : "BIHAR", "city" : "Patna", "population" : 1683200, "literates" : 1264523, "sexRatio" : 882 }
+{ "_id" : 66, "state" : "BIHAR", "city" : "Dinapur Nizamat", "population" : 182241, "literates" : 123199, "sexRatio" : 876 }
+{ "_id" : 67, "state" : "BIHAR", "city" : "Arrah", "population" : 261099, "literates" : 189080, "sexRatio" : 874 }
+{ "_id" : 68, "state" : "BIHAR", "city" : "Buxar", "population" : 102591, "literates" : 75752, "sexRatio" : 896 }
+{ "_id" : 69, "state" : "BIHAR", "city" : "Sasaram", "population" : 147396, "literates" : 105378, "sexRatio" : 897 }
+{ "_id" : 70, "state" : "BIHAR", "city" : "Dehri", "population" : 137068, "literates" : 98968, "sexRatio" : 896 }
+{ "_id" : 71, "state" : "BIHAR", "city" : "Aurangabad", "population" : 101520, "literates" : 75796, "sexRatio" : 904 }
+{ "_id" : 72, "state" : "BIHAR", "city" : "Gaya", "population" : 463454, "literates" : 346747, "sexRatio" : 886 }
+{ "_id" : 73, "state" : "BIHAR", "city" : "Jehanabad", "population" : 102456, "literates" : 70052, "sexRatio" : 867 }
+{ "_id" : 74, "state" : "CHANDIGARH", "city" : "Chandigarh", "population" : 960787, "literates" : 743254, "sexRatio" : 829 }
+{ "_id" : 75, "state" : "CHHATTISGARH", "city" : "Ambikapur", "population" : 114575, "literates" : 89590, "sexRatio" : 920 }
+{ "_id" : 76, "state" : "CHHATTISGARH", "city" : "Raigarh", "population" : 137097, "literates" : 105512, "sexRatio" : 952 }
+{ "_id" : 77, "state" : "CHHATTISGARH", "city" : "Korba", "population" : 363210, "literates" : 267900, "sexRatio" : 927 }
+{ "_id" : 78, "state" : "CHHATTISGARH", "city" : "Bilaspur", "population" : 330106, "literates" : 260654, "sexRatio" : 945 }
+{ "_id" : 79, "state" : "CHHATTISGARH", "city" : "Rajnandgaon", "population" : 163122, "literates" : 127042, "sexRatio" : 992 }
+{ "_id" : 80, "state" : "CHHATTISGARH", "city" : "Durg", "population" : 268679, "literates" : 210639, "sexRatio" : 968 }
+{ "_id" : 81, "state" : "CHHATTISGARH", "city" : "Bhilai Nagar", "population" : 625697, "literates" : 487242, "sexRatio" : 942 }
+{ "_id" : 82, "state" : "CHHATTISGARH", "city" : "Raipur", "population" : 1010087, "literates" : 769593, "sexRatio" : 945 }
+{ "_id" : 83, "state" : "CHHATTISGARH", "city" : "Jagdalpur", "population" : 125345, "literates" : 95303, "sexRatio" : 961 }
+{ "_id" : 84, "state" : "GUJARAT", "city" : "Ahmadabad", "population" : 5570585, "literates" : 4464303, "sexRatio" : 897 }
+{ "_id" : 85, "state" : "GUJARAT", "city" : "Kalol", "population" : 112126, "literates" : 88768, "sexRatio" : 888 }
+{ "_id" : 86, "state" : "GUJARAT", "city" : "Gandhinagar", "population" : 208299, "literates" : 177510, "sexRatio" : 903 }
+{ "_id" : 87, "state" : "GUJARAT", "city" : "Bhuj", "population" : 147123, "literates" : 114822, "sexRatio" : 889 }
+{ "_id" : 88, "state" : "GUJARAT", "city" : "Gandhidham", "population" : 248705, "literates" : 181253, "sexRatio" : 879 }
+{ "_id" : 89, "state" : "GUJARAT", "city" : "Palanpur", "population" : 127125, "literates" : 97459, "sexRatio" : 915 }
+{ "_id" : 90, "state" : "GUJARAT", "city" : "Deesa", "population" : 111149, "literates" : 78219, "sexRatio" : 893 }
+{ "_id" : 91, "state" : "GUJARAT", "city" : "Patan", "population" : 125502, "literates" : 99129, "sexRatio" : 912 }
+{ "_id" : 92, "state" : "GUJARAT", "city" : "Mahesana", "population" : 184133, "literates" : 151773, "sexRatio" : 894 }
+{ "_id" : 93, "state" : "GUJARAT", "city" : "Surendranagar Dudhrej", "population" : 177827, "literates" : 135879, "sexRatio" : 918 }
+{ "_id" : 94, "state" : "GUJARAT", "city" : "Morvi", "population" : 188278, "literates" : 140779, "sexRatio" : 924 }
+{ "_id" : 95, "state" : "GUJARAT", "city" : "Rajkot", "population" : 1286995, "literates" : 1026040, "sexRatio" : 905 }
+{ "_id" : 96, "state" : "GUJARAT", "city" : "Gondal", "population" : 112064, "literates" : 86139, "sexRatio" : 918 }
+{ "_id" : 97, "state" : "GUJARAT", "city" : "Jetpur Navagadh", "population" : 118550, "literates" : 89110, "sexRatio" : 902 }
+{ "_id" : 98, "state" : "GUJARAT", "city" : "Jamnagar", "population" : 529308, "literates" : 394919, "sexRatio" : 916 }
+{ "_id" : 99, "state" : "GUJARAT", "city" : "Porbandar", "population" : 152136, "literates" : 119545, "sexRatio" : 938 }
+{ "_id" : 100, "state" : "GUJARAT", "city" : "Veraval", "population" : 153696, "literates" : 106540, "sexRatio" : 966 }
+{ "_id" : 101, "state" : "GUJARAT", "city" : "Junagadh", "population" : 320250, "literates" : 259563, "sexRatio" : 952 }
+{ "_id" : 102, "state" : "GUJARAT", "city" : "Amreli", "population" : 105980, "literates" : 85975, "sexRatio" : 921 }
+{ "_id" : 103, "state" : "GUJARAT", "city" : "Bhavnagar", "population" : 593768, "literates" : 455242, "sexRatio" : 919 }
+{ "_id" : 104, "state" : "GUJARAT", "city" : "Botad", "population" : 130302, "literates" : 94563, "sexRatio" : 922 }
+{ "_id" : 105, "state" : "GUJARAT", "city" : "Anand", "population" : 197351, "literates" : 166211, "sexRatio" : 928 }
+{ "_id" : 106, "state" : "GUJARAT", "city" : "Nadiad", "population" : 218150, "literates" : 174931, "sexRatio" : 941 }
+{ "_id" : 107, "state" : "GUJARAT", "city" : "Godhra", "population" : 143126, "literates" : 111571, "sexRatio" : 938 }
+{ "_id" : 108, "state" : "GUJARAT", "city" : "Vadodara", "population" : 1666703, "literates" : 1394952, "sexRatio" : 923 }
+{ "_id" : 109, "state" : "GUJARAT", "city" : "Bharuch", "population" : 168729, "literates" : 133796, "sexRatio" : 942 }
+{ "_id" : 110, "state" : "GUJARAT", "city" : "Navsari", "population" : 160100, "literates" : 128822, "sexRatio" : 931 }
+{ "_id" : 111, "state" : "GUJARAT", "city" : "Valsad", "population" : 114987, "literates" : 97687, "sexRatio" : 950 }
+{ "_id" : 112, "state" : "GUJARAT", "city" : "Surat", "population" : 4462002, "literates" : 3499228, "sexRatio" : 758, "isMetro" : "true" }
+{ "_id" : 113, "state" : "HARYANA", "city" : "Panchkula", "population" : 210175, "literates" : 165235, "sexRatio" : 883 }
+{ "_id" : 114, "state" : "HARYANA", "city" : "Ambala Sadar", "population" : 104268, "literates" : 83236, "sexRatio" : 922 }
+{ "_id" : 115, "state" : "HARYANA", "city" : "Ambala", "population" : 196216, "literates" : 155780, "sexRatio" : 895 }
+{ "_id" : 116, "state" : "HARYANA", "city" : "Yamunanagar", "population" : 216628, "literates" : 166419, "sexRatio" : 877 }
+{ "_id" : 117, "state" : "HARYANA", "city" : "Jagadhri", "population" : 124915, "literates" : 95469, "sexRatio" : 844 }
+{ "_id" : 118, "state" : "HARYANA", "city" : "Thanesar", "population" : 154962, "literates" : 119482, "sexRatio" : 852 }
+{ "_id" : 119, "state" : "HARYANA", "city" : "Kaithal", "population" : 144633, "literates" : 103329, "sexRatio" : 887 }
+{ "_id" : 120, "state" : "HARYANA", "city" : "Karnal", "population" : 286974, "literates" : 220711, "sexRatio" : 892 }
+{ "_id" : 121, "state" : "HARYANA", "city" : "Panipat", "population" : 294150, "literates" : 218023, "sexRatio" : 870 }
+{ "_id" : 122, "state" : "HARYANA", "city" : "Sonipat", "population" : 277053, "literates" : 215609, "sexRatio" : 873 }
+{ "_id" : 123, "state" : "HARYANA", "city" : "Jind", "population" : 166225, "literates" : 123267, "sexRatio" : 877 }
+{ "_id" : 124, "state" : "HARYANA", "city" : "Sirsa", "population" : 183282, "literates" : 135435, "sexRatio" : 893 }
+{ "_id" : 125, "state" : "HARYANA", "city" : "Hisar", "population" : 301249, "literates" : 216978, "sexRatio" : 844 }
+{ "_id" : 126, "state" : "HARYANA", "city" : "Bhiwani", "population" : 197662, "literates" : 147807, "sexRatio" : 876 }
+{ "_id" : 127, "state" : "HARYANA", "city" : "Rohtak", "population" : 373133, "literates" : 279509, "sexRatio" : 887 }
+{ "_id" : 128, "state" : "HARYANA", "city" : "Bahadurgarh", "population" : 170426, "literates" : 132108, "sexRatio" : 858 }
+{ "_id" : 129, "state" : "HARYANA", "city" : "Rewari", "population" : 140864, "literates" : 110205, "sexRatio" : 886 }
+{ "_id" : 130, "state" : "HARYANA", "city" : "Gurgaon", "population" : 876824, "literates" : 662969, "sexRatio" : 844 }
+{ "_id" : 131, "state" : "HARYANA", "city" : "Faridabad", "population" : 1404653, "literates" : 1042168, "sexRatio" : 872 }
+{ "_id" : 132, "state" : "HARYANA", "city" : "Palwal", "population" : 127931, "literates" : 90937, "sexRatio" : 884 }
+{ "_id" : 133, "state" : "HIMACHAL PRADESH", "city" : "Shimla", "population" : 169758, "literates" : 147799, "sexRatio" : 818 }
+{ "_id" : 134, "state" : "JAMMU & KASHMIR", "city" : "Srinagar", "population" : 1192792, "literates" : 741441, "sexRatio" : 888 }
+{ "_id" : 135, "state" : "JAMMU & KASHMIR", "city" : "Anantnag", "population" : 108505, "literates" : 71408, "sexRatio" : 937 }
+{ "_id" : 136, "state" : "JAMMU & KASHMIR", "city" : "Jammu", "population" : 503690, "literates" : 413366, "sexRatio" : 898 }
+{ "_id" : 137, "state" : "JHARKHAND", "city" : "Giridih", "population" : 114447, "literates" : 84897, "sexRatio" : 910 }
+{ "_id" : 138, "state" : "JHARKHAND", "city" : "Deoghar", "population" : 203116, "literates" : 153807, "sexRatio" : 876 }
+{ "_id" : 139, "state" : "JHARKHAND", "city" : "Dhanbad", "population" : 1161561, "literates" : 820008, "sexRatio" : 887 }
+{ "_id" : 140, "state" : "JHARKHAND", "city" : "Bokaro Steel City", "population" : 413934, "literates" : 310127, "sexRatio" : 881 }
+{ "_id" : 141, "state" : "JHARKHAND", "city" : "Chas", "population" : 141618, "literates" : 105417, "sexRatio" : 888 }
+{ "_id" : 142, "state" : "JHARKHAND", "city" : "Jamshedpur", "population" : 629659, "literates" : 494893, "sexRatio" : 920 }
+{ "_id" : 143, "state" : "JHARKHAND", "city" : "Mango", "population" : 224002, "literates" : 169548, "sexRatio" : 927 }
+{ "_id" : 144, "state" : "JHARKHAND", "city" : "Hazaribag", "population" : 142494, "literates" : 113693, "sexRatio" : 919 }
+{ "_id" : 145, "state" : "JHARKHAND", "city" : "Ranchi", "population" : 1073440, "literates" : 841652, "sexRatio" : 920 }
+{ "_id" : 146, "state" : "JHARKHAND", "city" : "Aditya", "population" : 173988, "literates" : 125985, "sexRatio" : 902 }
+{ "_id" : 147, "state" : "KARNATAKA", "city" : "Belgaum", "population" : 488292, "literates" : 396736, "sexRatio" : 982 }
+{ "_id" : 148, "state" : "KARNATAKA", "city" : "Bagalkot", "population" : 112068, "literates" : 85860, "sexRatio" : 972 }
+{ "_id" : 149, "state" : "KARNATAKA", "city" : "Bijapur", "population" : 326360, "literates" : 239631, "sexRatio" : 976 }
+{ "_id" : 150, "state" : "KARNATAKA", "city" : "Bidar", "population" : 211944, "literates" : 163781, "sexRatio" : 937 }
+{ "_id" : 151, "state" : "KARNATAKA", "city" : "Raichur", "population" : 232456, "literates" : 158452, "sexRatio" : 980 }
+{ "_id" : 152, "state" : "KARNATAKA", "city" : "Gangawati", "population" : 105354, "literates" : 70630, "sexRatio" : 1000 }
+{ "_id" : 153, "state" : "KARNATAKA", "city" : "Gadag-Betigeri", "population" : 172813, "literates" : 132094, "sexRatio" : 1006 }
+{ "_id" : 154, "state" : "KARNATAKA", "city" : "Hubli-Dharwad", "population" : 943857, "literates" : 736506, "sexRatio" : 983 }
+{ "_id" : 155, "state" : "KARNATAKA", "city" : "Ranibennur", "population" : 106365, "literates" : 85298, "sexRatio" : 972 }
+{ "_id" : 156, "state" : "KARNATAKA", "city" : "Hospet", "population" : 206159, "literates" : 143776, "sexRatio" : 1003 }
+{ "_id" : 157, "state" : "KARNATAKA", "city" : "Bellary", "population" : 409644, "literates" : 281768, "sexRatio" : 988 }
+{ "_id" : 158, "state" : "KARNATAKA", "city" : "Chitradurga", "population" : 139914, "literates" : 111514, "sexRatio" : 990 }
+{ "_id" : 159, "state" : "KARNATAKA", "city" : "Davanagere", "population" : 435128, "literates" : 331551, "sexRatio" : 973 }
+{ "_id" : 160, "state" : "KARNATAKA", "city" : "Shimoga", "population" : 322428, "literates" : 255971, "sexRatio" : 991 }
+{ "_id" : 161, "state" : "KARNATAKA", "city" : "Bhadravati", "population" : 150776, "literates" : 118446, "sexRatio" : 1010 }
+{ "_id" : 162, "state" : "KARNATAKA", "city" : "Udupi", "population" : 125350, "literates" : 108041, "sexRatio" : 1021 }
+{ "_id" : 163, "state" : "KARNATAKA", "city" : "Chikmagalur", "population" : 118496, "literates" : 96586, "sexRatio" : 1013 }
+{ "_id" : 164, "state" : "KARNATAKA", "city" : "Tumkur", "population" : 305821, "literates" : 237424, "sexRatio" : 968 }
+{ "_id" : 165, "state" : "KARNATAKA", "city" : "BBMP", "population" : 8425970, "literates" : 6775942, "sexRatio" : 914 }
+{ "_id" : 166, "state" : "KARNATAKA", "city" : "Mandya", "population" : 137735, "literates" : 105938, "sexRatio" : 1003 }
+{ "_id" : 167, "state" : "KARNATAKA", "city" : "Hassan", "population" : 133723, "literates" : 109564, "sexRatio" : 1015 }
+{ "_id" : 168, "state" : "KARNATAKA", "city" : "Mangalore", "population" : 484785, "literates" : 416863, "sexRatio" : 1014 }
+{ "_id" : 169, "state" : "KARNATAKA", "city" : "Mysore", "population" : 887446, "literates" : 702896, "sexRatio" : 1000 }
+{ "_id" : 170, "state" : "KARNATAKA", "city" : "Gulbarga", "population" : 532031, "literates" : 387470, "sexRatio" : 953 }
+{ "_id" : 171, "state" : "KARNATAKA", "city" : "Kolar", "population" : 138553, "literates" : 102978, "sexRatio" : 978 }
+{ "_id" : 172, "state" : "KARNATAKA", "city" : "Robertson Pet", "population" : 146428, "literates" : 119258, "sexRatio" : 1023 }
+{ "_id" : 173, "state" : "KERALA", "city" : "Kozhikode", "population" : 432097, "literates" : 378033, "sexRatio" : 1093 }
+{ "_id" : 174, "state" : "KERALA", "city" : "Palakkad", "population" : 131019, "literates" : 112479, "sexRatio" : 1053 }
+{ "_id" : 175, "state" : "KERALA", "city" : "Thrissur", "population" : 315596, "literates" : 282338, "sexRatio" : 1076 }
+{ "_id" : 176, "state" : "KERALA", "city" : "Kochi", "population" : 601574, "literates" : 535318, "sexRatio" : 1028 }
+{ "_id" : 177, "state" : "KERALA", "city" : "Alappuzha", "population" : 174164, "literates" : 153269, "sexRatio" : 1076 }
+{ "_id" : 178, "state" : "KERALA", "city" : "Kollam", "population" : 349033, "literates" : 292641, "sexRatio" : 1077 }
+{ "_id" : 179, "state" : "KERALA", "city" : "Thiruvananthapuram", "population" : 752490, "literates" : 647479, "sexRatio" : 1064 }
+{ "_id" : 180, "state" : "MADHYA PRADESH", "city" : "Morena", "population" : 200506, "literates" : 139903, "sexRatio" : 850 }
+{ "_id" : 181, "state" : "MADHYA PRADESH", "city" : "Bhind", "population" : 197332, "literates" : 145530, "sexRatio" : 872 }
+{ "_id" : 182, "state" : "MADHYA PRADESH", "city" : "Gwalior", "population" : 1053505, "literates" : 800325, "sexRatio" : 878 }
+{ "_id" : 183, "state" : "MADHYA PRADESH", "city" : "Datia", "population" : 100466, "literates" : 71071, "sexRatio" : 898 }
+{ "_id" : 184, "state" : "MADHYA PRADESH", "city" : "Shivpuri", "population" : 179972, "literates" : 124641, "sexRatio" : 890 }
+{ "_id" : 185, "state" : "MADHYA PRADESH", "city" : "Chhattarpur", "population" : 133626, "literates" : 99154, "sexRatio" : 893 }
+{ "_id" : 186, "state" : "MADHYA PRADESH", "city" : "Sagar", "population" : 273357, "literates" : 217632, "sexRatio" : 916 }
+{ "_id" : 187, "state" : "MADHYA PRADESH", "city" : "Damoh", "population" : 124979, "literates" : 96043, "sexRatio" : 919 }
+{ "_id" : 188, "state" : "MADHYA PRADESH", "city" : "Satna", "population" : 280248, "literates" : 214468, "sexRatio" : 895 }
+{ "_id" : 189, "state" : "MADHYA PRADESH", "city" : "Rewa", "population" : 235422, "literates" : 185291, "sexRatio" : 889 }
+{ "_id" : 190, "state" : "MADHYA PRADESH", "city" : "Neemuch", "population" : 128108, "literates" : 97156, "sexRatio" : 903 }
+{ "_id" : 191, "state" : "MADHYA PRADESH", "city" : "Mandsaur", "population" : 141468, "literates" : 109135, "sexRatio" : 955 }
+{ "_id" : 192, "state" : "MADHYA PRADESH", "city" : "Ratlam", "population" : 264810, "literates" : 207742, "sexRatio" : 961 }
+{ "_id" : 193, "state" : "MADHYA PRADESH", "city" : "Nagda", "population" : 100036, "literates" : 72618, "sexRatio" : 946 }
+{ "_id" : 194, "state" : "MADHYA PRADESH", "city" : "Ujjain", "population" : 515215, "literates" : 391470, "sexRatio" : 942 }
+{ "_id" : 195, "state" : "MADHYA PRADESH", "city" : "Dewas", "population" : 289438, "literates" : 218877, "sexRatio" : 927 }
+{ "_id" : 196, "state" : "MADHYA PRADESH", "city" : "Pithampur", "population" : 126099, "literates" : 87417, "sexRatio" : 787 }
+{ "_id" : 197, "state" : "MADHYA PRADESH", "city" : "Indore", "population" : 1960631, "literates" : 1516434, "sexRatio" : 921 }
+{ "_id" : 198, "state" : "MADHYA PRADESH", "city" : "Khargone", "population" : 106452, "literates" : 77216, "sexRatio" : 947 }
+{ "_id" : 199, "state" : "MADHYA PRADESH", "city" : "Vidisha", "population" : 155959, "literates" : 118678, "sexRatio" : 915 }
+{ "_id" : 200, "state" : "MADHYA PRADESH", "city" : "Bhopal", "population" : 1795648, "literates" : 1354219, "sexRatio" : 911 }
+{ "_id" : 201, "state" : "MADHYA PRADESH", "city" : "Sehore", "population" : 108818, "literates" : 82066, "sexRatio" : 933 }
+{ "_id" : 202, "state" : "MADHYA PRADESH", "city" : "Betul", "population" : 103341, "literates" : 83356, "sexRatio" : 953 }
+{ "_id" : 203, "state" : "MADHYA PRADESH", "city" : "Hoshangabad", "population" : 117956, "literates" : 92317, "sexRatio" : 915 }
+{ "_id" : 204, "state" : "MADHYA PRADESH", "city" : "Murwara (Katni)", "population" : 221875, "literates" : 171966, "sexRatio" : 922 }
+{ "_id" : 205, "state" : "MADHYA PRADESH", "city" : "Jabalpur", "population" : 1054336, "literates" : 841399, "sexRatio" : 929 }
+{ "_id" : 206, "state" : "MADHYA PRADESH", "city" : "Chhindwara", "population" : 138266, "literates" : 112532, "sexRatio" : 963 }
+{ "_id" : 207, "state" : "MADHYA PRADESH", "city" : "Seoni", "population" : 102377, "literates" : 83832, "sexRatio" : 955 }
+{ "_id" : 208, "state" : "MADHYA PRADESH", "city" : "Guna", "population" : 180978, "literates" : 128463, "sexRatio" : 912 }
+{ "_id" : 209, "state" : "MADHYA PRADESH", "city" : "Singrauli", "population" : 220295, "literates" : 147527, "sexRatio" : 878 }
+{ "_id" : 210, "state" : "MADHYA PRADESH", "city" : "Khandwa", "population" : 200681, "literates" : 153609, "sexRatio" : 951 }
+{ "_id" : 211, "state" : "MADHYA PRADESH", "city" : "Burhanpur", "population" : 210891, "literates" : 149339, "sexRatio" : 948 }
+{ "_id" : 212, "state" : "MAHARASHTRA", "city" : "Nandurbar", "population" : 111067, "literates" : 85635, "sexRatio" : 930 }
+{ "_id" : 213, "state" : "MAHARASHTRA", "city" : "Dhule", "population" : 376093, "literates" : 298693, "sexRatio" : 940 }
+{ "_id" : 214, "state" : "MAHARASHTRA", "city" : "Jalgaon", "population" : 460468, "literates" : 363778, "sexRatio" : 909 }
+{ "_id" : 215, "state" : "MAHARASHTRA", "city" : "Bhusawal", "population" : 187750, "literates" : 152103, "sexRatio" : 942 }
+{ "_id" : 216, "state" : "MAHARASHTRA", "city" : "Akola", "population" : 427146, "literates" : 347687, "sexRatio" : 958 }
+{ "_id" : 217, "state" : "MAHARASHTRA", "city" : "Achalpur", "population" : 112293, "literates" : 92433, "sexRatio" : 928 }
+{ "_id" : 218, "state" : "MAHARASHTRA", "city" : "Amravati", "population" : 646801, "literates" : 543568, "sexRatio" : 957 }
+{ "_id" : 219, "state" : "MAHARASHTRA", "city" : "Wardha", "population" : 105543, "literates" : 90091, "sexRatio" : 982 }
+{ "_id" : 220, "state" : "MAHARASHTRA", "city" : "Hinganghat", "population" : 100416, "literates" : 85599, "sexRatio" : 936 }
+{ "_id" : 221, "state" : "MAHARASHTRA", "city" : "Nagpur", "population" : 2405421, "literates" : 2018598, "sexRatio" : 961 }
+{ "_id" : 222, "state" : "MAHARASHTRA", "city" : "Gondiya", "population" : 132889, "literates" : 112490, "sexRatio" : 991 }
+{ "_id" : 223, "state" : "MAHARASHTRA", "city" : "Chandrapur", "population" : 321036, "literates" : 263962, "sexRatio" : 944 }
+{ "_id" : 224, "state" : "MAHARASHTRA", "city" : "Yavatmal", "population" : 116714, "literates" : 96980, "sexRatio" : 988 }
+{ "_id" : 225, "state" : "MAHARASHTRA", "city" : "Nanded Waghala", "population" : 550564, "literates" : 421606, "sexRatio" : 924 }
+{ "_id" : 226, "state" : "MAHARASHTRA", "city" : "Parbhani", "population" : 307191, "literates" : 225298, "sexRatio" : 949 }
+{ "_id" : 227, "state" : "MAHARASHTRA", "city" : "Jalna", "population" : 285349, "literates" : 209531, "sexRatio" : 932 }
+{ "_id" : 228, "state" : "MAHARASHTRA", "city" : "Aurangabad", "population" : 1171330, "literates" : 908725, "sexRatio" : 919 }
+{ "_id" : 229, "state" : "MAHARASHTRA", "city" : "Nashik", "population" : 1486973, "literates" : 1198144, "sexRatio" : 894, "isMetro" : "false" }
+{ "_id" : 230, "state" : "MAHARASHTRA", "city" : "Malegoan", "population" : 471006, "literates" : 343611, "sexRatio" : 969 }
+{ "_id" : 231, "state" : "MAHARASHTRA", "city" : "Vasai Virar City", "population" : 1221233, "literates" : 987916, "sexRatio" : 880 }
+{ "_id" : 232, "state" : "MAHARASHTRA", "city" : "Bhiwandi", "population" : 711329, "literates" : 507722, "sexRatio" : 700, "isMetro" : "false" }
+{ "_id" : 233, "state" : "MAHARASHTRA", "city" : "Greater Mumbai", "population" : 12478447, "literates" : 10237586, "sexRatio" : 852, "isMetro" : "true" }
+{ "_id" : 234, "state" : "MAHARASHTRA", "city" : "Mira-Bhayander", "population" : 814655, "literates" : 684165, "sexRatio" : 876 }
+{ "_id" : 235, "state" : "MAHARASHTRA", "city" : "Thane", "population" : 1818872, "literates" : 1491552, "sexRatio" : 882 }
+{ "_id" : 236, "state" : "MAHARASHTRA", "city" : "Navi Mumbai", "population" : 1119477, "literates" : 911542, "sexRatio" : 831 }
+{ "_id" : 237, "state" : "MAHARASHTRA", "city" : "Kalyan-Dombivali", "population" : 1246381, "literates" : 1050798, "sexRatio" : 917 }
+{ "_id" : 238, "state" : "MAHARASHTRA", "city" : "Ulhasnagar", "population" : 506937, "literates" : 408959, "sexRatio" : 875 }
+{ "_id" : 239, "state" : "MAHARASHTRA", "city" : "Ambernath", "population" : 254003, "literates" : 201707, "sexRatio" : 910 }
+{ "_id" : 240, "state" : "MAHARASHTRA", "city" : "Badalapur", "population" : 175516, "literates" : 146259, "sexRatio" : 914 }
+{ "_id" : 241, "state" : "MAHARASHTRA", "city" : "Panvel", "population" : 180464, "literates" : 153138, "sexRatio" : 938 }
+{ "_id" : 242, "state" : "MAHARASHTRA", "city" : "Navi Mumbai Panvel Raigad", "population" : 194999, "literates" : 153608, "sexRatio" : 809 }
+{ "_id" : 243, "state" : "MAHARASHTRA", "city" : "Pune", "population" : 3115431, "literates" : 2556743, "sexRatio" : 945, "isMetro" : "true" }
+{ "_id" : 244, "state" : "MAHARASHTRA", "city" : "Pimpri-Chinchwad", "population" : 1729359, "literates" : 1374986, "sexRatio" : 828 }
+{ "_id" : 245, "state" : "MAHARASHTRA", "city" : "Ahmadnagar", "population" : 350905, "literates" : 287468, "sexRatio" : 952 }
+{ "_id" : 246, "state" : "MAHARASHTRA", "city" : "Bid", "population" : 146237, "literates" : 112171, "sexRatio" : 933 }
+{ "_id" : 247, "state" : "MAHARASHTRA", "city" : "Latur", "population" : 382754, "literates" : 291226, "sexRatio" : 932 }
+{ "_id" : 248, "state" : "MAHARASHTRA", "city" : "Udgir", "population" : 104063, "literates" : 78051, "sexRatio" : 911 }
+{ "_id" : 249, "state" : "MAHARASHTRA", "city" : "Osmanabad", "population" : 112085, "literates" : 87041, "sexRatio" : 929 }
+{ "_id" : 250, "state" : "MAHARASHTRA", "city" : "Barshi", "population" : 118573, "literates" : 91260, "sexRatio" : 948 }
+{ "_id" : 251, "state" : "MAHARASHTRA", "city" : "Solapur", "population" : 951118, "literates" : 710180, "sexRatio" : 972 }
+{ "_id" : 252, "state" : "MAHARASHTRA", "city" : "Satara", "population" : 120079, "literates" : 101320, "sexRatio" : 966 }
+{ "_id" : 253, "state" : "MAHARASHTRA", "city" : "Ichalkaranji", "population" : 287570, "literates" : 223752, "sexRatio" : 921 }
+{ "_id" : 254, "state" : "MAHARASHTRA", "city" : "Kolapur", "population" : 549283, "literates" : 459999, "sexRatio" : 956 }
+{ "_id" : 255, "state" : "MAHARASHTRA", "city" : "Sangli Miraj Kupwad", "population" : 502697, "literates" : 397395, "sexRatio" : 969 }
+{ "_id" : 256, "state" : "MANIPUR", "city" : "Imphal", "population" : 264986, "literates" : 219261, "sexRatio" : 1055 }
+{ "_id" : 257, "state" : "MEGHALAYA", "city" : "Shillong", "population" : 143007, "literates" : 119313, "sexRatio" : 1042 }
+{ "_id" : 258, "state" : "MIZORAM", "city" : "Aizawl", "population" : 291822, "literates" : 253588, "sexRatio" : 1029 }
+{ "_id" : 259, "state" : "NAGALAND", "city" : "Dimapur", "population" : 123777, "literates" : 95646, "sexRatio" : 904 }
+{ "_id" : 260, "state" : "NCT OF DELHI", "city" : "DMC", "population" : 11007835, "literates" : 8583105, "sexRatio" : 875, "isMetro" : "true" }
+{ "_id" : 261, "state" : "NCT OF DELHI", "city" : "NDMC Total", "population" : 249998, "literates" : 208352, "sexRatio" : 832 }
+{ "_id" : 262, "state" : "NCT OF DELHI", "city" : "Kirari Suleman Nagar", "population" : 282598, "literates" : 191624, "sexRatio" : 858 }
+{ "_id" : 263, "state" : "NCT OF DELHI", "city" : "Sultan Pur Majra", "population" : 181624, "literates" : 125557, "sexRatio" : 896 }
+{ "_id" : 264, "state" : "NCT OF DELHI", "city" : "Bhalswa Jahangir Pur", "population" : 197150, "literates" : 130417, "sexRatio" : 855 }
+{ "_id" : 265, "state" : "NCT OF DELHI", "city" : "Burari", "population" : 145584, "literates" : 113188, "sexRatio" : 872 }
+{ "_id" : 266, "state" : "NCT OF DELHI", "city" : "Karawal Nagar", "population" : 224666, "literates" : 163801, "sexRatio" : 868 }
+{ "_id" : 267, "state" : "NCT OF DELHI", "city" : "Mustafabad", "population" : 127012, "literates" : 81915, "sexRatio" : 903 }
+{ "_id" : 268, "state" : "NCT OF DELHI", "city" : "Gokal Pur", "population" : 121938, "literates" : 90904, "sexRatio" : 878 }
+{ "_id" : 269, "state" : "NCT OF DELHI", "city" : "Mandoli", "population" : 120345, "literates" : 84053, "sexRatio" : 877 }
+{ "_id" : 270, "state" : "NCT OF DELHI", "city" : "Dallo Pura", "population" : 154955, "literates" : 111514, "sexRatio" : 903 }
+{ "_id" : 271, "state" : "NCT OF DELHI", "city" : "Hastsal", "population" : 177033, "literates" : 129653, "sexRatio" : 862 }
+{ "_id" : 272, "state" : "NCT OF DELHI", "city" : "Nangloi Jat", "population" : 205497, "literates" : 147805, "sexRatio" : 867 }
+{ "_id" : 273, "state" : "NCT OF DELHI", "city" : "Delhi Cantonment", "population" : 116352, "literates" : 93971, "sexRatio" : 719 }
+{ "_id" : 274, "state" : "NCT OF DELHI", "city" : "Deoli", "population" : 169410, "literates" : 123167, "sexRatio" : 858 }
+{ "_id" : 275, "state" : "ORISSA", "city" : "Sambalpur Town", "population" : 183383, "literates" : 141329, "sexRatio" : 938 }
+{ "_id" : 276, "state" : "ORISSA", "city" : "Raurkela Industrial Township", "population" : 210412, "literates" : 164546, "sexRatio" : 916 }
+{ "_id" : 277, "state" : "ORISSA", "city" : "Raurkela Town", "population" : 273217, "literates" : 214744, "sexRatio" : 885 }
+{ "_id" : 278, "state" : "ORISSA", "city" : "Baripada Town", "population" : 110058, "literates" : 89421, "sexRatio" : 931 }
+{ "_id" : 279, "state" : "ORISSA", "city" : "Baleshwar Town", "population" : 118202, "literates" : 95084, "sexRatio" : 960 }
+{ "_id" : 280, "state" : "ORISSA", "city" : "Bhadrak", "population" : 107369, "literates" : 76928, "sexRatio" : 949 }
+{ "_id" : 281, "state" : "ORISSA", "city" : "Cuttack", "population" : 606007, "literates" : 508188, "sexRatio" : 997 }
+{ "_id" : 282, "state" : "ORISSA", "city" : "Bhubaneswar Town", "population" : 837737, "literates" : 710243, "sexRatio" : 882 }
+{ "_id" : 283, "state" : "ORISSA", "city" : "Puri Town", "population" : 201026, "literates" : 164481, "sexRatio" : 928 }
+{ "_id" : 284, "state" : "ORISSA", "city" : "Brahmapur Town", "population" : 355823, "literates" : 293818, "sexRatio" : 917 }
+{ "_id" : 285, "state" : "PUDUCHERRY", "city" : "Puducherry", "population" : 241773, "literates" : 195861, "sexRatio" : 1045 }
+{ "_id" : 286, "state" : "PUDUCHERRY", "city" : "Ozhukarai", "population" : 300028, "literates" : 244264, "sexRatio" : 1025 }
+{ "_id" : 287, "state" : "PUNJAB", "city" : "Pathankot", "population" : 148357, "literates" : 119483, "sexRatio" : 906 }
+{ "_id" : 288, "state" : "PUNJAB", "city" : "Batala", "population" : 156400, "literates" : 121138, "sexRatio" : 897 }
+{ "_id" : 289, "state" : "PUNJAB", "city" : "Kapurthala", "population" : 101654, "literates" : 78914, "sexRatio" : 832 }
+{ "_id" : 290, "state" : "PUNJAB", "city" : "Jalandhar", "population" : 862196, "literates" : 665625, "sexRatio" : 882 }
+{ "_id" : 291, "state" : "PUNJAB", "city" : "Hoshiarpur", "population" : 168443, "literates" : 135094, "sexRatio" : 908 }
+{ "_id" : 292, "state" : "PUNJAB", "city" : "Khanna", "population" : 128130, "literates" : 97022, "sexRatio" : 890 }
+{ "_id" : 293, "state" : "PUNJAB", "city" : "Ludhiana", "population" : 1613878, "literates" : 1230218, "sexRatio" : 845 }
+{ "_id" : 294, "state" : "PUNJAB", "city" : "Moga", "population" : 150432, "literates" : 110764, "sexRatio" : 886 }
+{ "_id" : 295, "state" : "PUNJAB", "city" : "Firozpur", "population" : 110091, "literates" : 78615, "sexRatio" : 885 }
+{ "_id" : 296, "state" : "PUNJAB", "city" : "Abohar", "population" : 145238, "literates" : 103319, "sexRatio" : 890 }
+{ "_id" : 297, "state" : "PUNJAB", "city" : "Muktsar", "population" : 117085, "literates" : 79979, "sexRatio" : 888 }
+{ "_id" : 298, "state" : "PUNJAB", "city" : "Bathinda", "population" : 285813, "literates" : 211318, "sexRatio" : 883 }
+{ "_id" : 299, "state" : "PUNJAB", "city" : "Patiala", "population" : 405164, "literates" : 316093, "sexRatio" : 879 }
+{ "_id" : 300, "state" : "PUNJAB", "city" : "Amritsar", "population" : 1132761, "literates" : 872527, "sexRatio" : 879 }
+{ "_id" : 301, "state" : "PUNJAB", "city" : "S.A.S. Nagar", "population" : 146104, "literates" : 123930, "sexRatio" : 911 }
+{ "_id" : 302, "state" : "PUNJAB", "city" : "Malerkotla", "population" : 135330, "literates" : 83606, "sexRatio" : 895 }
+{ "_id" : 303, "state" : "PUNJAB", "city" : "Barnala", "population" : 116454, "literates" : 82347, "sexRatio" : 869 }
+{ "_id" : 304, "state" : "RAJASTHAN", "city" : "Ganganagar", "population" : 224773, "literates" : 166449, "sexRatio" : 859 }
+{ "_id" : 305, "state" : "RAJASTHAN", "city" : "Hanumangarh", "population" : 151104, "literates" : 104285, "sexRatio" : 893 }
+{ "_id" : 306, "state" : "RAJASTHAN", "city" : "Bikaner", "population" : 647804, "literates" : 451663, "sexRatio" : 900 }
+{ "_id" : 307, "state" : "RAJASTHAN", "city" : "Churu", "population" : 119846, "literates" : 77751, "sexRatio" : 940 }
+{ "_id" : 308, "state" : "RAJASTHAN", "city" : "Sujangarh", "population" : 101528, "literates" : 64716, "sexRatio" : 950 }
+{ "_id" : 309, "state" : "RAJASTHAN", "city" : "Jhunjhunun", "population" : 118966, "literates" : 76183, "sexRatio" : 922 }
+{ "_id" : 310, "state" : "RAJASTHAN", "city" : "Alwar", "population" : 315310, "literates" : 243634, "sexRatio" : 889 }
+{ "_id" : 311, "state" : "RAJASTHAN", "city" : "Bhiwadi", "population" : 104883, "literates" : 70987, "sexRatio" : 755 }
+{ "_id" : 312, "state" : "RAJASTHAN", "city" : "Bharatpur", "population" : 252109, "literates" : 181159, "sexRatio" : 880 }
+{ "_id" : 313, "state" : "RAJASTHAN", "city" : "Dhaulpur", "population" : 126142, "literates" : 83405, "sexRatio" : 862 }
+{ "_id" : 314, "state" : "RAJASTHAN", "city" : "Hindaun", "population" : 105690, "literates" : 69108, "sexRatio" : 881 }
+{ "_id" : 315, "state" : "RAJASTHAN", "city" : "Gangapur City", "population" : 119045, "literates" : 82132, "sexRatio" : 892 }
+{ "_id" : 316, "state" : "RAJASTHAN", "city" : "Sawai Madhopur", "population" : 120998, "literates" : 85472, "sexRatio" : 914 }
+{ "_id" : 317, "state" : "RAJASTHAN", "city" : "Jaipur", "population" : 3073350, "literates" : 2272724, "sexRatio" : 898 }
+{ "_id" : 318, "state" : "RAJASTHAN", "city" : "Sikar", "population" : 237579, "literates" : 158413, "sexRatio" : 929 }
+{ "_id" : 319, "state" : "RAJASTHAN", "city" : "Nagaur", "population" : 100618, "literates" : 64028, "sexRatio" : 927 }
+{ "_id" : 320, "state" : "RAJASTHAN", "city" : "Jodhpur", "population" : 1033918, "literates" : 740011, "sexRatio" : 900 }
+{ "_id" : 321, "state" : "RAJASTHAN", "city" : "Pali", "population" : 229956, "literates" : 156858, "sexRatio" : 916 }
+{ "_id" : 322, "state" : "RAJASTHAN", "city" : "Ajmer", "population" : 542580, "literates" : 422913, "sexRatio" : 946 }
+{ "_id" : 323, "state" : "RAJASTHAN", "city" : "Beawar", "population" : 145809, "literates" : 110111, "sexRatio" : 946 }
+{ "_id" : 324, "state" : "RAJASTHAN", "city" : "Kishangarh", "population" : 155019, "literates" : 106809, "sexRatio" : 929 }
+{ "_id" : 325, "state" : "RAJASTHAN", "city" : "Tonk", "population" : 165363, "literates" : 98819, "sexRatio" : 947 }
+{ "_id" : 326, "state" : "RAJASTHAN", "city" : "Bundi", "population" : 102823, "literates" : 75482, "sexRatio" : 929 }
+{ "_id" : 327, "state" : "RAJASTHAN", "city" : "Bhilwara", "population" : 360009, "literates" : 264762, "sexRatio" : 915 }
+{ "_id" : 328, "state" : "RAJASTHAN", "city" : "Banswara", "population" : 100128, "literates" : 76438, "sexRatio" : 954 }
+{ "_id" : 329, "state" : "RAJASTHAN", "city" : "Chittaurgarh", "population" : 116409, "literates" : 86945, "sexRatio" : 933 }
+{ "_id" : 330, "state" : "RAJASTHAN", "city" : "Kota", "population" : 1001365, "literates" : 738795, "sexRatio" : 890 }
+{ "_id" : 331, "state" : "RAJASTHAN", "city" : "Baran", "population" : 118157, "literates" : 83879, "sexRatio" : 926 }
+{ "_id" : 332, "state" : "RAJASTHAN", "city" : "Udaipur", "population" : 451735, "literates" : 366598, "sexRatio" : 925 }
+{ "_id" : 333, "state" : "TAMIL NADU", "city" : "Chennai", "population" : 4681087, "literates" : 3850472, "sexRatio" : 986, "isMetro" : "true" }
+{ "_id" : 334, "state" : "TAMIL NADU", "city" : "Avadi", "population" : 344701, "literates" : 275881, "sexRatio" : 969 }
+{ "_id" : 335, "state" : "TAMIL NADU", "city" : "Tiruvottiyur", "population" : 248059, "literates" : 197646, "sexRatio" : 987 }
+{ "_id" : 336, "state" : "TAMIL NADU", "city" : "Madavaram", "population" : 118525, "literates" : 96308, "sexRatio" : 988 }
+{ "_id" : 337, "state" : "TAMIL NADU", "city" : "Ambattur", "population" : 478134, "literates" : 401253, "sexRatio" : 982 }
+{ "_id" : 338, "state" : "TAMIL NADU", "city" : "Alandur", "population" : 164162, "literates" : 142415, "sexRatio" : 997 }
+{ "_id" : 339, "state" : "TAMIL NADU", "city" : "Pallavaram", "population" : 216308, "literates" : 182201, "sexRatio" : 996 }
+{ "_id" : 340, "state" : "TAMIL NADU", "city" : "Tambaram", "population" : 176807, "literates" : 150667, "sexRatio" : 947 }
+{ "_id" : 341, "state" : "TAMIL NADU", "city" : "Kancheepuram", "population" : 164265, "literates" : 132348, "sexRatio" : 1003 }
+{ "_id" : 342, "state" : "TAMIL NADU", "city" : "Vellore", "population" : 185895, "literates" : 145192, "sexRatio" : 1032 }
+{ "_id" : 343, "state" : "TAMIL NADU", "city" : "Ambur", "population" : 113856, "literates" : 88309, "sexRatio" : 1031 }
+{ "_id" : 344, "state" : "TAMIL NADU", "city" : "Tiruvannamalai", "population" : 144683, "literates" : 106256, "sexRatio" : 1000 }
+{ "_id" : 345, "state" : "TAMIL NADU", "city" : "Salem", "population" : 831038, "literates" : 642662, "sexRatio" : 987 }
+{ "_id" : 346, "state" : "TAMIL NADU", "city" : "Erode", "population" : 156953, "literates" : 126638, "sexRatio" : 1010 }
+{ "_id" : 347, "state" : "TAMIL NADU", "city" : "Dindigul", "population" : 207225, "literates" : 171130, "sexRatio" : 1013 }
+{ "_id" : 348, "state" : "TAMIL NADU", "city" : "Tiruchirappalli", "population" : 846915, "literates" : 705492, "sexRatio" : 1025 }
+{ "_id" : 349, "state" : "TAMIL NADU", "city" : "Neyveli", "population" : 105687, "literates" : 90114, "sexRatio" : 978 }
+{ "_id" : 350, "state" : "TAMIL NADU", "city" : "Cuddalore", "population" : 173361, "literates" : 139388, "sexRatio" : 1025 }
+{ "_id" : 351, "state" : "TAMIL NADU", "city" : "Nagapattinam", "population" : 102838, "literates" : 81913, "sexRatio" : 1024 }
+{ "_id" : 352, "state" : "TAMIL NADU", "city" : "Kumbakonam", "population" : 140113, "literates" : 117500, "sexRatio" : 1020 }
+{ "_id" : 353, "state" : "TAMIL NADU", "city" : "Thanjavur", "population" : 222619, "literates" : 186643, "sexRatio" : 1037 }
+{ "_id" : 354, "state" : "TAMIL NADU", "city" : "Pudukkottai", "population" : 117215, "literates" : 98054, "sexRatio" : 1000 }
+{ "_id" : 355, "state" : "TAMIL NADU", "city" : "Karaikkudi", "population" : 106793, "literates" : 88380, "sexRatio" : 999 }
+{ "_id" : 356, "state" : "TAMIL NADU", "city" : "Madurai", "population" : 1016885, "literates" : 845990, "sexRatio" : 997 }
+{ "_id" : 357, "state" : "TAMIL NADU", "city" : "Rajapalayam", "population" : 130119, "literates" : 103172, "sexRatio" : 1013 }
+{ "_id" : 358, "state" : "TAMIL NADU", "city" : "Thoothukkudi", "population" : 237374, "literates" : 202105, "sexRatio" : 1011 }
+{ "_id" : 359, "state" : "TAMIL NADU", "city" : "Tirunelveli", "population" : 474838, "literates" : 391972, "sexRatio" : 1024 }
+{ "_id" : 360, "state" : "TAMIL NADU", "city" : "Nagercoil", "population" : 224329, "literates" : 195748, "sexRatio" : 1037 }
+{ "_id" : 361, "state" : "TAMIL NADU", "city" : "Hosur", "population" : 116821, "literates" : 91358, "sexRatio" : 966 }
+{ "_id" : 362, "state" : "TAMIL NADU", "city" : "Coimbatore", "population" : 1061447, "literates" : 885471, "sexRatio" : 999 }
+{ "_id" : 363, "state" : "TAMIL NADU", "city" : "Kurichi", "population" : 125800, "literates" : 102816, "sexRatio" : 996 }
+{ "_id" : 364, "state" : "TAMIL NADU", "city" : "Tiruppur", "population" : 444543, "literates" : 350206, "sexRatio" : 954 }
+{ "_id" : 365, "state" : "TRIPURA", "city" : "Agartala", "population" : 399688, "literates" : 343633, "sexRatio" : 1002 }
+{ "_id" : 366, "state" : "UTTAR PRADESH", "city" : "Saharanpur", "population" : 703345, "literates" : 479218, "sexRatio" : 891 }
+{ "_id" : 367, "state" : "UTTAR PRADESH", "city" : "Shamli", "population" : 107233, "literates" : 76650, "sexRatio" : 874 }
+{ "_id" : 368, "state" : "UTTAR PRADESH", "city" : "Muzaffarnagar", "population" : 392451, "literates" : 278405, "sexRatio" : 897 }
+{ "_id" : 369, "state" : "UTTAR PRADESH", "city" : "Moradabad", "population" : 889810, "literates" : 550637, "sexRatio" : 908 }
+{ "_id" : 370, "state" : "UTTAR PRADESH", "city" : "Sambhal", "population" : 221334, "literates" : 92608, "sexRatio" : 908 }
+{ "_id" : 371, "state" : "UTTAR PRADESH", "city" : "Chandausi", "population" : 114254, "literates" : 72515, "sexRatio" : 897 }
+{ "_id" : 372, "state" : "UTTAR PRADESH", "city" : "Rampur", "population" : 325248, "literates" : 174508, "sexRatio" : 915 }
+{ "_id" : 373, "state" : "UTTAR PRADESH", "city" : "Amroha", "population" : 197135, "literates" : 108772, "sexRatio" : 918 }
+{ "_id" : 374, "state" : "UTTAR PRADESH", "city" : "Meerut", "population" : 1309023, "literates" : 889729, "sexRatio" : 898 }
+{ "_id" : 375, "state" : "UTTAR PRADESH", "city" : "Baraut", "population" : 102733, "literates" : 69559, "sexRatio" : 884 }
+{ "_id" : 376, "state" : "UTTAR PRADESH", "city" : "Modinagar", "population" : 130161, "literates" : 104383, "sexRatio" : 882 }
+{ "_id" : 377, "state" : "UTTAR PRADESH", "city" : "Loni", "population" : 512296, "literates" : 328096, "sexRatio" : 871 }
+{ "_id" : 378, "state" : "UTTAR PRADESH", "city" : "Khora", "population" : 189410, "literates" : 140013, "sexRatio" : 845 }
+{ "_id" : 379, "state" : "UTTAR PRADESH", "city" : "Hapur", "population" : 262801, "literates" : 170325, "sexRatio" : 881 }
+{ "_id" : 380, "state" : "UTTAR PRADESH", "city" : "Noida", "population" : 642381, "literates" : 495045, "sexRatio" : 822 }
+{ "_id" : 381, "state" : "UTTAR PRADESH", "city" : "Greater Noida", "population" : 107676, "literates" : 79757, "sexRatio" : 836 }
+{ "_id" : 382, "state" : "UTTAR PRADESH", "city" : "Bulandshahr", "population" : 222826, "literates" : 153135, "sexRatio" : 906 }
+{ "_id" : 383, "state" : "UTTAR PRADESH", "city" : "Khurja", "population" : 111089, "literates" : 64643, "sexRatio" : 896, "isMetro" : "false" }
+{ "_id" : 384, "state" : "UTTAR PRADESH", "city" : "Aligarh", "population" : 872575, "literates" : 533969, "sexRatio" : 884 }
+{ "_id" : 385, "state" : "UTTAR PRADESH", "city" : "Hathras", "population" : 137509, "literates" : 95524, "sexRatio" : 874 }
+{ "_id" : 386, "state" : "UTTAR PRADESH", "city" : "Mathura", "population" : 349336, "literates" : 235976, "sexRatio" : 872 }
+{ "_id" : 387, "state" : "UTTAR PRADESH", "city" : "Agra", "population" : 1574542, "literates" : 880530, "sexRatio" : 853 }
+{ "_id" : 388, "state" : "UTTAR PRADESH", "city" : "Firozabad", "population" : 603797, "literates" : 365347, "sexRatio" : 877 }
+{ "_id" : 389, "state" : "UTTAR PRADESH", "city" : "Shikohabad", "population" : 107300, "literates" : 77060, "sexRatio" : 882 }
+{ "_id" : 390, "state" : "UTTAR PRADESH", "city" : "Mainpuri", "population" : 117327, "literates" : 88548, "sexRatio" : 908 }
+{ "_id" : 391, "state" : "UTTAR PRADESH", "city" : "Budaun", "population" : 159221, "literates" : 101914, "sexRatio" : 907 }
+{ "_id" : 392, "state" : "UTTAR PRADESH", "city" : "Bareilly", "population" : 898167, "literates" : 563619, "sexRatio" : 881 }
+{ "_id" : 393, "state" : "UTTAR PRADESH", "city" : "Pilibhit", "population" : 130428, "literates" : 88119, "sexRatio" : 894 }
+{ "_id" : 394, "state" : "UTTAR PRADESH", "city" : "Shahjahanpur", "population" : 327975, "literates" : 200804, "sexRatio" : 894 }
+{ "_id" : 395, "state" : "UTTAR PRADESH", "city" : "Lakhimpur", "population" : 152010, "literates" : 114526, "sexRatio" : 876 }
+{ "_id" : 396, "state" : "UTTAR PRADESH", "city" : "Sitapur", "population" : 177351, "literates" : 131995, "sexRatio" : 899 }
+{ "_id" : 397, "state" : "UTTAR PRADESH", "city" : "Hardoi", "population" : 126890, "literates" : 99217, "sexRatio" : 901 }
+{ "_id" : 398, "state" : "UTTAR PRADESH", "city" : "Unnao", "population" : 178681, "literates" : 134018, "sexRatio" : 899 }
+{ "_id" : 399, "state" : "UTTAR PRADESH", "city" : "Lucknow", "population" : 2815601, "literates" : 2147564, "sexRatio" : 915 }
+{ "_id" : 400, "state" : "UTTAR PRADESH", "city" : "Rae Bareli", "population" : 191056, "literates" : 142863, "sexRatio" : 914 }
+{ "_id" : 401, "state" : "UTTAR PRADESH", "city" : "Farrukhabad-cum-Fatehgarh", "population" : 275754, "literates" : 182356, "sexRatio" : 895 }
+{ "_id" : 402, "state" : "UTTAR PRADESH", "city" : "Etawah", "population" : 256790, "literates" : 188887, "sexRatio" : 891 }
+{ "_id" : 403, "state" : "UTTAR PRADESH", "city" : "Kanpur", "population" : 2767031, "literates" : 2116973, "sexRatio" : 842, "isMetro" : "true" }
+{ "_id" : 404, "state" : "UTTAR PRADESH", "city" : "Kanpur", "population" : 108035, "literates" : 77484, "sexRatio" : 847 }
+{ "_id" : 405, "state" : "UTTAR PRADESH", "city" : "Orai", "population" : 187185, "literates" : 139256, "sexRatio" : 880 }
+{ "_id" : 406, "state" : "UTTAR PRADESH", "city" : "Jhansi", "population" : 507293, "literates" : 381771, "sexRatio" : 892 }
+{ "_id" : 407, "state" : "UTTAR PRADESH", "city" : "Lalitpur", "population" : 133041, "literates" : 98108, "sexRatio" : 913 }
+{ "_id" : 408, "state" : "UTTAR PRADESH", "city" : "Banda", "population" : 154388, "literates" : 113857, "sexRatio" : 878 }
+{ "_id" : 409, "state" : "UTTAR PRADESH", "city" : "Fatehpur", "population" : 193801, "literates" : 133418, "sexRatio" : 907 }
+{ "_id" : 410, "state" : "UTTAR PRADESH", "city" : "Allahabad", "population" : 1117094, "literates" : 877590, "sexRatio" : 858 }
+{ "_id" : 411, "state" : "UTTAR PRADESH", "city" : "Faizabad", "population" : 167544, "literates" : 130700, "sexRatio" : 920, "isMetro" : "false" }
+{ "_id" : 412, "state" : "UTTAR PRADESH", "city" : "Akbarpur", "population" : 111594, "literates" : 75062, "sexRatio" : 939 }
+{ "_id" : 413, "state" : "UTTAR PRADESH", "city" : "Sultanpur", "population" : 107914, "literates" : 85656, "sexRatio" : 904 }
+{ "_id" : 414, "state" : "UTTAR PRADESH", "city" : "Bahraich", "population" : 186241, "literates" : 122602, "sexRatio" : 890 }
+{ "_id" : 415, "state" : "UTTAR PRADESH", "city" : "Gonda", "population" : 114353, "literates" : 82739, "sexRatio" : 955 }
+{ "_id" : 416, "state" : "UTTAR PRADESH", "city" : "Basti", "population" : 114651, "literates" : 87065, "sexRatio" : 907 }
+{ "_id" : 417, "state" : "UTTAR PRADESH", "city" : "Gorakhpur", "population" : 671048, "literates" : 523441, "sexRatio" : 898 }
+{ "_id" : 418, "state" : "UTTAR PRADESH", "city" : "Deoria", "population" : 129570, "literates" : 102802, "sexRatio" : 912 }
+{ "_id" : 419, "state" : "UTTAR PRADESH", "city" : "Azamgarh", "population" : 110980, "literates" : 85008, "sexRatio" : 912 }
+{ "_id" : 420, "state" : "UTTAR PRADESH", "city" : "Maunath Bhanjan", "population" : 279060, "literates" : 187382, "sexRatio" : 948 }
+{ "_id" : 421, "state" : "UTTAR PRADESH", "city" : "Ballia", "population" : 104271, "literates" : 80964, "sexRatio" : 872 }
+{ "_id" : 422, "state" : "UTTAR PRADESH", "city" : "Jaunpur", "population" : 168128, "literates" : 123245, "sexRatio" : 895 }
+{ "_id" : 423, "state" : "UTTAR PRADESH", "city" : "Ghazipur", "population" : 110698, "literates" : 83755, "sexRatio" : 904 }
+{ "_id" : 424, "state" : "UTTAR PRADESH", "city" : "Mughalsarai", "population" : 110110, "literates" : 79611, "sexRatio" : 901 }
+{ "_id" : 425, "state" : "UTTAR PRADESH", "city" : "Varanasi", "population" : 1201815, "literates" : 859379, "sexRatio" : 887 }
+{ "_id" : 426, "state" : "UTTAR PRADESH", "city" : "Mirzapur-cum-Vindhyachal", "population" : 233691, "literates" : 161128, "sexRatio" : 869 }
+{ "_id" : 427, "state" : "UTTAR PRADESH", "city" : "Etah", "population" : 118632, "literates" : 90289, "sexRatio" : 884 }
+{ "_id" : 428, "state" : "UTTAR PRADESH", "city" : "Kasganj", "population" : 101241, "literates" : 69289, "sexRatio" : 892 }
+{ "_id" : 429, "state" : "UTTARAKHAND", "city" : "Dehradun", "population" : 578420, "literates" : 463791, "sexRatio" : 906 }
+{ "_id" : 430, "state" : "UTTARAKHAND", "city" : "Haldwani-cum-Kathgodam", "population" : 156060, "literates" : 111410, "sexRatio" : 905 }
+{ "_id" : 431, "state" : "UTTARAKHAND", "city" : "Kashipur", "population" : 121610, "literates" : 89433, "sexRatio" : 911 }
+{ "_id" : 432, "state" : "UTTARAKHAND", "city" : "Rudrapur", "population" : 140884, "literates" : 88700, "sexRatio" : 897 }
+{ "_id" : 433, "state" : "UTTARAKHAND", "city" : "Roorkee", "population" : 118188, "literates" : 96674, "sexRatio" : 861 }
+{ "_id" : 434, "state" : "UTTARAKHAND", "city" : "Hardwar", "population" : 225235, "literates" : 169371, "sexRatio" : 874 }
+{ "_id" : 435, "state" : "WEST BENGAL", "city" : "Siliguri", "population" : 509709, "literates" : 394366, "sexRatio" : 951 }
+{ "_id" : 436, "state" : "WEST BENGAL", "city" : "Darjiling", "population" : 120414, "literates" : 107242, "sexRatio" : 1003 }
+{ "_id" : 437, "state" : "WEST BENGAL", "city" : "Jalpaiguri", "population" : 107351, "literates" : 90455, "sexRatio" : 997 }
+{ "_id" : 438, "state" : "WEST BENGAL", "city" : "Dabgram", "population" : 118464, "literates" : 76930, "sexRatio" : 951 }
+{ "_id" : 439, "state" : "WEST BENGAL", "city" : "Raiganj", "population" : 183682, "literates" : 133215, "sexRatio" : 902 }
+{ "_id" : 440, "state" : "WEST BENGAL", "city" : "Balurghat", "population" : 151183, "literates" : 130230, "sexRatio" : 998 }
+{ "_id" : 441, "state" : "WEST BENGAL", "city" : "English Bazar", "population" : 216083, "literates" : 154875, "sexRatio" : 877 }
+{ "_id" : 442, "state" : "WEST BENGAL", "city" : "Baharampur", "population" : 195363, "literates" : 164445, "sexRatio" : 945 }
+{ "_id" : 443, "state" : "WEST BENGAL", "city" : "Asansol", "population" : 564491, "literates" : 431300, "sexRatio" : 922 }
+{ "_id" : 444, "state" : "WEST BENGAL", "city" : "Kulti", "population" : 313977, "literates" : 214889, "sexRatio" : 917 }
+{ "_id" : 445, "state" : "WEST BENGAL", "city" : "Jamuria", "population" : 144971, "literates" : 93152, "sexRatio" : 918 }
+{ "_id" : 446, "state" : "WEST BENGAL", "city" : "Raniganj", "population" : 128624, "literates" : 89293, "sexRatio" : 915 }
+{ "_id" : 447, "state" : "WEST BENGAL", "city" : "Durgapur", "population" : 566937, "literates" : 453604, "sexRatio" : 926 }
+{ "_id" : 448, "state" : "WEST BENGAL", "city" : "Barddhaman", "population" : 314638, "literates" : 260564, "sexRatio" : 959 }
+{ "_id" : 449, "state" : "WEST BENGAL", "city" : "Nabadwip", "population" : 125528, "literates" : 102793, "sexRatio" : 922 }
+{ "_id" : 450, "state" : "WEST BENGAL", "city" : "Krishnanagar", "population" : 152203, "literates" : 128574, "sexRatio" : 984 }
+{ "_id" : 451, "state" : "WEST BENGAL", "city" : "Santipur", "population" : 151774, "literates" : 113028, "sexRatio" : 970 }
+{ "_id" : 452, "state" : "WEST BENGAL", "city" : "Bongaon", "population" : 110668, "literates" : 92253, "sexRatio" : 962 }
+{ "_id" : 453, "state" : "WEST BENGAL", "city" : "Habra", "population" : 149675, "literates" : 125800, "sexRatio" : 956 }
+{ "_id" : 454, "state" : "WEST BENGAL", "city" : "Ashokenagar Kalyangarh", "population" : 123906, "literates" : 106337, "sexRatio" : 981 }
+{ "_id" : 455, "state" : "WEST BENGAL", "city" : "Basirhat", "population" : 127135, "literates" : 102737, "sexRatio" : 974 }
+{ "_id" : 456, "state" : "WEST BENGAL", "city" : "Bankura", "population" : 138036, "literates" : 111073, "sexRatio" : 951 }
+{ "_id" : 457, "state" : "WEST BENGAL", "city" : "Puruliya", "population" : 121436, "literates" : 90534, "sexRatio" : 942 }
+{ "_id" : 458, "state" : "WEST BENGAL", "city" : "Kolkata", "population" : 4486679, "literates" : 3648210, "sexRatio" : 899, "isMetro" : "true" }
+{ "_id" : 459, "state" : "WEST BENGAL", "city" : "Kalyani", "population" : 100620, "literates" : 82553, "sexRatio" : 978 }
+{ "_id" : 460, "state" : "WEST BENGAL", "city" : "Rajarhat Gopalpur", "population" : 404991, "literates" : 337188, "sexRatio" : 970 }
+{ "_id" : 461, "state" : "WEST BENGAL", "city" : "Barasat", "population" : 283443, "literates" : 236881, "sexRatio" : 972 }
+{ "_id" : 462, "state" : "WEST BENGAL", "city" : "Madhyamgram", "population" : 198964, "literates" : 165630, "sexRatio" : 978 }
+{ "_id" : 463, "state" : "WEST BENGAL", "city" : "Kanchrapara", "population" : 122181, "literates" : 103194, "sexRatio" : 978 }
+{ "_id" : 464, "state" : "WEST BENGAL", "city" : "Halisahar", "population" : 126893, "literates" : 103789, "sexRatio" : 904 }
+{ "_id" : 465, "state" : "WEST BENGAL", "city" : "Naihati", "population" : 221762, "literates" : 183458, "sexRatio" : 966 }
+{ "_id" : 466, "state" : "WEST BENGAL", "city" : "Bhatpara", "population" : 390467, "literates" : 307362, "sexRatio" : 878 }
+{ "_id" : 467, "state" : "WEST BENGAL", "city" : "North Barrackpur", "population" : 134825, "literates" : 119954, "sexRatio" : 979 }
+{ "_id" : 468, "state" : "WEST BENGAL", "city" : "Barrackpur", "population" : 154475, "literates" : 128459, "sexRatio" : 943 }
+{ "_id" : 469, "state" : "WEST BENGAL", "city" : "Titagarh", "population" : 118426, "literates" : 87356, "sexRatio" : 852 }
+{ "_id" : 470, "state" : "WEST BENGAL", "city" : "Khardaha", "population" : 111130, "literates" : 99848, "sexRatio" : 957 }
+{ "_id" : 471, "state" : "WEST BENGAL", "city" : "Panihati", "population" : 383522, "literates" : 332924, "sexRatio" : 984 }
+{ "_id" : 472, "state" : "WEST BENGAL", "city" : "Kamarhati", "population" : 336579, "literates" : 275870, "sexRatio" : 925 }
+{ "_id" : 473, "state" : "WEST BENGAL", "city" : "Baranagar", "population" : 248466, "literates" : 215849, "sexRatio" : 935 }
+{ "_id" : 474, "state" : "WEST BENGAL", "city" : "South Dum Dum", "population" : 410524, "literates" : 356092, "sexRatio" : 987 }
+{ "_id" : 475, "state" : "WEST BENGAL", "city" : "North Dum Dum", "population" : 253625, "literates" : 217371, "sexRatio" : 972 }
+{ "_id" : 476, "state" : "WEST BENGAL", "city" : "Dum Dum", "population" : 117637, "literates" : 103757, "sexRatio" : 927 }
+{ "_id" : 477, "state" : "WEST BENGAL", "city" : "Bidhan Nagar", "population" : 218323, "literates" : 185885, "sexRatio" : 960 }
+{ "_id" : 478, "state" : "WEST BENGAL", "city" : "Bansberia", "population" : 103799, "literates" : 81514, "sexRatio" : 929 }
+{ "_id" : 479, "state" : "WEST BENGAL", "city" : "Hugli-Chinsurah", "population" : 177209, "literates" : 152437, "sexRatio" : 992 }
+{ "_id" : 480, "state" : "WEST BENGAL", "city" : "Bhadreswar", "population" : 101334, "literates" : 80249, "sexRatio" : 901 }
+{ "_id" : 481, "state" : "WEST BENGAL", "city" : "Champdani", "population" : 110983, "literates" : 81883, "sexRatio" : 872 }
+{ "_id" : 482, "state" : "WEST BENGAL", "city" : "Chandannagar", "population" : 166949, "literates" : 141572, "sexRatio" : 981 }
+{ "_id" : 483, "state" : "WEST BENGAL", "city" : "Baidyabati", "population" : 121081, "literates" : 100590, "sexRatio" : 936 }
+{ "_id" : 484, "state" : "WEST BENGAL", "city" : "Serampore", "population" : 183339, "literates" : 153460, "sexRatio" : 940 }
+{ "_id" : 485, "state" : "WEST BENGAL", "city" : "Rishra", "population" : 124585, "literates" : 100581, "sexRatio" : 866 }
+{ "_id" : 486, "state" : "WEST BENGAL", "city" : "Uttarpara Kotrung", "population" : 162386, "literates" : 137869, "sexRatio" : 961 }
+{ "_id" : 487, "state" : "WEST BENGAL", "city" : "Bally", "population" : 291972, "literates" : 216902, "sexRatio" : 863 }
+{ "_id" : 488, "state" : "WEST BENGAL", "city" : "Bally", "population" : 115715, "literates" : 95665, "sexRatio" : 930 }
+{ "_id" : 489, "state" : "WEST BENGAL", "city" : "Haora", "population" : 1072161, "literates" : 888817, "sexRatio" : 913, "isMetro" : "false" }
+{ "_id" : 490, "state" : "WEST BENGAL", "city" : "Uluberia", "population" : 222175, "literates" : 159826, "sexRatio" : 946 }
+{ "_id" : 491, "state" : "WEST BENGAL", "city" : "Maheshtala", "population" : 449423, "literates" : 335440, "sexRatio" : 945 }
+{ "_id" : 492, "state" : "WEST BENGAL", "city" : "Rajpur Sonarpur", "population" : 423806, "literates" : 357154, "sexRatio" : 962 }
+{ "_id" : 493, "state" : "WEST BENGAL", "city" : "Medinipur", "population" : 169127, "literates" : 139303, "sexRatio" : 981 }
+{ "_id" : 494, "state" : "WEST BENGAL", "city" : "Kharagpur", "population" : 206923, "literates" : 163915, "sexRatio" : 939 }
+{ "_id" : 495, "state" : "WEST BENGAL", "city" : "Haldia", "population" : 200762, "literates" : 159984, "sexRatio" : 915, "isMetro" : "false" }

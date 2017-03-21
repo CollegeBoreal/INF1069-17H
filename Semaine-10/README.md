@@ -169,7 +169,7 @@ Execute the following script
 
 ```
 mongo = new Mongo('localhost');
-wordsDB = mongo.getDB('words');
+wordsDB = mongo.getDB('semaine10');
 wordsColl = wordsDB.getCollection('word_stats');
 results = wordsColl.mapReduce(
 	function() { emit(this.first, this.stats.vowels); },

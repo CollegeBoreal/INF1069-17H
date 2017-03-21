@@ -13,11 +13,11 @@ import com.mongodb.WriteConcern;
  */
 public class JavaConnect {
     public static void main(String[] args) {
-        try {
-            MongoClient mongoClient = null;
-            MongoDatabase mongoDatabase = null;
-            MongoCollection collection = null;
+        MongoClient mongoClient = null;
+        MongoDatabase mongoDatabase = null;
+        MongoCollection collection = null;
 
+        try {
             // ***Change the server and port to match your database connection
             mongoClient = new MongoClient("10.0.2.2", 27018);
             mongoClient.setWriteConcern(WriteConcern.JOURNAL_SAFE);

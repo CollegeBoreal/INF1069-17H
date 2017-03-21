@@ -13,16 +13,16 @@ import com.mongodb.client.MongoCollection;
 
 /**
  * INF1069-17H
- * This class implements example for find function.
+ * This class implements an example for find function.
  * By Steve Tshibangu <a>Steve.TshibanguMutshi@collegeboreal.ca</a>
  */
 public class JavaFind {
     public static void main(String[] args) {
-        try {
-            MongoClient mongoClient = null;
-            MongoDatabase mongoDatabase = null;
-            MongoCollection collection = null;
+        MongoClient mongoClient = null;
+        MongoDatabase mongoDatabase = null;
+        MongoCollection collection = null;
 
+        try {
             // ***Change the server and port to match your database connection
             mongoClient = new MongoClient("10.0.2.2", 27018);
             mongoDatabase = mongoClient.getDatabase("semaine09");

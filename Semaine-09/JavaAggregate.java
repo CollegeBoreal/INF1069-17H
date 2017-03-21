@@ -1,58 +1,100 @@
+package semaine09;
+
 import com.mongodb.MongoClient;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.BasicDBObject; 
-import com.mongodb.DBObject;
-import com.mongodb.DBCursor;
-import com.mongodb.AggregationOutput;
+import com.mongodb.client.AggregateIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+
+import javax.print.Doc;
+import java.util.ArrayList;
 import java.util.Iterator;
+
+/**
+ * INF1069-17H
+ * This class implements an example for aggregate function.
+ * By Steve Tshibangu <a>Steve.TshibanguMutshi@collegeboreal.ca</a>
+ */
 public class JavaAggregate {
-  public static void main(String[] args) {
-    try {
-      MongoClient mongoClient = new MongoClient("localhost", 27017);
-      DB db = mongoClient.getDB("semaine09");
-      DBCollection collection = db.getCollection("word_stats");
-      JavaAggregate.largeSmallVowels(collection);
-      JavaAggregate.top5AverageWordFirst(collection);
-    } catch (Exception e) {
-      System.out.println(e);
+    public static void main(String[] args) {
+        MongoClient mongoClient = null;
+        MongoDatabase mongoDatabase = null;
+        MongoCollection collection = null;
+
+        try {
+            // ***Change the server and port to match your database connection
+            mongoClient = new MongoClient("10.0.2.2", 27018);
+            mongoDatabase = mongoClient.getDatabase("semaine09");
+            collection = mongoDatabase.getCollection("word_stats");
+
+            JavaAggregate.largeSmallVowels(collection);
+            JavaAggregate.top5AverageWordFirst(collection);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
-  }
-  public static void displayAggregate(AggregationOutput result){
-    for (Iterator<DBObject> items = result.results().iterator(); 
-         items.hasNext();){
-      System.out.println(items.next());
+
+    public static void displayAggregate(AggregateIterable aggregateIterable){
+        for (Iterator<Document> items = aggregateIterable.iterator();
+            items.hasNext();){
+            System.out.println(items.next());
+        }
     }
-  }
-  public static void largeSmallVowels(DBCollection collection){
-    BasicDBObject match = new BasicDBObject("$match", 
-        new BasicDBObject("first",
-            new BasicDBObject ("$in", 
-                new String[]{"a","e","i","o","u"})));
-    BasicDBObject groupOps = new BasicDBObject("_id", "$first");
-    groupOps.append("largest", new BasicDBObject("$max", "$size"));
-    groupOps.append("smallest", new BasicDBObject("$min", "$size"));
-    groupOps.append("total", new BasicDBObject("$sum", 1));
-    BasicDBObject group = new BasicDBObject("$group", groupOps);
-    BasicDBObject sort = new BasicDBObject("$sort", 
-        new BasicDBObject("first", 1));
-    AggregationOutput result = 
-        collection.aggregate(match, group, sort);
-    System.out.println("\nLargest and smallest word sizes for " +
-                       "words beginning with a vowel: ");
-    JavaAggregate.displayAggregate(result);
-  }
-  public static void top5AverageWordFirst(DBCollection collection){
-    BasicDBObject groupOps = new BasicDBObject("_id", "$first");
-    groupOps.append("average", new BasicDBObject("$avg", "$size"));
-    BasicDBObject group = new BasicDBObject("$group", groupOps);
-    BasicDBObject sort = new BasicDBObject("$sort", 
-        new BasicDBObject("average", -1));
-    BasicDBObject limit = new BasicDBObject("$limit", 5);
-    AggregationOutput result = 
-        collection.aggregate(group, sort, limit);
-    System.out.println("\nFirst letter of top 5 largest average " + 
-                       "word size: ");
-    JavaAggregate.displayAggregate(result);
-  }
+
+    public static void largeSmallVowels(MongoCollection collection) {
+        Document match = null;
+        Document groupOps = null;
+        Document group = null;
+        Document sort = null;
+        ArrayList<Document> documents = null;
+        AggregateIterable aggregateIterable = null;
+        ArrayList<String> vowels = null;
+
+        vowels = new ArrayList<String>();
+        vowels.add("a");
+        vowels.add("e");
+        vowels.add("i");
+        vowels.add("o");
+        vowels.add("u");
+
+        match = new Document("$match",
+                    new Document("first", new Document ("$in", vowels)));
+        groupOps = new Document("_id", "$first");
+        groupOps.append("largest", new Document("$max", "$size"));
+        groupOps.append("smallest", new Document("$min", "$size"));
+        groupOps.append("total", new Document("$sum", 1));
+        group = new Document("$group", groupOps);
+        sort = new Document("$sort", new Document("first", 1));
+        documents = new ArrayList<Document>();
+        documents.add(match);
+        documents.add(group);
+        documents.add(sort);
+        aggregateIterable = collection.aggregate(documents);
+        System.out.println("\nLargest and smallest word sizes for " +
+                "words beginning with a vowel: ");
+        JavaAggregate.displayAggregate(aggregateIterable);
+    }
+
+    public static void top5AverageWordFirst(MongoCollection collection){
+        Document groupOps = null;
+        Document group = null;
+        Document sort = null;
+        Document limit = null;
+        AggregateIterable aggregateIterable = null;
+        ArrayList<Document> documents = null;
+
+        groupOps = new Document("_id", "$first");
+        groupOps.append("average", new Document("$avg", "$size"));
+        group = new Document("$group", groupOps);
+        sort = new Document("$sort", new Document("average", -1));
+        limit = new Document("$limit", 5);
+        documents = new ArrayList<Document>();
+        documents.add(group);
+        documents.add(sort);
+        documents.add(limit);
+        aggregateIterable = collection.aggregate(documents);
+        System.out.println("\nFirst letter of top 5 largest average " +
+                "word size: ");
+        JavaAggregate.displayAggregate(aggregateIterable);
+    }
 }

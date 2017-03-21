@@ -147,73 +147,77 @@ In nutshell, the Map reduce operation consists on the following four steps:
 ## Scenario
 
 ```
-> function map() {
+function map() {
 	for(i = 0; i < this.cities.length; i++) {
 		emit(this.cities[i].substring(0, 1), 1);
 	}
 }
 
-> function reduce(key, values) {
+function reduce(key, values) {
 	return Array.sum(values);
 }
 
-> db.IndiaStates.mapReduce(map, reduce, {out: "census_mr"})
+db.IndiaStates.mapReduce(map, reduce, {out: "census_mr"})
 
-> db.census_mr.find().sort({value: -1}).limit(3)
+db.census_mr.find().sort({value: -1}).limit(3)
 ```
 
 ## Hands-on
 
 ### Example
 
-Execute the following script
+Execute the following script from the bash
+```
+mongo --port 27017 handson-js.js
+```
 
+Or copy from Robomongo
 ```
 // Connection
-mongo = new Mongo('localhost');
-wordsDB = mongo.getDB('semaine10');
-wordsColl = wordsDB.getCollection('word_stats');
+//mongo = new Mongo('localhost')
+mongo = new Mongo('10.0.2.2:27018')
+wordsDB = mongo.getDB('semaine10')
+wordsColl = wordsDB.getCollection('word_stats')
+//wordsColl = db.getCollection('word_stats')
 
 // Example 1
 results = wordsColl.mapReduce(
-	function() { emit(this.first, this.stats.vowels); },
-	function(key, values){ return Array.sum(values); },
+	function() { emit(this.first, this.stats.vowels)},
+	function(key, values){ return Array.sum(values)},
 	{ out: {inline: 1}}
-);
-print("Total vowel count in words beginning with " + "a certain letter: ");
+)
+print("Total vowel count in words beginning with " + "a certain letter: ")
 for(i in results.results){
-	print(JSON.stringify(results.results[i]));
+	print(JSON.stringify(results.results[i]))
 }
 
 // Example 2
 results = wordsColl.mapReduce(
-	function() { emit(this.first, 
-						{ vowels: this.stats.vowels, 
-						consonants: this.stats.consonants})
-	}, 
+	function() { emit(this.first, { vowels: this.stats.vowels, consonants: this.stats.consonants})}, 
 	function(key, values){
-		result = {count: values.length, 
-				vowels: 0, consonants: 0};
-		for(var i=0; i<values.length; i++){
-			if (values[i].vowels)
-				result.vowels += values[i].vowels;
-			if(values[i].consonants)
-				result.consonants += values[i].consonants;
+		result = {count: values.length, vowels: 0, consonants: 0}
+		for(i = 0; i < values.length; i++) {
+			if (values[i].vowels) {
+                            result.vowels += values[i].vowels
+                        }
+			if(values[i].consonants) {
+                            result.consonants += values[i].consonants
+                        }
 		}
-		return result;
+		return result
 	},
 	{ out: {inline: 1},
 		query: {last: {$in:['a','e','i','o','u']}},
 		finalize: function (key, obj) {
-			obj.characters = obj .vowels + obj.consonants;
-			return obj;
+			obj.characters = obj .vowels + obj.consonants
+			return obj
 		}
 	}
-);
+)
 print("Total words, vowels, consonants and characters in words " +
-	"beginning with a certain letter that ends with a vowel: ");
+	"beginning with a certain letter that ends with a vowel: ")
 for(i in results.results){
-	print(JSON.stringify(resu lts.results[i]));
+	print(JSON.stringify(results.results[i]))
 }
 ```
 

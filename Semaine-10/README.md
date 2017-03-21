@@ -169,9 +169,12 @@ In nutshell, the Map reduce operation consists on the following four steps:
 Execute the following script
 
 ```
+// Connection
 mongo = new Mongo('localhost');
 wordsDB = mongo.getDB('semaine10');
 wordsColl = wordsDB.getCollection('word_stats');
+
+// Example 1
 results = wordsColl.mapReduce(
 	function() { emit(this.first, this.stats.vowels); },
 	function(key, values){ return Array.sum(values); },
@@ -181,6 +184,8 @@ print("Total vowel count in words beginning with " + "a certain letter: ");
 for(i in results.results){
 	print(JSON.stringify(results.results[i]));
 }
+
+// Example 2
 results = wordsColl.mapReduce(
 	function() { emit(this.first, 
 						{ vowels: this.stats.vowels, 

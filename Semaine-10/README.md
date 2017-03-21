@@ -6,6 +6,7 @@ Import these collections to manipulate given examples.
 mongoimport -d semaine10 -c IndiaStates --drop --file IndiaStates.json
 mongoimport -d semaine10 -c IndiaCitiesPopulation --drop --file IndiaCitiesPopulation.json
 mongoimport -d semaine10 -c mapreduce --drop --file mapreduce.json
+mongoimport -d semaine10 -c word_stats --drop --file word_stats.json
 ```
 
 Map reduce is a programming model used on large data sets. It was first developed by Google.

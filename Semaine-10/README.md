@@ -174,8 +174,7 @@ mongo --port 27017 handson-js.js
 Or copy from Robomongo
 ```
 // Connection
-//mongo = new Mongo('localhost')
-mongo = new Mongo('10.0.2.2:27018')
+mongo = new Mongo('localhost:27017')
 wordsDB = mongo.getDB('semaine10')
 wordsColl = wordsDB.getCollection('word_stats')
 //wordsColl = db.getCollection('word_stats')

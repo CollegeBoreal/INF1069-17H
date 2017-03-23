@@ -328,7 +328,7 @@ Then reduce
 reduce("blue",a);
 ```
 
-### [Exercice](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-10/Exercice.md)
+### [Exercices](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-10/Exercices.md)
 
 ## References
 * Instant MongoDB. By Amol Nayak. Packt Publishing. 26-JUL-2013

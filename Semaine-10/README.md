@@ -144,6 +144,10 @@ In nutshell, the Map reduce operation consists on the following four steps:
 
 4. Write to output collection.
 
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-10/mapreduce-operation1.PNG)
+
+![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-10/mapreduce-operation2.PNG)
+
 ## Scenario
 
 ```
@@ -327,3 +331,4 @@ reduce("blue",a);
 ## References
 * Instant MongoDB. By Amol Nayak. Packt Publishing. 26-JUL-2013
 * The Definitive Guide to MongoDB: A complete guide to dealing with Big Data using MongoDB, Second Edition. By David Hows; Peter Membrey; Eelco Plugge; Tim Hawkins. Apress. 06-NOV-2013
+* MongoDB Documentation, Map-Reduce https://docs.mongodb.com/v3.2/core/map-reduce/

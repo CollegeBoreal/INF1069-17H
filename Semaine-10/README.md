@@ -144,6 +144,8 @@ In nutshell, the Map reduce operation consists on the following four steps:
 
 4. Write to output collection.
 
+See https://docs.mongodb.com/v3.2/core/map-reduce/
+
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-10/mapreduce-operation1.PNG)
 
 ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Semaine-10/mapreduce-operation2.PNG)

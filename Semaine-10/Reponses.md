@@ -112,7 +112,7 @@ __Question 5__
 ```
 db.cityInspections.mapReduce(
 	function() {
-        emit( this.address.city, 1 );
+        emit( this.address.city.toLowerCase(), 1 );
     },
 	function(publisher, values) {
 		count = 0;

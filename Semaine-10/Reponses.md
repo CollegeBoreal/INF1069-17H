@@ -112,6 +112,7 @@ __Question 5__
 ```
 db.cityInspections.mapReduce(
 	function() {
+	// Manipuler les chaines de caractères seulement si c'est nécessaire.
         emit( this.address.city.toLowerCase(), 1 );
     },
 	function(publisher, values) {

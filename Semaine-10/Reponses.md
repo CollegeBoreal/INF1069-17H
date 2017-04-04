@@ -14,7 +14,7 @@ db.mapreduceBooks.mapReduce(
 		count = 0;
 		for (var index = 0; index < values.length; ++index) {
 			count += values[index];
-		}
+		}		
 		return count;
 	},
 	{out: {replace: "question1"}}
@@ -35,7 +35,6 @@ db.mapreduceBooks.mapReduce(
             value.count += values[index].count;
             value.price += values[index].price;
         }
-
         return value;
     },
     {   
@@ -64,7 +63,6 @@ db.mapreduceBooks.mapReduce(
             value.count += values[index].count;
             value.price += values[index].price;
         }
-
         return value;
     },
     {   
@@ -94,13 +92,16 @@ db.cityInspections.mapReduce(
 		}
 		return count;
     },
-    { 
-            query: {$and: 
+    {
+		query:  
+		{
+			$and: 
 			[
-                {"result": {"$exists": true}},
-                {"result": "Pass"}
-			]},
-            out: {replace: "question4"}
+				{"result": {"$exists": true}},
+				{"result": "Pass"}
+			]
+		},
+		out: {replace: "question4"}
 	}
 )
 
@@ -122,13 +123,16 @@ db.cityInspections.mapReduce(
 		}
 		return count;
     },
-    { 
-            query: {$and: 
+    {
+		query:
+		{
+			$and: 
 			[
-                {"address.city": {"$exists": true}},
+				{"address.city": {"$exists": true}},
 				{"address.city": {$ne: ""}}
-			]},
-            out: {replace: "question5"}
+			]
+		},
+		out: {replace: "question5"}
 	}
 )
 
@@ -138,4 +142,33 @@ db.question5.find({}).sort({"value":-1}).limit(1)
 __Question 6__
 
 ```
+db.cityInspections.mapReduce(
+	function() {
+        emit( this.result, { count: 1, average: 0, total: 0 });
+    },
+	function(key, values) {
+		var value = { count: 0, average: 0, total: 0 };
+		for (var index = 0; index < values.length; ++index) {
+			value.count += values[index].count;
+		}
+		
+		return value;
+    },
+    {
+			scope: { total: db.cityInspections.find({}).count()},
+			query: {$and: 
+			[
+				{"result": {"$exists": true}},
+				{"result": "Fail"}
+			]},
+			out: {replace: "question6"},
+			finalize: 
+				function(key, value) {
+					//value.average = ( value.count / total ).toFixed(2);
+					value.average = ( value.count / total );
+					value.total = total;
+					return value;
+				}
+	}
+)
 ```

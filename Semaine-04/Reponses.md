@@ -178,6 +178,9 @@ __Question 8__
     },
     {
         $sort: {"count": -1}
+    },
+    {
+    	$limit: 1
     }
 ]).pretty()
 ```

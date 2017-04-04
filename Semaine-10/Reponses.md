@@ -1,4 +1,4 @@
-# Les fonctions d’agrégation - Réponses
+# Fonction MapReduce - Réponses
 
 __Question 1__ 
 

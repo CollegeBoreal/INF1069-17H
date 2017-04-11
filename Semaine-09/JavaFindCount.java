@@ -6,9 +6,11 @@ import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
 /**
- * INF1069-17H
  * This class implements an example for count function.
- * By Steve Tshibangu <a>Steve.TshibanguMutshi@collegeboreal.ca</a>
+ * Author : Steve Tshibangu
+ * Email: steve.tshibangu-mutshi.1@collegeboreal.ca
+ * Course: INF1069
+ * Date : 2017-02-02
  */
 public class JavaFindCount {
     public static void main(String[] args) {
@@ -23,7 +25,7 @@ public class JavaFindCount {
             collection = mongoDatabase.getCollection("word_stats");
             JavaFindCount.countWords(collection);
         } catch (Exception e){
-            System.out.println(e);
+            System.err.println(e.toString());
         }
     }
 

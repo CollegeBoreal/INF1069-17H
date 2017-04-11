@@ -205,13 +205,13 @@ public class CourseManagementExample {
                 // ajouter le cours dans la liste
                 if (choice == JOptionPane.YES_OPTION) {
                     course = "" +
-                            code + " " +
-                            name + " " +
-                            nbMaxInsc + " " +
-                            price + " " +
-                            city + " " +
-                            day + " " +
-                            hr + " " +
+                            code + "\t" +
+                            name + "\t" +
+                            nbMaxInsc + "\t" +
+                            price + "\t" +
+                            city + "\t" +
+                            day + "\t" +
+                            hr + "\t" +
                             min;
                     listCourses.add(course);
                 } else {
@@ -235,8 +235,7 @@ public class CourseManagementExample {
 
         jTextArea = new JTextArea(10, 30);
         // texte d'en-tête
-        message += "Code\tNom\tNB Max Insc\tPrice\tPlace" +
-                    "\tYear\tMonth\tDay\tHour\tMinutes\n";
+        message += "Code\tNom\tNB Max Insc\tPrice\tPlace\tDay\tHour\tMinutes\n";
 
         // texte du contenu
         for(String course: listCourses) {

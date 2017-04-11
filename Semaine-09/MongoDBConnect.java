@@ -5,9 +5,11 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 
 /**
- * INF1069-17H
  * This class connects to MongoDB and prints the list of databases.
- * By Steve Tshibangu <a>Steve.TshibanguMutshi@collegeboreal.ca</a>
+ * Author : Steve Tshibangu
+ * Email: steve.tshibangu-mutshi.1@collegeboreal.ca
+ * Course: INF1069
+ * Date : 2017-02-02
  */
 public class MongoDBConnect {
     public static void main(String[] args) {
@@ -48,7 +50,7 @@ public class MongoDBConnect {
             mongoClient.close();
         } catch(Exception e) {
             // Print errors
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.err.println(e.toString());
         }
     }
 }

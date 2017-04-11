@@ -11,9 +11,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * INF1069-17H
  * This class implements an example for aggregate function.
- * By Steve Tshibangu <a>Steve.TshibanguMutshi@collegeboreal.ca</a>
+ * Author : Steve Tshibangu
+ * Email: steve.tshibangu-mutshi.1@collegeboreal.ca
+ * Course: INF1069
+ * Date : 2017-02-02
  */
 public class JavaAggregate {
     public static void main(String[] args) {
@@ -30,7 +32,7 @@ public class JavaAggregate {
             JavaAggregate.largeSmallVowels(collection);
             JavaAggregate.top5AverageWordFirst(collection);
         } catch (Exception e) {
-            System.out.println(e);
+            System.err.println(e.toString());
         }
     }
 

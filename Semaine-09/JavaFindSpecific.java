@@ -9,9 +9,11 @@ import org.bson.Document;
 import java.util.ArrayList;
 
 /**
- * INF1069-17H
  * This class implements an example for find function.
- * By Steve Tshibangu <a>Steve.TshibanguMutshi@collegeboreal.ca</a>
+ * Author : Steve Tshibangu
+ * Email: steve.tshibangu-mutshi.1@collegeboreal.ca
+ * Course: INF1069
+ * Date : 2017-02-02
  */
 public class JavaFindSpecific {
     public static void main(String[] args) {
@@ -31,7 +33,7 @@ public class JavaFindSpecific {
             JavaFindSpecific.over6Vowels(collection);
             JavaFindSpecific.nonAlphaCharacters(collection);
         } catch (Exception e) {
-            System.out.println(e);
+            System.err.println(e.toString());
         }
     }
 

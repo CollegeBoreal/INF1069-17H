@@ -12,9 +12,11 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
 /**
- * INF1069-17H
  * This class connects to MongoDB and inserts a document into a collection.
- * By Steve Tshibangu <a>Steve.TshibanguMutshi@collegeboreal.ca</a>
+ * Author : Steve Tshibangu
+ * Email: steve.tshibangu-mutshi.1@collegeboreal.ca
+ * Course: INF1069
+ * Date : 2017-02-02
  */
 public class MongoDBInsertDocument {
 
@@ -71,19 +73,21 @@ public class MongoDBInsertDocument {
             keySet = document.keySet();
             iterator = keySet.iterator();
 
+            System.out.println("\n------------------------------\n");
             while (iterator.hasNext()) {
                 documentKey = iterator.next();
                 System.out.println(
                         documentKey +
-                        "\t" +
+                        ":\t" +
                         documentRet.get(documentKey.toString()));
             }
+            System.out.println("\n------------------------------\n");
 
             // close the connection
             mongoClient.close();
         } catch(Exception e) {
             // Print errors
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.err.println(e.toString());
         }
     }
 }

@@ -12,9 +12,11 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoCollection;
 
 /**
- * INF1069-17H
  * This class implements an example for find function.
- * By Steve Tshibangu <a>Steve.TshibanguMutshi@collegeboreal.ca</a>
+ * Author : Steve Tshibangu
+ * Email: steve.tshibangu-mutshi.1@collegeboreal.ca
+ * Course: INF1069
+ * Date : 2017-02-02
  */
 public class JavaFind {
     public static void main(String[] args) {
@@ -32,7 +34,7 @@ public class JavaFind {
             JavaFind.getManyFor(collection);
             JavaFind.getManyToArray(collection);
         } catch (Exception e) {
-            System.out.println(e);
+            System.err.println(e.toString());
         }
     }
 

@@ -15,9 +15,11 @@ import com.mongodb.client.model.UpdateOptions;
 import com.mongodb.client.result.UpdateResult;
 
 /**
- * INF1069-17H
  * This class connects to MongoDB and updates documents into a collection.
- * By Steve Tshibangu <a>Steve.TshibanguMutshi@collegeboreal.ca</a>
+ * Author : Steve Tshibangu
+ * Email: steve.tshibangu-mutshi.1@collegeboreal.ca
+ * Course: INF1069
+ * Date : 2017-02-02
  */
 public class MongoDBUpdateDocument {
     public static void main(String[] args) {
@@ -46,7 +48,7 @@ public class MongoDBUpdateDocument {
 
             // Connect to server
             mongoClient = new MongoClient(
-                    Arrays.asList(new ServerAddress(server, port)));
+                            Arrays.asList(new ServerAddress(server, port)));
 
             // Get the database
             mongoDatabase = mongoClient.getDatabase(database);
@@ -55,7 +57,7 @@ public class MongoDBUpdateDocument {
             collection = mongoDatabase.getCollection("catalogUpdate");
 
             // Create document 1
-            catalog = new Document("catalogId", "catalog1")
+            catalog = new Document("catalogId", 1)
                         .append("journal", "Oracle Magazine")
                         .append("publisher", "Oracle Publishing")
                         .append("edition", "November December 2013")
@@ -66,7 +68,7 @@ public class MongoDBUpdateDocument {
             collection.insertOne(catalog);
 
             // Create document 2
-            catalog = new Document("catalogId", "catalog2")
+            catalog = new Document("catalogId", 2)
                         .append("journal", "Oracle Magazine")
                         .append("publisher", "Oracle Publishing")
                         .append("edition", "November December 2013")
@@ -78,18 +80,18 @@ public class MongoDBUpdateDocument {
 
             // Update one document
             collection.updateOne(
-                    new Document("catalogId", "catalog1"),
+                    new Document("catalogId", 1),
                     new Document("$set", new Document("edition", "11-12 2013")
                                         .append("author", "Kelly, David A.")));
 
             // Update many documents
             collection.updateMany(new Document("journal", "Oracle Magazine"),
                     new Document("$set",
-                            new Document("journal", "OracleMagazine")));
+                            new Document("journal", "Oracle Magazine")));
 
             updateResult = collection.replaceOne(
-                            new Document("catalogId", "catalog3"),
-                            new Document("catalogId", "catalog3")
+                            new Document("catalogId", 3),
+                            new Document("catalogId", 3)
                                     .append("journal", "Oracle Magazine")
                                     .append("publisher", "Oracle Publishing")
                                     .append("edition", "November December 2013")
@@ -105,11 +107,12 @@ public class MongoDBUpdateDocument {
                     + updateResult.getModifiedCount());
 
             System.out.println("Upserted Document Id: "
-                    + updateResult.getUpsertedId().asObjectId().getValue());
+                    + updateResult.getUpsertedId());
 
             iterable = collection.find();
 
             /*** Print results */
+            System.out.println("\n------------------------------\n");
             for (Document document : iterable) {
                 keySet = document.keySet();
                 iterator = keySet.iterator();
@@ -118,16 +121,17 @@ public class MongoDBUpdateDocument {
                     documentKey = iterator.next();
                     System.out.println(
                             documentKey +
-                            "\t" +
+                            ":\t" +
                             document.get(documentKey));
                 }
+                System.out.println("\n------------------------------\n");
             }
 
             // close the connection
             mongoClient.close();
         } catch(Exception e) {
             // Print errors
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.err.println(e.toString());
         }
     }
 }

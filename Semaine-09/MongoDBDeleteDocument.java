@@ -14,9 +14,11 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.result.DeleteResult;
 
 /**
- * INF1069-17H
  * This class connects to MongoDB and deletes a document.
- * By Steve Tshibangu <a>Steve.TshibanguMutshi@collegeboreal.ca</a>
+ * Author : Steve Tshibangu
+ * Email: steve.tshibangu-mutshi.1@collegeboreal.ca
+ * Course: INF1069
+ * Date : 2017-02-02
  */
 public class MongoDBDeleteDocument {
     public static void main(String[] args) {
@@ -55,7 +57,7 @@ public class MongoDBDeleteDocument {
             collection = mongoDatabase.getCollection("catalogDelete");
 
             // Create document 1
-            document = new Document("catalogId", "catalog1")
+            document = new Document("catalogId", 1)
                         .append("journal", "Oracle Magazine")
                         .append("publisher", "Oracle Publishing")
                         .append("edition", "November December 2013")
@@ -66,7 +68,7 @@ public class MongoDBDeleteDocument {
             collection.insertOne(document);
 
             // Create document 2
-            document = new Document("catalogId", "catalog2")
+            document = new Document("catalogId", 2)
                         .append("journal", "Oracle Magazine")
                         .append("publisher", "Oracle Publishing")
                         .append("edition", "November December 2013")
@@ -77,7 +79,7 @@ public class MongoDBDeleteDocument {
             collection.insertOne(document);
 
             // Create document 3
-            document = new Document("catalogId", "catalog3")
+            document = new Document("catalogId", 3)
                         .append("journal", "Oracle Magazine")
                         .append("publisher", "Oracle Publishing")
                         .append("edition", "November December 2013");
@@ -86,7 +88,7 @@ public class MongoDBDeleteDocument {
             collection.insertOne(document);
 
             // Create document 4
-            document = new Document("catalogId", "catalog4")
+            document = new Document("catalogId", 4)
                         .append("journal", "Oracle Magazine")
                         .append("publisher", "Oracle Publishing")
                         .append("edition", "November December 2013");
@@ -96,7 +98,7 @@ public class MongoDBDeleteDocument {
 
             // Delete one document
             deleteResult = collection.deleteOne(
-                            new Document("catalogId", "catalog1"));
+                            new Document("catalogId", 1));
 
             // Print results
             System.out.println("Number of documents deleted: "
@@ -104,7 +106,7 @@ public class MongoDBDeleteDocument {
 
             // Find and delete
             documentDeleted = collection.findOneAndDelete(
-                                new Document("catalogId", "catalog2"));
+                                new Document("catalogId", 2));
 
             // Print results
             System.out.println("Document deleted: " + documentDeleted);
@@ -137,7 +139,7 @@ public class MongoDBDeleteDocument {
             mongoClient.close();
         } catch(Exception e) {
             // Print errors
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.err.println(e.toString());
         }
     }
 }

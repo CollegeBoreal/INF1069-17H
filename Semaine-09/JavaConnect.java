@@ -6,10 +6,12 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.WriteConcern;
 
 /**
- * INF1069-17H
  * This class connects to MongoDB and prints the number of documents
  * from collection called word_stats.
- * By Steve Tshibangu <a>Steve.TshibanguMutshi@collegeboreal.ca</a>
+ * Author : Steve Tshibangu
+ * Email: steve.tshibangu-mutshi.1@collegeboreal.ca
+ * Course: INF1069
+ * Date : 2017-02-02
  */
 public class JavaConnect {
     public static void main(String[] args) {
@@ -27,7 +29,7 @@ public class JavaConnect {
                     new Long(collection.count()).toString());
         } catch (Exception e) {
             // Print errors
-            System.out.println(e);
+            System.err.println(e.toString());
         }
     }
 }

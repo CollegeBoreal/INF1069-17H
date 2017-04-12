@@ -34,7 +34,7 @@ public class CourseManagementExample {
         do {
             choiceM = JOptionPane.showOptionDialog(
                         null,
-                        "Que desirez-vous ?",
+                        "Que desirez-vous?",
                         "COURS",
                         0,
                         JOptionPane.PLAIN_MESSAGE,
@@ -47,7 +47,7 @@ public class CourseManagementExample {
                 case 2:
                     choiceS = JOptionPane.showOptionDialog(
                                 null,
-                                " Que desirez-vous ?",
+                                "Que desirez-vous?",
                                 "COURS",
                                 0,
                                 JOptionPane.PLAIN_MESSAGE,
@@ -79,10 +79,11 @@ public class CourseManagementExample {
 
         try {
             // initialise le fichier
-            writer = new BufferedWriter(new FileWriter(new File("courses.dat")));
+            writer = new BufferedWriter(
+                        new FileWriter(new File("courses.dat")));
 
             for(String course: listCourses) {
-                message += course + "";
+                message += course + "\n";
             }
 
             // ecrire dans le fichier seulement si on a des cours dans la liste
@@ -126,7 +127,7 @@ public class CourseManagementExample {
             do {
                 code = JOptionPane.showInputDialog(
                         null,
-                        "Entrez le numéro du cours[une lettre + 3 chiffres]:");
+                        "Entrez le numéro du cours [une lettre + 3 chiffres]:");
             } while (code.length() != 4);
 
             // valider le code du cours
@@ -136,7 +137,7 @@ public class CourseManagementExample {
                 do {
                     name = JOptionPane.showInputDialog(
                             null,
-                            "Entrez le nom du cours[minimum 3 caractères]:");
+                            "Entrez le nom du cours [minimum 3 caractères]:");
                 } while (name.length() < 3);
 
                 // nombre maximum d'inscriptions
@@ -233,7 +234,7 @@ public class CourseManagementExample {
         JTextArea jTextArea = null;
         String message = "";
 
-        jTextArea = new JTextArea(10, 30);
+        jTextArea = new JTextArea(10, 40);
         // texte d'en-tête
         message += "Code\tNom\tNB Max Insc\tPrice\tPlace\tDay\tHour\tMinutes\n";
 
@@ -247,7 +248,7 @@ public class CourseManagementExample {
         JOptionPane.showMessageDialog(
                 null,
                 jTextArea,
-                "liste des nombres",
+                "liste des cours",
                 JOptionPane.PLAIN_MESSAGE);
     }
 
@@ -274,7 +275,7 @@ public class CourseManagementExample {
         do {
             ch = JOptionPane.showInputDialog(
                     null,
-                    "Entrez le numéro du cours[une lettre + 3 chiffres]:");
+                    "Entrez le numéro du cours [une lettre + 3 chiffres]:");
         } while (ch.length() < 3);
 
         for (String course : listCourses) {
@@ -294,7 +295,7 @@ public class CourseManagementExample {
             // TODO modify course
             JOptionPane.showMessageDialog(
                     null,
-                    "fonction non implémentée");
+                    "Fonction non implémentée");
         } else {
             JOptionPane.showMessageDialog(
                     null,

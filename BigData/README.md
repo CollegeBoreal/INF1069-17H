@@ -20,6 +20,8 @@
 13. LSTAT: % lower status of the population 
 14. MEDV: Median value of owner-occupied homes in $1000's
 
+## R Code
+
 ```
 > housing<-read.fwf(
         file=url('https://archive.ics.uci.edu/ml/machine-learning-databases/housing/housing.data'),

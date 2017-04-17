@@ -35,11 +35,11 @@
 > with(housing, boxplot(AGE))
 > with(housing, boxplot(CRIM,INDUS))
 > with(housing, plot(AGE, TAX, xlab="AGE",ylab="TAX"))
-> with (housing, hist(RM)) loi normale
-> with (housing, hist(AGE)) plus de maisons agées
-> with(housing, hist(DIS)) loi lognormale
-> with(housing, hist(RAD)) TAX et RAD se ressemblent beaucoup
-> with(housing, hist(LSTAT))la loi lognormale 
+> with (housing, hist(RM)) # loi normale
+> with (housing, hist(AGE)) # plus de maisons agées
+> with(housing, hist(DIS)) # loi lognormale
+> with(housing, hist(RAD)) # TAX et RAD se ressemblent beaucoup
+> with(housing, hist(LSTAT)) # la loi lognormale 
 > pairs(housing[,c("RM","LSTAT","MEDV")])
 ```
 

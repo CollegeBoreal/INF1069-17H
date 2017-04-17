@@ -1,8 +1,8 @@
-#	Comprendre et analyser les données : Boston housing data
+#	Comprendre et analyser les données : Boston housing data  
 
 
-•	https://archive.ics.uci.edu/ml/machine-learning-databases/housing/
-•	Descriptions des variables
+•	https://archive.ics.uci.edu/ml/machine-learning-databases/housing/  
+•	Descriptions des variables  
 
 
 1. CRIM: per capita crime rate by town 

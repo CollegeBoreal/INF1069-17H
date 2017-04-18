@@ -17,7 +17,19 @@ db.mapreduceBooks.mapReduce(
 		}		
 		return count;
 	},
-	{out: {replace: "question1"}}
+	{
+		query:  
+		{
+			$and: 
+			[
+				{"author.firstName": {"$exists": true}},
+				{"author.lastName": {"$exists": true}},
+				{"author.firstName": {$ne: ""}},
+				{"author.lastName": {$ne: ""}}
+			]
+		},
+		out: {replace: "question1"}
+	}
 )
 ```
 
@@ -39,7 +51,15 @@ db.mapreduceBooks.mapReduce(
     },
     {   
         scope: { currency: "US" },
-        out: { replace: "question2" },
+        query:  
+		{
+			$and: 
+			[
+				{"publisher": {"$exists": true}},
+				{"publisher": {$ne: ""}}
+			]
+		},
+	out: { replace: "question2" },
         finalize: 
             function(key, value) {
                 value.average = currency + ( value.price / value.count ).toFixed(2);
@@ -67,6 +87,14 @@ db.mapreduceBooks.mapReduce(
     },
     {   
         scope: { currency: "US" },
+	query:  
+		{
+			$and: 
+			[
+				{"publisher": {"$exists": true}},
+				{"publisher": {$ne: ""}}
+			]
+		},
         out: { replace: "question3" },
         finalize: 
             function(key, value) {

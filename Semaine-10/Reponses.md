@@ -98,7 +98,8 @@ db.cityInspections.mapReduce(
 			$and: 
 			[
 				{"result": {"$exists": true}},
-				{"result": "Pass"}
+				{"result": "Pass"},
+				{"issue_date": {"$exists": true}}
 			]
 		},
 		out: {replace: "question4"}

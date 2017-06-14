@@ -7,8 +7,6 @@ import javax.swing.*;
  * Exemple d'utilisation d'un JTextArea pour afficher
  * des résultats en colonnes
  * méthode setText pour assigner un String au contenu du JTextArea
- * Auteur : Steve Tshibangu
- * Courriel: steve.tshibangu-mutshi.1@collegeboreal.ca
  * Cours: INF1069
  * Date : Hiver 2017
  */

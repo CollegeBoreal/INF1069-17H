@@ -8,8 +8,6 @@ import javax.swing.*;
  * InputReaderExample2.java (version graphique)
  * Ce programme fait la lecture au clavier du nom et de l'âge de l'usager
  * pour ensuite afficher ces informations
- * Auteur : Steve Tshibangu
- * Courriel: steve.tshibangu-mutshi.1@collegeboreal.ca
  * Cours: INF1069
  * Date : Hiver 2017
  */

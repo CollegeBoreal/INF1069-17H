@@ -3,7 +3,7 @@
 ## Run mongo with authentication
 
 ```
-$ docker run --name some-mongo -d mongo --auth
+$ docker run --name some-mongo --publish 27017:27017 --detach mongo --auth
 ```
 
 ## Add the Initial Admin User

@@ -10,9 +10,19 @@ $ docker run --name some-mongo --publish 27017:27017 --detach mongo --auth
 
 * execute the admin command to get mongo's shell prompt
 
+   . Connect to the container
+
 ```
-$ docker exec --interactive --tty some-mongo bash # mongo admin
+$ docker exec --interactive --tty some-mongo bash
 ```
+
+   . Launch mongo CLI
+   
+```
+# mongo admin
+```
+
+
 
 * create the user admin
 

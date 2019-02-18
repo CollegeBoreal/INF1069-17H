@@ -15,7 +15,9 @@ $ docker run --name some-mongo --publish 27017:27017 --detach mongo --auth
 ```
 $ docker exec --interactive --tty some-mongo bash
 ```
+
 	- Launch mongo CLI 
+
 ```
 # mongo admin
 ```

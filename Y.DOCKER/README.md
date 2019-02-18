@@ -11,7 +11,7 @@ $ docker run --name some-mongo --publish 27017:27017 --detach mongo --auth
 * execute the admin command to get mongo's shell prompt
 
 ```
-$ docker exec -it some-mongo mongo admin
+$ docker exec --interactive --tty some-mongo bash # mongo admin
 ```
 
 * create the user admin
